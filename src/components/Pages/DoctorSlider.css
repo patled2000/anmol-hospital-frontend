@@ -1,0 +1,105 @@
+ .doctor-slider-container {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f8fbff, #eef5ff);
+  position: relative;
+  padding-top: 50px;
+}
+
+.slider-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.doctor-card {
+  background: #fff;
+  padding: 5px 5px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+}
+
+.doctor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+}
+
+.doctor-img-wrapper {
+  overflow: hidden;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  padding: 10px; /* padding around image */
+  background: #f0f0f0;
+}
+
+.doctor-image {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.doctor-card:hover .doctor-image {
+  transform: scale(1.05);
+}
+
+.doctor-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 10px 0 5px;
+}
+
+.doctor-degree {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 4px;
+}
+
+.doctor-department {
+  font-size: 15px;
+  color: #2980b9;
+  font-weight: 600;
+}
+
+/* Custom arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  background: #3498db;
+  color: white;
+}
+
+.arrow.prev {
+  left: -10px;
+}
+
+.arrow.next {
+  right: -10px;
+}
+
+.arrow svg {
+  font-size: 18px;
+}
+
+@media (max-width: 640px) {
+  .arrow {
+    display: none;
+  }
+}

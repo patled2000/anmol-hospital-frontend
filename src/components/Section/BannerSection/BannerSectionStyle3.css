@@ -1,0 +1,36 @@
+.banner-section-style-3 {
+   padding: 0 0 80px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-text-box {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.insurance-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.insurance-logo {
+  max-height: 80px;
+  object-fit: contain;
+  padding: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.insurance-logo:hover {
+  transform: scale(1.05);
+}

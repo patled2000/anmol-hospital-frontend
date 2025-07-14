@@ -1,1 +1,1 @@
-# anmol-hospital-react
+# anmolhospital
