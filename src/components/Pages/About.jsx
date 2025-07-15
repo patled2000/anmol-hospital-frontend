@@ -7,7 +7,9 @@ import FeaturesSectionStyle2 from '../Section/FeaturesSection/FeaturesSectionSty
 import FunFactSection from '../Section/FunFactSection';
 import TeamSection from '../Section/TeamSection';
 import AwardSectionStyle2 from '../Section/AwardSection/AwardSectionStyle2';
+import FounderMessage from './FounderMessage';
 import { pageTitle } from '../../helpers/PageTitle';
+import about_page from './image/about_page.png'
 const departmentData = [
   {
     title: 'Diagnostic testing',
@@ -144,7 +146,7 @@ export default function About() {
       
       <BannerSectionStyle3
             bgUrl="/images/about/banner_bg.svg"
-            imgUrl="/images/about/banner_img.png"
+            imgUrl={about_page}
             title="Welcome to <br />ProHealth Medical & Healthcare Center"
             subTitle="Your Partner in Health and Wellness"
           />
@@ -159,6 +161,10 @@ export default function About() {
           supportSubTitle="We are available when you want"
         />
       </Section>
+      <Section> 
+     <FounderMessage/>
+     </Section>
+
       <Section topMd={175} topLg={125} topXl={85} bottomMd={100} bottomLg={110}>
         <FeaturesSectionStyle2
           sectionTitle="Why Choose Us"

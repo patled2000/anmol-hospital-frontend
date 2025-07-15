@@ -1,74 +1,166 @@
- .cs_site_header {
+ /* -------------------
+   Main Header
+------------------- */
+.main-header {
+  position: fixed;
+  top: 55px;
   width: 100%;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  background-color: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  background: white;
+  z-index: 10000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.cs_header_row {
-  max-width: 1300px; 
+.main-header-container {
+  max-width: 1300px;
   margin: 0 auto;
+  padding: 12px 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 17px;
-  width: 100%;
+  position: relative;
 }
-.cs_nav_list {
+
+.logo img {
+  height: 65px;
+}
+
+/* -------------------
+   Hamburger (Mobile Only)
+------------------- */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #1e5799;
+}
+
+/* -------------------
+   Nav Links
+------------------- */
+.nav-links {
   display: flex;
-  gap: 5px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  gap: 32px;
+  align-items: center;
 }
 
-.cs_nav_list li a {
+.nav-links a {
   text-decoration: none;
-  color: #222;
   font-weight: 600;
-  padding: 8px 12px;
-  transition: color 0.3s ease;
+  color: #222;
+  transition: color 0.3s;
 }
 
-.cs_nav_list li a:hover {
+.nav-links a:hover {
   color: #2989d8;
 }
 
-.cs_appointment_btn button {
-  padding: 10px 22px;
+/* -------------------
+   Appointment Button
+------------------- */
+.appointment-btn button {
   background: linear-gradient(to right, #1e5799, #2989d8);
-  border: none;
-  border-radius: 30px;
   color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 600;
   cursor: pointer;
-  font-weight: 500;
-  transition: background 0.3s ease;
+  transition: background 0.3s;
 }
+
+.appointment-btn button:hover {
+  background: linear-gradient(to right, #174e85, #227ac8);
+}
+
+/* -------------------
+   Sidenav Form
+------------------- */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99998;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.appointment-sidenav {
+  background: white;
+  width: 400px;
+  height: 100%;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 99999;
+  position: relative;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.appointment-sidenav.open {
+  transform: translateX(0);
+}
+
+.sidenav-content {
+  padding: 30px 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.close-btn {
+  background: none;
+  font-size: 24px;
+  border: none;
+  float: right;
+  cursor: pointer;
+}
+
+/* -------------------
+   Mobile Styles
+------------------- */
 @media (max-width: 768px) {
-  .cs_header_row {
-    flex-direction: column;
-    align-items: flex-start;
+  .hamburger {
+    display: block;
   }
 
-  .cs_nav_list {
-    flex-direction: column;
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
-    gap: 12px;
+    background-color: white;
+    flex-direction: column;
+    display: none;
+    padding: 15px 20px;
+    gap: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10001;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 12px 0;
+    border-top: 1px solid #eee;
+  }
+
+  .appointment-btn {
+    width: 100%;
     margin-top: 10px;
   }
 
-  .cs_nav_list li a {
-    padding: 10px 0;
-    display: block;
+  .appointment-btn button {
     width: 100%;
+    padding: 12px;
   }
 
-  .cs_appointment_btn {
-    align-self: flex-end;
-    margin-top: 15px;
+  .appointment-sidenav {
+    width: 100%;
+    max-width: 100%;
   }
 }

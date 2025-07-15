@@ -1,18 +1,21 @@
  .founder-section {
   padding: 60px 20px;
-  background-color: white;
+  background-color: #f9fcff;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .section-title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-bottom: 50px;
-  color: #2c3e50;
+  color: #274760;
+  font-weight: 700;
 }
 
 .founder-block {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 40px;
   margin-bottom: 60px;
   flex-wrap: wrap;
@@ -24,16 +27,22 @@
 
 .founder-image {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
 }
 
 .founder-image img {
-  width: auto;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
 
-  
-  height: 400px;
-  border-radius: 0;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+.founder-image img:hover {
+  transform: scale(1.03);
 }
 
 .founder-content {
@@ -41,8 +50,8 @@
   font-size: 1.1rem;
   color: #444;
   line-height: 1.7;
-  margin-left: 20px;
-  margin-right: 50px;
+  padding: 10px 20px;
+  max-width: 700px;
 }
 
 .founder-name {
@@ -50,6 +59,7 @@
   margin-top: 15px;
   font-size: 1rem;
   color: #007B8F;
+  font-style: italic;
 }
 
 /* ✅ Mobile Responsive */
@@ -57,6 +67,8 @@
   .founder-block {
     flex-direction: column;
     text-align: center;
+    gap: 25px;
+    margin-bottom: 50px;
   }
 
   .founder-block.reverse {
@@ -65,10 +77,16 @@
 
   .founder-content {
     font-size: 1rem;
+    padding: 0 10px;
   }
 
   .founder-image img {
-    max-width: 90%;
-    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 2rem;
   }
 }

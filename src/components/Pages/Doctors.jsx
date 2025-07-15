@@ -4,6 +4,7 @@ import BannerSectionStyle4 from '../Section/BannerSection/BannerSectionStyle4';
 import TeamSectionStyle2 from '../Section/TeamSection/TeamSectionStyle2';
 import Section from '../Section';
 import { pageTitle } from '../../helpers/PageTitle';
+import Doctor_page  from './image/find doctor.png'
 const teamData = [
   {
     imgUrl: '/images/doctors/doctor_1.png',
@@ -193,7 +194,7 @@ export default function Doctors() {
     <>
       <BannerSectionStyle5
         bgUrl="/images/doctors/banner_bg.svg"
-        imgUrl="/images/doctors/banner_img.png"
+        imgUrl={Doctor_page}
         title="Introduce You to <br />Our Experts"
         subTitle="The list of certified doctors with years of <br />professional experiences"
       />

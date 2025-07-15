@@ -1,0 +1,72 @@
+ .facility-section {
+  padding: 60px 20px;
+  background-color: #f9fcff;
+  text-align: center;
+}
+
+.facility-heading h2 {
+  font-size: 32px;
+  color: #274760;
+  margin-bottom: 10px;
+}
+
+.facility-heading p {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.facility-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.facility-box {
+  background: #ffffff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.facility-box:hover {
+  background-color: #e6f0ff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.facility-icon {
+  font-size: 40px;
+  color: #274760;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.facility-box:hover .facility-icon {
+  color: #2989d8;
+  transform: scale(1.2);
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.facility-box h3 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.facility-box p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .facility-box {
+    width: 100%;
+    max-width: 90%;
+  }
+}

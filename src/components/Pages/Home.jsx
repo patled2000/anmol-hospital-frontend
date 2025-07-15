@@ -16,6 +16,18 @@ import FounderMessage from './FounderMessage';
 import DoctorSlider from './DoctorSlider';
 import FunFactSection from '../Section/FunFactSection';
 import InsurancePartnersSection from './InsurancePartnersSection';
+import FacilitiesSection from './FacilitiesSection';
+import Specialties from './Specialties';
+import SpecialtySlider from './Specialties';
+import HospitalIntroSection from './HospitalIntroSection';
+import DirectorsSection from './DirectorsSection';
+import General1 from './image/General surgery.png'
+import Obstetrics from './image/Obstetrics and gynaecology.png'
+import Medical_management from './image/Medical management.png'
+import Trauma from './image/Trauma.png'
+import Cardiology from './image/Cardiology.png'
+import Paediatric_care  from './image/Paediatric care.png'
+import TeamGroupSection from './TeamGroupSection';
 
 const featureListData = [
   {
@@ -83,32 +95,7 @@ const faqData = [
       'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
   },
 ];
-const blogData = [
-  {
-    title: 'The Benefits of Mindfulness Meditation for Stress and Anxiety',
-    thumbUrl: 'images/home_1/post_1.jpeg',
-    date: 'May 1, 2023',
-    btnText: 'Learn More',
-    href: '/blog/blog-details',
-    socialShare: true,
-  },
-  {
-    title: 'Healthy Eating on a Budget: Tips and Strategies',
-    thumbUrl: 'images/home_1/post_2.jpeg',
-    date: 'May 4, 2023',
-    btnText: 'Learn More',
-    href: '/blog/blog-details',
-    socialShare: true,
-  },
-  {
-    title: 'The Importance of Regular Cancer Screenings and Early Detection',
-    thumbUrl: 'images/home_1/post_3.jpeg',
-    date: 'May 1, 2023',
-    btnText: 'Learn More',
-    href: '/blog/blog-details',
-    socialShare: true,
-  },
-];
+ 
 const awardData = [
   {
     title: 'Malcolm Baldrige National Quality Award',
@@ -138,22 +125,22 @@ const awardData = [
  const departmentData = [
   {
     title: 'General Surgery',
-     iconUrl: '/images/departments/slider2.jpeg',
+     iconUrl:General1,
     href: '/departments/department-details',
   },
   {
     title: 'Obstetrics and Gynaecology',
-      iconUrl: '/images/departments/slider2.jpeg',
+      iconUrl: Obstetrics ,
     href: '/departments/department-details',
   },
   {
     title: 'Medical Management',
-       iconUrl: '/images/departments/slider2.jpeg',
+       iconUrl: Medical_management,
     href: '/departments/department-details',
   },
   {
     title: 'Trauma Care',
-     iconUrl: '/images/departments/slider2.jpeg',
+     iconUrl: Trauma,
     href: '/departments/department-details',
   },
   {
@@ -173,12 +160,12 @@ const awardData = [
   },
   {
     title: 'Cardiology Department',
-     iconUrl: '/images/departments/slider2.jpeg',
+     iconUrl: Cardiology,
     href: '/departments/department-details',
   },
   {
     title: 'Paediatric Care',
-     iconUrl: '/images/departments/slider2.jpeg',
+     iconUrl: Paediatric_care,
     href: '/departments/department-details',
   },
 ];
@@ -276,10 +263,19 @@ export default function Home() {
   return (
     <>
       <HeroSlider/>
+      <HospitalIntroSection/>
+        <SpecialtySlider/>
+          <FacilitiesSection/>
+       <InsurancePartnersSection/>
+
+
+      
+      
+     
       <section> 
-      <FunFactSection  bgUrl="images/about/fun_fact_bg.jpeg"
-          data={funFactData}/>
-      <FounderMessage/>
+    {/**  <FunFactSection  bgUrl="images/about/fun_fact_bg.jpeg"  
+          data={funFactData}/>   
+    {/**    <FounderMessage/>  */}
       </section>
       
  {/**       
@@ -304,13 +300,14 @@ export default function Home() {
       </Section>   */}
       {/* End About Section */}
       {/* Start Departments Section */}
-      <Section topMd={185} topLg={150} topXl={110}>
+      <Section topMd={185} topLg={150} topXl={20}>
         <DepartmentSection
           sectionTitle="Departments"
           bgUrl="images/home_1/department_bg.svg"
           data={departmentData}
         />
       </Section>
+       <DirectorsSection/>
        <DoctorSlider/>
 
       {/* End Departments Section */}
@@ -338,31 +335,7 @@ export default function Home() {
                 data={testimonialData}
               />
             </Section>
-
-
-            <InsurancePartnersSection/>
-      {/* End Testimonial */}
-      {/* Start Banner Section */}
-    {/**   <Section>
-        <Banner
-          bgUrl="images/home_1/cta_bg.svg"
-          imgUrl="images/home_1/cta_img.png"
-          title="Don’t Let Your Health Take a Backseat!"
-          subTitle="Schedule an appointment with one of our experienced medical professionals today!"
-        />
-      </Section>   */}
-{/** <section> 
- <BannerSectionStyle3
-  bgUrl="/images/about/banner_bg.svg"
-  title="Welcome to <br />ProHealth Medical & Healthcare Center"
-  subTitle="Your Partner in Health and Wellness"
-  btnText="Check Coverage"
-  btnUrl="/insurance"
-/>
-</section>   */}
-      
-{/** 
-             <Section topMd={185} topLg={145} topXl={105}>
+              <Section topMd={185} topLg={145} topXl={105}>
                     <FaqSectionStyle4
                       sectionTitle="Frequently Asked <br />Questions"
                       data={faqData}
@@ -371,16 +344,12 @@ export default function Home() {
                     />
                   </Section>
 
-                   <Section>
-                          <AppointmentSectionStyle2
-                            bgUrl="/images/home_2/appointment_bg.svg"
-                            imgUrl="/images/home_2/appointment_img.png"
-                            sectionTitle="Appointment"
-                            sectionTitleUp="BOOK AN"
-                          />
-                        </Section>   */}
 
-      {/* End Banner Section */}
+            
+            <TeamGroupSection/>
+      
+
+                   
      
      
     </>

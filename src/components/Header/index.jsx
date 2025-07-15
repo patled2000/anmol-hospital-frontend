@@ -1,108 +1,74 @@
- import React, { useEffect, useState } from 'react';
+ import React, { useState } from 'react';
+import { FaPhone, FaMapMarkerAlt, FaEnvelope, FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import logo from './Anmol_Hospital_Logo_Hz_Color@150x-100.jpg';
 import AppointmentForm from './AppointmentForm';
-import Spacing from '../Spacing';
-import './Header.css'; // ✅ Make sure to write matching CSS
-import anmol_hospital from './Anmol_Hospital_Logo_Hz_Color@150x-100.jpg'
- 
-import {
-  FaPhone,
-  FaMapMarkerAlt,
-  FaEnvelope,
-  
-} from 'react-icons/fa';
 import './TopHeader.css';
+import './Header.css';
 
-export default function Header({ logoSrc, variant }) {
-  const [isSticky, setIsSticky] = useState(false);
-  const [sideNav, setSideNav] = useState(false);
+export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAppointmentOpen, setIsAppointmentOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsSticky(window.scrollY > 0);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
     <>
-    
-       {/* Top Header OUTSIDE the sticky main header */}
-        <div className="top-header">
-    <div className="top-header-container">
-      <div className="top-header-left">
-        <div className="contact-box">24/7 Support</div>
-
-        <div className="info-item">
-          <FaPhone className="icon" />
-          <span>Toll Free Number: 1800 233 0239</span>
-        </div>
-
-        <div className="info-item">
-          <FaMapMarkerAlt className="icon" />
-          <span>Location: Annapurna Road, Indore</span>
-        </div>
-
-        <div className="info-item">
-          <FaEnvelope className="icon" />
-          <span>info@anmolehospital.com</span>
+      {/* Top Header */}
+      <div className="top-header">
+        <div className="top-header-container">
+          <div className="contact-box">24/7 Support</div>
+          <div className="info-item"><FaPhone className="icon" />1800 233 0239</div>
+          <div className="info-item"><FaMapMarkerAlt className="icon" />Annapurna Road, Indore</div>
+          <div className="info-item"><FaEnvelope className="icon" />info@anmolehospital.com</div>
         </div>
       </div>
-    </div>
-  </div>
 
-         {/* Sticky Main Header */}
-  <header className={`cs_site_header cs_style1 ${isSticky ? 'cs_active_sticky' : ''} ${variant}`}>
-    <div className="container">
-      <div className="cs_header_row">
-        <div className="cs_logo">
-          <Link to="/">
-            <img
-              src={anmol_hospital}
-              alt="Anmol Hospital logo"
-              style={{ height: '50px', width: 'auto' }}
-            />
-          </Link>
-        </div>
-
-        <nav className="cs_nav">
-          <ul className="cs_nav_list">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/doctors">Find Doctor</Link></li>
-            <li><Link to="/departments">Departments</Link></li>
-            <li><Link to="/gallery">Gallery</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
-        </nav>
-
-        <div className="cs_appointment_btn">
-          <button onClick={() => setSideNav(true)}>Appointment</button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-      {/*  SideNav Appointment Panel */}
-      <div className={`cs_sidenav ${sideNav ? 'active' : ''}`}>
-        <div className="cs_sidenav_overlay" onClick={() => setSideNav(false)} />
-        <div className="cs_sidenav_in">
-          <button className="cs_close" onClick={() => setSideNav(false)}>
-            <img src="/images/icons/close.svg" alt="Close" />
-          </button>
-          <div className="cs_logo_box">
-            <img src="/images/logo.svg" alt="Logo" />
-            <Spacing md="20" lg="20" xl="20" />
-            <h3 className="cs_fs_24 cs_semibold mb-0">Book Appointment</h3>
+      {/* Main Header */}
+      <header className="main-header">
+        <div className="main-header-container">
+          <div className="logo">
+            <Link to="/"><img src={logo} alt="Anmol Hospital" /></Link>
           </div>
-          <Spacing md="30" lg="30" xl="30" />
-          <div className="cs_appointment_form_wrapper">
-            <AppointmentForm />
+
+          {/* Hamburger icon (mobile only) */}
+          <div className="hamburger" onClick={toggleMenu}>
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
+          </div>
+
+          {/* Navigation Links */}
+          <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/doctors">Find Doctor</Link>
+            <Link to="/departments">Departments</Link>
+            <Link to="/gallery">Gallery</Link>
+            <Link to="/contact">Contact</Link>
+            <div className="appointment-btn">
+              <button onClick={() => setIsAppointmentOpen(true)}>Appointment</button>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      {/* Appointment Form SideNav with Overlay Fix */}
+      {isAppointmentOpen && (
+        <div
+          className="overlay"
+          onClick={() => setIsAppointmentOpen(false)}
+        >
+          <div
+            className="appointment-sidenav open"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sidenav-content">
+              <button className="close-btn" onClick={() => setIsAppointmentOpen(false)}>✕</button>
+              <h3>Book Appointment</h3>
+              <AppointmentForm />
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </>
   );
 }
