@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c8cc6e63.css",
+    "main.js": "/static/js/main.ae362238.js",
+    "static/media/Urology.jpg": "/static/media/Urology.ae140321390969b0bfef.jpg",
+    "static/media/Paediatric Care.jpg": "/static/media/Paediatric Care.3cfb94f8fae7cc9db06f.jpg",
+    "static/media/Burn.jpg": "/static/media/Burn.206ef807aa9fdc296233.jpg",
+    "static/media/cheerful-group-medics-hospital.jpg": "/static/media/cheerful-group-medics-hospital.6d1ca25110154a816af4.jpg",
+    "static/media/jitendar.png": "/static/media/jitendar.cb269c2e88f29d51ba42.png",
+    "static/media/slider1.jpeg": "/static/media/slider1.b89ecbab71238b10d843.jpeg",
+    "static/media/slider2.jpeg": "/static/media/slider2.e833d958fa8ee7084afb.jpeg",
+    "static/media/Anmol_Hospital_Logo_Hz_Color@150x-100.jpg": "/static/media/Anmol_Hospital_Logo_Hz_Color@150x-100.c5b1c50c3ac3b93f4131.jpg",
+    "static/media/Anmol_Hospital_Logo_Icon_Color@150x-100.jpg": "/static/media/Anmol_Hospital_Logo_Icon_Color@150x-100.dd87346e9caf9e427215.jpg",
+    "static/media/General Surgery.jpg": "/static/media/General Surgery.1d5070190e1665fbf23a.jpg",
+    "static/media/Trauma.jpg": "/static/media/Trauma.00cb92b1fb9ed6f070d5.jpg",
+    "static/media/MRI Scan.jpg": "/static/media/MRI Scan.57248a86463dd54773a4.jpg",
+    "static/media/ICU Unit.jpg": "/static/media/ICU Unit.235d93ed5bc5b25c8141.jpg",
+    "static/media/Lab Work.jpg": "/static/media/Lab Work.80dbaa77a63094c4b7a5.jpg",
+    "static/media/Obstetrics and Gynaecology.jpg": "/static/media/Obstetrics and Gynaecology.f2d896f6b3c975104b53.jpg",
+    "static/media/Medical Management.jpg": "/static/media/Medical Management.447e7a5a382d4089c9b0.jpg",
+    "static/media/about_page.png": "/static/media/about_page.f0441347ee1dad8ffe7a.png",
+    "static/media/find doctor.png": "/static/media/find doctor.5dee6dfa681c04d62cc4.png",
+    "static/media/Cardiology.jpg": "/static/media/Cardiology.9af6e02f5e9b5685fe92.jpg",
+    "static/media/Obstetrics and gynaecology.png": "/static/media/Obstetrics and gynaecology.3a3a419c34a79e6a10a4.png",
+    "static/media/Trauma.png": "/static/media/Trauma.77c3ddfd4031e3ee82f8.png",
+    "static/media/General surgery.png": "/static/media/General surgery.965449e65ba7ff4c778e.png",
+    "static/media/Paediatric care.png": "/static/media/Paediatric care.30639d98c0d4edcaf146.png",
+    "static/media/Anmol_Hospital_Logo_Hz_White@150x.png": "/static/media/Anmol_Hospital_Logo_Hz_White@150x.285cc489d99cdf98b03a.png",
+    "static/media/Microscope.jpg": "/static/media/Microscope.ca44ac51b5befcab9b8f.jpg",
+    "static/media/Cardiology.png": "/static/media/Cardiology.7f921a5914a4591d02d9.png",
+    "static/media/Medical management.png": "/static/media/Medical management.b712c2b129354e9e1fba.png",
+    "static/media/shivam.jpeg": "/static/media/shivam.0c334670f36cfdc2c2a1.jpeg",
+    "static/media/category.svg": "/static/media/category.811f069436a2d96b8b94.svg",
+    "static/media/reply.svg": "/static/media/reply.83c40c23cb7eadf211ec.svg",
+    "index.html": "/index.html",
+    "main.c8cc6e63.css.map": "/static/css/main.c8cc6e63.css.map",
+    "main.ae362238.js.map": "/static/js/main.ae362238.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8cc6e63.css",
+    "static/js/main.ae362238.js"
+  ]
+}
