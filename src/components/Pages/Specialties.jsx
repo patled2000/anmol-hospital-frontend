@@ -8,8 +8,8 @@ import Trauma from './Department/Trauma.jpg';
 import Burn from './Department/Burn.jpg';
 import Urology from './Department/Urology.jpg';
 import Cardiology from './Department/Cardiology.jpg';
-import Paediatric_care from './Department/Paediatric Care.jpg';3
-import logo from './Department/Anmol_Hospital_Logo_Icon_Color@150x-100.jpg'
+import Paediatric_care from './Department/Paediatric Care.jpg';
+ 
 
 const specialties = [
   {
