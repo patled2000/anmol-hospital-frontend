@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
-import Layout2 from './components/Layout/Layout2';
+
 import Layout3 from './components/Layout/Layout3';
 import Layout4 from './components/Layout/Layout4';
 import Home from './components/Pages/Home';
@@ -25,6 +25,7 @@ import Layout5 from './components/Layout/Layout5';
 import HomeStyle5 from './components/Pages/HomeStyle5';
 import HomeStyle6 from './components/Pages/HomeStyle6';
 import TopHeader from './components/Header/TopHeader';
+import AppointmentForm from './components/Header/AppointmentForm';
 
 function App() {
   const { pathname } = useLocation();
@@ -44,6 +45,7 @@ function App() {
         <Route path="blog" element={<Blog />} />
         <Route path="blog/:blogId" element={<BlogDetails />} />
         <Route path="appointments" element={<Appointments />} />
+        <Route path='appointmentfrom' element={<AppointmentForm/>} />
         <Route path="departments" element={<Departments />} />
         <Route
           path="departments/:departmentId"
@@ -54,21 +56,21 @@ function App() {
         <Route path="timetable" element={<Timetable />} />
         <Route path="contact" element={<Contact />} />
       </Route>
-      <Route element={<Layout2 />}>
+  {/**     <Route element={<Layout2 />}>
         <Route path="home-v2" element={<HomeStyle2 />} />
         <Route path="home-v6" element={<HomeStyle6 />} />
-      </Route>
-      <Route path="home-v3" element={<Layout3 />}>
+      </Route> */}
+  {/**     <Route path="home-v3" element={<Layout3 />}>
         <Route index element={<HomeStyle3 />} />
-      </Route>
-      <Route path="home-v4" element={<Layout4 />}>
+      </Route>  */}
+  {/**     <Route path="home-v4" element={<Layout4 />}>
         <Route index element={<HomeStyle4 />} />
-      </Route>
-      <Route path="home-v5" element={<Layout5 />}>
+      </Route>   */}
+  {/**     <Route path="home-v5" element={<Layout5 />}>
         <Route index element={<HomeStyle5 />} />
-      </Route>
+      </Route>    */}
       <Route path="*" element={<ErrorPage />} />
-    </Routes>
+    </Routes>  
   );
 }
 

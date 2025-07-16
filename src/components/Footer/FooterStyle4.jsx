@@ -4,6 +4,7 @@ import ContactInfoWidget from '../Widget/ContactInfoWidget';
 import SocialWidget from '../Widget/SocialWidget';
 import MenuWidget from '../Widget/MenuWidget';
 import NewsletterStyle4 from '../Widget/NewsletterStyle4';
+import logo from './Anmol_Hospital_Logo_Hz_White@150x.png'
 const menuDataOne = [
   { title: 'About Us', href: '/about' },
   { title: 'Departments', href: '/departments' },
@@ -35,8 +36,8 @@ export default function FooterStyle4() {
           <div className="cs_footer_col">
             <div className="cs_footer_item">
               <TextWidget
-                logoUrl="/images/footer_logo_white.svg"
-                text="ProHealth Medical & Healthcare Center"
+                logoUrl={logo}
+                text="Your care in our hand "
               />
               <ContactInfoWidget />
             </div>
@@ -62,7 +63,7 @@ export default function FooterStyle4() {
       <div className="cs_footer_bottom">
         <div className="container">
           <div className="cs_copyright">
-            Copyright © 2023 Pro Health. All rights reserved.
+           Copyright © 2025 <strong>Anmol Hospital</strong>. Designed & Developed by <strong>Inkcast innovations</strong>.
           </div>
         </div>
       </div>

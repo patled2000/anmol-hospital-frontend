@@ -6,7 +6,7 @@
   top: 55px;
   width: 100%;
   background: white;
-  z-index: 10000;
+  z-index: 99999;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
@@ -74,29 +74,28 @@
 }
 
 /* -------------------
-   Sidenav Form
+   Sidenav Form Overlay
 ------------------- */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 99998;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
+  z-index: 99999;
 }
 
 .appointment-sidenav {
   background: white;
   width: 400px;
   height: 100%;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 99999;
-  position: relative;
   transform: translateX(100%);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease-in-out;
+  z-index: 100000;
+  position: relative;
 }
 
 .appointment-sidenav.open {
@@ -136,7 +135,7 @@
     padding: 15px 20px;
     gap: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    z-index: 10001;
+    z-index: 99998;
   }
 
   .nav-links.active {
