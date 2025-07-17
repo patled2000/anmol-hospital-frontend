@@ -34,11 +34,11 @@ export default function HeroSlider() {
       {/* ✅ Stats Box */}
       <div className="hero-stats-box">
         <div className="stats-row">
-          <div className="stat-item"><strong>20+</strong><span>Years of experience</span></div>
-          <div className="stat-item"><strong>95%</strong><span>Patient satisfaction</span></div>
-          <div className="stat-item"><strong>5000+</strong><span>Patients served annually</span></div>
-          <div className="stat-item"><strong>10+</strong><span>Healthcare providers</span></div>
-          <div className="stat-item"><strong>22+</strong><span>Locations in area</span></div>
+          <div className="stat-item"><strong>20+</strong><span>Years <br /> of experience</span></div>
+          <div className="stat-item"><strong>95%</strong><span>Patient <br /> Satisfaction</span></div>
+          <div className="stat-item"><strong>5K+</strong><span>Patients <br /> Served annually</span></div>
+          <div className="stat-item"><strong>10+</strong><span>Healthcare <br /> providers</span></div>
+          <div className="stat-item"><strong>22+</strong><span>Locations <br /> in area</span></div>
         </div>
       </div>
     </div>

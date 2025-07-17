@@ -4,6 +4,8 @@ import img1 from './image/MRI Scan.jpg';
 import img2 from './image/Lab Work.jpg';
 import img3 from './image/Microscope.jpg';
 import img4 from './image/ICU Unit.jpg';
+import { Link } from 'react-router-dom';
+
 
 export default function HospitalIntroSection() {
   return (
@@ -23,11 +25,11 @@ export default function HospitalIntroSection() {
       </div>
 
       <div className="intro-right">
-        <div className="img-grid">
-          <img src={img1} alt="MRI Scan" />
-          <img src={img2} alt="Lab work" />
-          <img src={img3} alt="Microscope" />
-          <img src={img4} alt="ICU Unit" />
+        <div className="img-grid"> 
+      <Link to="/gallery">   <img src={img1} alt="MRI Scan" /></Link> 
+      <Link to="/gallery">     <img src={img2} alt="Lab work" /></Link>
+        <Link to="/gallery">   <img src={img3} alt="Microscope" /></Link>
+        <Link to="/gallery">   <img src={img4} alt="ICU Unit" /> </Link>
         </div>
       </div>
     </section>

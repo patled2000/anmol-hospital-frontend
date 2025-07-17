@@ -67,15 +67,15 @@ export default function SpecialtySlider() {
 
   return (
     <>
-      {/* 🔷 Heading Section with animation, icon, and underline */}
+      {/*  Heading Section with animation, icon, and underline */}
       <div className="specialty-header">
          
         <h2><span>Specialist Hours</span></h2>
-        <div className="line-bar"></div>
-        <p><strong>Explore expert departments at Anmol Hospital with dedicated professionals.</strong></p>
+        <p> Explore expert departments at Anmol Hospital <br />
+         with dedicated professionals</p>
       </div>
 
-      {/* 🔄 Slider Section */}
+      {/* Slider Section */}
       <div className="specialty-slider-box">
         <button className="arrow-btn left" onClick={prevSlide}>‹</button>
         <div className="specialty-left">
@@ -84,7 +84,7 @@ export default function SpecialtySlider() {
         <div className="specialty-right">
           <h2>{specialties[current].title}</h2>
           <p>{specialties[current].desc}</p>
-          <span className="hospital-tag">Anmol Hospital</span>
+          
 
           <div className="dot-navigation">
             {specialties.map((_, index) => (

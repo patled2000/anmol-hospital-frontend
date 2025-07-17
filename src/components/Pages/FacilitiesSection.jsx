@@ -52,7 +52,7 @@ export default function FacilitiesSection() {
     <section className="facility-section">
       <div className="facility-heading">
         <h2>Our Facilities</h2>
-        <p>Delivering excellence in healthcare with world-class infrastructure</p>
+        <p>Delivering excellence in healthcare <br /> with world-class infrastructure</p>
       </div>
       <div className="facility-grid">
         {facilities.map((facility, index) => (

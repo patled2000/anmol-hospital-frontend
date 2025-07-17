@@ -1,13 +1,14 @@
  .directors-section {
-  padding: 0px 40px;
-  background: #f9fcff;
+  padding: 95px 50px;
+  background: linear-gradient(to right, #f4f9ff, #ffffff);
   text-align: center;
 }
 
 .section-title {
   font-size: 36px;
-  color: #274760;
+  color:#0054A6 ;
   margin-bottom: 50px;
+   font-family: 'Inter', sans-serif;
 }
 
 .directors-container {

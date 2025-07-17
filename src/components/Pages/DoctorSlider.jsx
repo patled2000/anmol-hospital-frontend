@@ -2,32 +2,50 @@
 import Slider from "react-slick";
 import "./DoctorSlider.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import dr_ashwin_aouchat from './Doctor_image/Dr ashwin aouchat.jpeg'
+import Dr_mahesh_goad from './Doctor_image/Dr mahesh goad.jpeg'
+import Dr_shreya_agrawal from './Doctor_image/Dr shreya agrawal.jpeg'
+import Dr_shreya from './Doctor_image/Dr shreya.jpeg'
+import Dr_shubham_satsangi from './Doctor_image/Dr shubham.satsangi.jpeg'
 
 const doctors = [
   {
-    name: "Dr. A. K. Sharma",
+    name: "Dr. Ashwin Aouchat",
+    degree: "MBBS, MS (Trauma)",
+    department: "General Surgery",
+    image:dr_ashwin_aouchat,
+  },
+  {
+    name: "Dr. Mahesh Gaud",
     degree: "MBBS, MD (Cardiology)",
-    department: "Cardiology",
-    image: "/images/doctors/doc1.jpg",
+    department: "Medical Management",
+    image: Dr_mahesh_goad,
   },
   {
-    name: "Dr. Neha Gupta",
-    degree: "MBBS, MS (Gynecology)",
-    department: "Gynecology",
-    image: "/images/doctors/doc2.jpg",
+    name: "Dr. Shreya Agrawal",
+    degree: "MBBS, DGO (Obstetrics )",
+    department: "Gynaecology",
+    image: Dr_shreya_agrawal,
   },
   {
-    name: "Dr. Ravi Verma",
-    degree: "MBBS, MS (Orthopedics)",
-    department: "Orthopedics",
-    image: "/images/doctors/doc3.jpg",
+    name: "Dr. Shubham Satsangi",
+    degree: "MBBS, DCH (Cardiology)",
+    department: "Medical Management",
+    image: Dr_shubham_satsangi,
   },
-  {
-    name: "Dr. Priya Singh",
-    degree: "MBBS, DCH (Pediatrics)",
-    department: "Pediatrics",
-    image: "/images/doctors/doc4.jpg",
+ {
+    name: "Dr. Shubham Satsangi",
+    degree: "MBBS, DCH (Cardiology)",
+    department: "Medical Management",
+    image:"#",
   },
+   {
+    name: "Dr. Shubham Satsangi",
+    degree: "MBBS, DCH (Cardiology)",
+    department: "Medical Management",
+    image:"#",
+  },
+
 ];
 
 // Custom arrow components

@@ -1,22 +1,23 @@
  .doctor-slider-container {
   padding: 50px 20px;
-  background: linear-gradient(135deg, #f8fbff, #eef5ff);
+ background: linear-gradient(to right, #f4f9ff, #ffffff);
   position: relative;
   padding-top: 50px;
 }
 
 .slider-title {
   text-align: center;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 40px;
-  color: #2c3e50;
+  color: #0054A6;
+   font-family: 'Inter', sans-serif;
 }
 
 .doctor-card {
-  background: #fff;
-  padding: 5px 5px;
-  border-radius: 18px;
+   background: linear-gradient(to right, #f4f9ff, #ffffff);
+  padding: 0px 0px;
+  border-radius: 10px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -31,16 +32,18 @@
 .doctor-img-wrapper {
   overflow: hidden;
   border-radius: 14px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 10px; /* padding around image */
-  background: #f0f0f0;
+   background: linear-gradient(to right, #f4f9ff, #ffffff);
 }
 
 .doctor-image {
   width: 100%;
-  height: 270px;
+  height: 300px;
+  
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 10px;
+   object-position: center;
   transition: transform 0.4s ease;
 }
 
@@ -56,9 +59,10 @@
 }
 
 .doctor-degree {
-  font-size: 14px;
-  color: #7f8c8d;
+  font-size: 15px;
+  color: #2c3e50 ;
   margin-bottom: 4px;
+  font-weight: 500;
 }
 
 .doctor-department {

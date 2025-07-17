@@ -1,4 +1,6 @@
- .hero-slider-wrapper {
+
+
+.hero-slider-wrapper {
   position: relative;
   padding-top: 130px;
 }
@@ -57,15 +59,26 @@
 .stat-item strong {
   display: block;
   font-size: 26px;
-  color: #274760;
+  color: #0054A6;
   font-weight: bold;
   margin-bottom: 5px;
+  font-family: "Anton", sans-serif;
+   font-weight: 400;
+  font-style: normal;
 }
 
 .stat-item span {
-  font-size: 17px;
-  color: #555;
-  font-weight: 500;
+  padding-top: 10px;
+  font-size: 18px;
+  color:  #0054A6;
+    
+    
+    font-weight: 700;
+  font-style: normal;
+  line-height: 0.1;
+    
+  
+   
 }
 
 /* ✅ Mobile Responsive */

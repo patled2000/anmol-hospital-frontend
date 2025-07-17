@@ -1,12 +1,13 @@
  .top-header {
-  background-color: #7897ec;
+   background: linear-gradient(to top, #0054A6, #00AEEF);
+   
   color: white;
   font-family: sans-serif;
   padding: 10px 20px;
   font-size: 14px;
   display: flex;
   align-items: center;
-  position: fixed;
+   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
@@ -25,17 +26,21 @@
   background-color: white;
   color: #263a70;
   padding: 5px 15px;
-  border-radius: 15px 0 15px 15px;
+  border-radius: 15px 0px 15px 0px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
+
 }
 
 .info-item {
   display: flex;
-  align-items: center;
-  gap: 5px;
+   text-align: center;
+  gap: 10px;
   color: white;
   font-size: 18px;
+  font-weight: 500;
+     
+  
 }
 
 .icon {

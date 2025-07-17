@@ -13,15 +13,16 @@
 
 .specialty-header h2 {
   font-size: 38px;
-  color: #274760;
+  color: #0054A6;
   margin-bottom: 5px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+    font-family: 'Inter', sans-serif;
+  
 }
 
 .specialty-header h2 span {
-  color: #2989d8;
+  color:  #0054A6;
   font-weight: 700;
+   font-family: 'Inter', sans-serif;
 }
 
 .specialty-header .line-bar {
@@ -33,12 +34,12 @@
 }
 
 .specialty-header p {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 600;
   color: #444;
   max-width: 750px;
   margin: auto;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 /* 🔁 Slide Section Styling (as before) */
@@ -95,9 +96,9 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #2989d8;
+  background: #0054A6;
   color: #fff;
-  font-size: 28px;
+  font-size: 50px;
   border: none;
   padding: 10px 15px;
   cursor: pointer;
@@ -107,7 +108,7 @@
 }
 
 .arrow-btn:hover {
-  background: #1b6fb8;
+  background: #A1D348;
 }
 
 .arrow-btn.left {
@@ -136,7 +137,7 @@
 }
 
 .dot.active {
-  background-color: #2989d8;
+  background-color:#0054A6;
 }
 
 /* Animations */

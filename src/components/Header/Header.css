@@ -13,7 +13,7 @@
 .main-header-container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 12px 20px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,7 +22,7 @@
 }
 
 .logo img {
-  height: 65px;
+  height: 60px;
 }
 
 /* -------------------
@@ -59,7 +59,7 @@
    Appointment Button
 ------------------- */
 .appointment-btn button {
-  background: linear-gradient(to right, #1e5799, #2989d8);
+  background: linear-gradient(to top, #174e85 ,#227ac8 );
   color: white;
   border: none;
   padding: 10px 22px;
@@ -70,7 +70,7 @@
 }
 
 .appointment-btn button:hover {
-  background: linear-gradient(to right, #174e85, #227ac8);
+  background: linear-gradient(to right, #A1D348);
 }
 
 /* -------------------

@@ -1,19 +1,22 @@
  .facility-section {
   padding: 60px 20px;
-  background-color: #f9fcff;
+   background: linear-gradient(to right, #f4f9ff, #ffffff);
   text-align: center;
 }
 
 .facility-heading h2 {
-  font-size: 32px;
-  color: #274760;
+  font-size: 36px;
+  color:  #0054A6;
   margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+    
 }
 
 .facility-heading p {
-  color: #666;
+  color: black;
   margin-bottom: 40px;
-  font-size: 16px;
+  font-size: 19px;
+  font-weight: 500;
 }
 
 .facility-grid {
@@ -41,13 +44,13 @@
 
 .facility-icon {
   font-size: 40px;
-  color: #274760;
+  color:#A1D348;
   margin-bottom: 15px;
   transition: all 0.3s ease;
 }
 
 .facility-box:hover .facility-icon {
-  color: #2989d8;
+  color: #00AEEF;
   transform: scale(1.2);
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }

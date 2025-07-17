@@ -129,7 +129,7 @@ const awardData = [
     href: '/departments/department-details',
   },
   {
-    title: 'Obstetrics and Gynaecology',
+    title: 'Obstetrics ',
       iconUrl: Obstetrics ,
     href: '/departments/department-details',
   },
@@ -300,7 +300,7 @@ export default function Home() {
       </Section>   */}
       {/* End About Section */}
       {/* Start Departments Section */}
-      <Section topMd={185} topLg={150} topXl={20}>
+      <Section topMd={185} topLg={150} topXl={80}>
         <DepartmentSection
           sectionTitle="Departments"
           bgUrl="images/home_1/department_bg.svg"

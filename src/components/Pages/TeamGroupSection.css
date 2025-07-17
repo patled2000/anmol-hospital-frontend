@@ -1,22 +1,26 @@
  .team-group-section {
-  padding: 80px 30px;
-  background-color: #f4f9ff;
+  padding: 100px 40px 0 40px;
+  background: linear-gradient(to right, #f4f9ff, #ffffff); 
+ 
   text-align: center;
 }
 
 .team-group-content h2 {
   font-size: 36px;
-  color: #274760;
+  color: #0054A6;
   margin-bottom: 15px;
+   font-family: 'Inter', sans-serif;
 }
 
 .team-group-content h2 span {
-  color: #2989d8;
+  color: #0054A6;
+   font-family: 'Inter', sans-serif;
 }
 
 .team-group-content p {
-  font-size: 16px;
-  color: #555;
+  font-size: 17px;
+  font-weight: 400;
+  color:black;
   max-width: 800px;
   margin: auto;
   margin-bottom: 40px;
@@ -25,12 +29,12 @@
 
 .team-group-image {
   width: 100%;
-  height: 450px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 12px 12px 0 0;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 

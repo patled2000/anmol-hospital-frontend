@@ -32,10 +32,7 @@ export default function Header() {
   </a>
 </div>
 
-<div className="info-item">
-  <FaEnvelope className="icon" />
-  <a href="mailto:anmolhospital123@gmail.com">anmolhospital123@gmail.com</a>
-</div>
+ 
 
         </div>
       </div>

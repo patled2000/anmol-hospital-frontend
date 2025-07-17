@@ -1,25 +1,27 @@
 .insurance-section {
-  background: #f9f9f9;
+  background: linear-gradient(to right, #f4f9ff, #ffffff);
   padding: 60px 20px;
 }
 
 .insurance-container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
   text-align: center;
 }
 
 .insurance-title {
-  font-size: 32px;
-  font-weight: 700;
-  color: #2c3e50;
+  font-size: 36px;
+   
+  color: #0054A6;
+   font-family: 'Inter', sans-serif;
   margin-bottom: 10px;
 }
 
 .insurance-subtitle {
-  font-size: 16px;
-  color: #7f8c8d;
+  font-size: 18px;
+  color: black;
   margin-bottom: 40px;
+  font-weight: 500;
 }
 
 .insurance-grid {
@@ -51,5 +53,5 @@
 .insurance-name {
   font-size: 14px;
   font-weight: 600;
-  color: #34495e;
+  color: #0054A6 ;
 }

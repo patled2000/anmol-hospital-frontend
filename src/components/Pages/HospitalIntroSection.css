@@ -1,7 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
 .hospital-intro {
   display: flex;
   flex-wrap: wrap;
-  padding: 60px 30px;
+  padding: 60px 40px;
   background: #f9fcff;
   align-items: center;
 }
@@ -13,8 +17,12 @@
 
 .intro-left h2 {
   font-size: 32px;
-  color: #274760;
+  color: #0054A6;
   margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+   
+  font-weight: 700;
+  font-style: normal;
 }
 
 .intro-left p {
