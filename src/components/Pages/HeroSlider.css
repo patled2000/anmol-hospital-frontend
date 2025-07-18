@@ -2,7 +2,7 @@
 
 .hero-slider-wrapper {
   position: relative;
-  padding-top: 130px;
+  padding-top: 125px;
 }
 
 .hero-slider {
@@ -17,7 +17,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@
 
 .stat-item strong {
   display: block;
-  font-size: 26px;
+  font-size: 36px;
   color: #0054A6;
   font-weight: bold;
   margin-bottom: 5px;
@@ -68,14 +68,14 @@
 }
 
 .stat-item span {
-  padding-top: 10px;
+  padding-top: 15px;
   font-size: 18px;
   color:  #0054A6;
     
     
     font-weight: 700;
   font-style: normal;
-  line-height: 0.1;
+   
     
   
    
@@ -96,6 +96,6 @@
     gap: 15px;
   }
   .hero-slider-wrapper {
-    padding-top: 170px;
+    padding-top: 85px;
   }
 }

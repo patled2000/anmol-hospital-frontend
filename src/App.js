@@ -26,6 +26,7 @@ import HomeStyle5 from './components/Pages/HomeStyle5';
 import HomeStyle6 from './components/Pages/HomeStyle6';
 import TopHeader from './components/Header/TopHeader';
 import AppointmentForm from './components/Header/AppointmentForm';
+import TeamSectionStyle4 from './components/Section/TeamSection/TeamSectionStyle4';
 
 function App() {
   const { pathname } = useLocation();
@@ -47,6 +48,7 @@ function App() {
         <Route path="appointments" element={<Appointments />} />
         <Route path='appointmentfrom' element={<AppointmentForm/>} />
         <Route path="departments" element={<Departments />} />
+        <Route path='TestimonialSection' element={<TeamSectionStyle4/>}/>
         <Route
           path="departments/:departmentId"
           element={<DepartmentDetails />}

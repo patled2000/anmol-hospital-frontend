@@ -23,13 +23,9 @@ export default function Header() {
           <div className="info-item"><FaPhone className="icon" />0731 3594 048</div>
           <div className="info-item">
   <FaMapMarkerAlt className="icon" />
-  <a
-    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.745687114546!2d75.8433838744598!3d22.737691979374503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963036d21badf7d%3A0x48fda517ec42ad42!2sAnmol%20Hospital!5e0!3m2!1sen!2sin!4v1752658261945!5m2!1sen!2sin"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
+  
     Kamla Nehru Nagar, Indore
-  </a>
+  
 </div>
 
  
