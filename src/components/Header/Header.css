@@ -60,7 +60,7 @@
    Appointment Button
 ------------------- */
 .appointment-btn button {
-  background: linear-gradient(to top, #174e85 ,#227ac8 );
+  background: linear-gradient(to top, #174e85, #227ac8);
   color: white;
   border: none;
   padding: 10px 22px;
@@ -86,7 +86,7 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  z-index: 99999;
+  z-index: 10000;
 }
 
 .appointment-sidenav {
@@ -95,7 +95,7 @@
   height: 100%;
   transform: translateX(100%);
   transition: transform 0.4s ease-in-out;
-  z-index: 100000;
+  z-index: 100001;
   position: relative;
 }
 
@@ -125,9 +125,9 @@
     display: block;
   }
 
-   .main-header {
+  .main-header {
     top: 0;
-   }
+  }
 
   .nav-links {
     position: absolute;

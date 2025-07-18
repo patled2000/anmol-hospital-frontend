@@ -5,9 +5,14 @@ import TeamSectionStyle2 from '../Section/TeamSection/TeamSectionStyle2';
 import Section from '../Section';
 import { pageTitle } from '../../helpers/PageTitle';
 import Doctor_page  from './image/find doctor.png'
+import dr_ashwin_aouchat from './Doctor_image/Dr ashwin aouchat.png'
+import Dr_mahesh_goad from './Doctor_image/Dr mahesh goad.png'
+import Dr_shreya_agrawal from './Doctor_image/Dr shreya agrawal.png'
+import Dr_shreya from './Doctor_image/Dr shreya.jpeg'
+import Dr_shubham_satsangi from './Doctor_image/Dr shubham.satsangi.png'
 const teamData = [
   {
-    imgUrl: '/images/doctors/doctor_1.png',
+    imgUrl: Dr_mahesh_goad,
     department: 'General Medicine Department',
     name: 'Dr. Mahesh Gaud MBBS,MD',
     designation: 'Physician',
@@ -37,7 +42,7 @@ const teamData = [
     href: '/doctors/doctor-details',
   },
   {
-    imgUrl: '/images/doctors/doctor_3.png',
+    imgUrl: Dr_shubham_satsangi,
     department: 'General Medicine Department',
     name: 'Dr. Shubham Satsangi, MBBS MD',
     designation: ' Physician',
@@ -67,7 +72,7 @@ const teamData = [
     href: '/doctors/doctor-details',
   },
   {
-    imgUrl: '/images/doctors/doctor_5.png',
+    imgUrl: Dr_shreya_agrawal,
     department: 'Gynecology Department',
     name: 'Dr. Shreya Agrawal, MBBS DGO',
     designation: 'Gynecologist & Obstetrician',
@@ -82,7 +87,7 @@ const teamData = [
     href: '/doctors/doctor-details',
   },
   {
-    imgUrl: '/images/doctors/doctor_6.png',
+    imgUrl: dr_ashwin_aouchat,
     department: 'Gastroenterology Department',
     name: 'Dr. Ashwin Aouchat, MBBS MS',
     designation: 'Surgeon',
@@ -171,13 +176,13 @@ const teamData = [
     category: 'gynecology',
     href: '/doctors/doctor-details',
   },
- {/**  {
+ {
     imgUrl: '/images/doctors/doctor_12.png',
     department: 'Psychiatry Department',
-    name: 'Dr. Maria Rodriguez, MD',
+    name: 'Dr. Maria Rodriguez,MBBS MD',
     designation: 'Psychiatrist',
     description:
-      'Dr. Chen is a skilled psychiatrist with expertise in the treatment of mood disorders and psychotic disorders. She is board-certified in psychiatry and has a special interest in the management.',
+      'Dr. Chen is a skilled psychiatrist with expertise psychiatrist with expertise   ',
     social: [
       { icon: 'fa6-brands:facebook-f', href: '/about' },
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
@@ -185,7 +190,7 @@ const teamData = [
     ],
     category: 'pediatric',
     href: '/doctors/doctor-details',
-  },   */}
+  },   
 ];
 
 export default function Doctors() {
@@ -201,13 +206,13 @@ export default function Doctors() {
       <Section topMd={65} bottomMd={200} bottomLg={150} bottomXl={110}>
         <TeamSectionStyle2 data={teamData} />
       </Section>
-      <Section className="cs_footer_margin_0">
+   {/**   <Section className="cs_footer_margin_0">
         <BannerSectionStyle4
           bgUrl="images/doctors/banner_bg_2.jpeg"
           title="Don’t Let Your Health <br />Take a Backseat!"
           subTitle="Schedule an appointment with one of our experienced <br />medical professionals today!"
         />
-      </Section>
+      </Section>  */}  
     </>
   );
 }

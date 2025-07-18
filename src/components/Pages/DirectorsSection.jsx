@@ -6,7 +6,7 @@ import director2 from './image/jitendar.png';
 export default function DirectorsSection() {
   return (
     <section className="directors-section">
-      <h2 className="section-title">Our Founders</h2>
+      <h2 className="section-title ">Our Founders</h2>
       <div className="directors-container">
         <div className="director-card">
           <img src={director1} alt="Director 1" />

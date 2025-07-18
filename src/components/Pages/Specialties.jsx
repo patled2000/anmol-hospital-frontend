@@ -1,4 +1,4 @@
- import React, { useState } from 'react';
+ import React, { useState, useEffect, useRef } from 'react';
 import './Specialties.css';
 
 import General_surgery from './Department/General Surgery.jpg';
@@ -9,7 +9,6 @@ import Burn from './Department/Burn.jpg';
 import Urology from './Department/Urology.jpg';
 import Cardiology from './Department/Cardiology.jpg';
 import Paediatric_care from './Department/Paediatric Care.jpg';
- 
 
 const specialties = [
   {
@@ -56,6 +55,26 @@ const specialties = [
 
 export default function SpecialtySlider() {
   const [current, setCurrent] = useState(0);
+  const intervalRef = useRef(null);
+  const sliderRef = useRef(null);
+
+  const startAutoPlay = () => {
+    intervalRef.current = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % specialties.length);
+    }, 3000); // 3 seconds
+  };
+
+  const stopAutoPlay = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  };
+
+  useEffect(() => {
+    startAutoPlay();
+    return () => stopAutoPlay(); // cleanup on unmount
+  }, []);
 
   const nextSlide = () => {
     setCurrent((prev) => (prev + 1) % specialties.length);
@@ -67,16 +86,23 @@ export default function SpecialtySlider() {
 
   return (
     <>
-      {/*  Heading Section with animation, icon, and underline */}
       <div className="specialty-header">
-         
         <h2><span>Specialist Hours</span></h2>
-        <p> Explore expert departments at Anmol Hospital <br />
-         with dedicated professionals</p>
+        <p>
+          Explore expert departments at Anmol Hospital <br />
+          with dedicated professionals
+        </p>
       </div>
 
       {/* Slider Section */}
-      <div className="specialty-slider-box">
+      <div
+        className="specialty-slider-box"
+        ref={sliderRef}
+        onMouseEnter={stopAutoPlay}
+        onMouseLeave={startAutoPlay}
+        onTouchStart={stopAutoPlay}
+        onTouchEnd={startAutoPlay}
+      >
         <button className="arrow-btn left" onClick={prevSlide}>‹</button>
         <div className="specialty-left">
           <img src={specialties[current].image} alt={specialties[current].title} />
@@ -84,8 +110,6 @@ export default function SpecialtySlider() {
         <div className="specialty-right">
           <h2>{specialties[current].title}</h2>
           <p>{specialties[current].desc}</p>
-          
-
           <div className="dot-navigation">
             {specialties.map((_, index) => (
               <span

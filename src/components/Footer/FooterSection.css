@@ -8,7 +8,7 @@
 .Footer_logo {
   display: flex;
   justify-content: start;
-  padding: 40px 70px 0px;
+  padding: 30px 70px 25px;
 }
 
  .Footer_logo {
@@ -16,7 +16,7 @@
 }
 
 .Footer_logo img {
-  height: 90px !important;
+  height: 85px !important;
   max-height: none !important;
   max-width: 100% !important;
   width: auto !important;
@@ -39,9 +39,9 @@
 
 .footer-column p {
   margin: 10px 20px 20px;
-  font-size: 20px;
+  font-size: 23px;
   color: white;
-  line-height: 1.6;
+  line-height: 0;
   font-weight: 600;
 }
 
@@ -56,24 +56,24 @@
   align-items: flex-start;
   gap: 10px;
   margin-bottom: 8px;
-  font-size: 18px;
+  font-size: 16px;
   color: white;
 }
 
 .footer-column li svg {
   min-width: 18px;  
-  font-size: 20px;   
+  font-size: 18px;   
   margin-top: 2px; 
   transform: scaleX(-1);   
 }
 
 .footer-column a {
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .footer-column a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: black;
   font-weight: 600;
 }
@@ -87,20 +87,20 @@
 .social-icons {
   display: flex;
   gap: 12px;
-  margin-top: 10px;
-  font-size: 18px;
+  margin-top: 0px;
+  font-size: 20px;
 }
 
 .social-icons a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #A1D348;
+  background-color: rgb(194, 193, 193);
   color: white;
-  width: 35px;
-  height: 35px;
+  width: 33px;
+  height: 33px;
   border-radius: 12px;
-  font-size: 21px;
+  font-size: 20px;
   transition: all 0.3s ease;
 }
 
@@ -110,11 +110,11 @@
 
 .footer-bottom {
   background: linear-gradient(to right,white );
-  text-align: center;
-  padding: 12px 20px;
-  font-size: 16px;
+  
+  padding: 9px 20px;
+  font-size: 14px;
   color:black;
-  font-weight: 400;
+  
 }
 
 .footer-bottom strong {

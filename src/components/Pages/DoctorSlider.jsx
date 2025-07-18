@@ -2,11 +2,11 @@
 import Slider from "react-slick";
 import "./DoctorSlider.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import dr_ashwin_aouchat from './Doctor_image/Dr ashwin aouchat.jpeg'
-import Dr_mahesh_goad from './Doctor_image/Dr mahesh goad.jpeg'
-import Dr_shreya_agrawal from './Doctor_image/Dr shreya agrawal.jpeg'
+import dr_ashwin_aouchat from './Doctor_image/Dr ashwin aouchat.png'
+import Dr_mahesh_goad from './Doctor_image/Dr mahesh goad.png'
+import Dr_shreya_agrawal from './Doctor_image/Dr shreya agrawal.png'
 import Dr_shreya from './Doctor_image/Dr shreya.jpeg'
-import Dr_shubham_satsangi from './Doctor_image/Dr shubham.satsangi.jpeg'
+import Dr_shubham_satsangi from './Doctor_image/Dr shubham.satsangi.png'
 
 const doctors = [
   {
@@ -67,10 +67,10 @@ const DoctorSlider = () => {
     infinite: true,
     speed: 800,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     slidesToShow: 3,
     slidesToScroll: 1,
-    pauseOnHover: true,
+    pauseOnHover: false,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -91,7 +91,7 @@ const DoctorSlider = () => {
 
   return (
     <div className="doctor-slider-container">
-      <h2 className="slider-title">Meet Our Expert Doctors</h2>
+      <h2 className="slider-title expert-title">Meet Our Expert Doctors</h2>
       <Slider {...settings}>
         {doctors.map((doctor, index) => (
           <div className="doctor-card" key={index}>

@@ -1,6 +1,5 @@
 import React from 'react';
 import SectionHeading from '../../SectionHeading';
-import AppointmentForm from '../../AppointmentForm';
 import Spacing from '../../Spacing';
 
 export default function AppointmentSection({
@@ -43,7 +42,7 @@ export default function AppointmentSection({
           <div className="col-lg-6">
             <SectionHeading title={sectionTitle} titleUp={sectionTitleUp} />
             <Spacing md="72" lg="50" />
-            <AppointmentForm />
+    
           </div>
           <div className="col-lg-5 offset-lg-1 text-center">
             <img src={imgUrl} alt="Appointment" className="cs_radius_30" />

@@ -1,5 +1,5 @@
 import React from 'react';
-import AppointmentForm from '../../AppointmentForm';
+
 import SectionHeading from '../../SectionHeading';
 import Spacing from '../../Spacing';
 
@@ -25,7 +25,7 @@ export default function AppointmentSectionStyle2({
           <div className="offset-lg-6 col-lg-6">
             <SectionHeading title={sectionTitle} titleUp={sectionTitleUp} />
             <Spacing md="57" />
-            <AppointmentForm />
+          
           </div>
         </div>
         <div className="cs_height_120" />

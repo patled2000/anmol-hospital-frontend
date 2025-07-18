@@ -172,19 +172,19 @@ export default function About() {
           data={featureListData}
         />
       </Section>
-      <Section>
+   {/**    <Section>
         <FunFactSection
           bgUrl="images/about/fun_fact_bg.jpeg"
           data={funFactData}
         />
-      </Section>
-      <Section topMd={190} topLg={145} topXl={105}>
+   </Section>    */}
+        {/**   <Section topMd={190} topLg={145} topXl={105}>
         <TeamSection
           sectionTitle="Experts Doctor"
           sectionTitleUp="MEET OUR"
           data={teamData}
         />
-      </Section>
+      </Section>   */}
    {/**    <Section topMd={170} topLg={120} topXl={80}>
         <GallerySection
           sectionTitle="Our Facilities and <br />Latest Activities"
@@ -207,14 +207,14 @@ export default function About() {
           data={awardData}
         />
       </Section>
-      <Section className="cs_footer_margin_0">
+   {/**   <Section className="cs_footer_margin_0">
         <BannerSectionStyle4
           bgUrl="images/about/banner_bg_2.jpeg"
           title="Don’t Let Your Health <br />Take a Backseat!"
           subTitle="Schedule an appointment with one of our experienced <br />medical professionals today!"
           center
         />
-      </Section>
+      </Section>   */} 
     </>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
-import AppointmentForm from '../../AppointmentForm';
+import AppointmentForm from '../../AppointmentForm/AppointmentForm';
+
 const contactInfo = [
   { title: 'Phone', subTitle: '123-456-7890' },
   { title: 'Email Us', subTitle: 'hellocallcenter@gmail.com' },
@@ -13,7 +14,7 @@ export default function AppointmentWithContactInfoSection() {
         <div className="col-lg-7">
           <h2 className="cs_fs_40 cs_medium mb-0">Appoinment</h2>
           <div className="cs_height_42 cs_height_xl_25" />
-          <AppointmentForm />
+          <AppointmentForm/>
         </div>
         <div className="col-lg-4 offset-lg-1">
           <div className="cs_height_lg_100" />

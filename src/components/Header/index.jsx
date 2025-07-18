@@ -1,8 +1,8 @@
- import React, { useState } from 'react';
-import { FaPhone, FaMapMarkerAlt, FaEnvelope, FaBars, FaTimes } from 'react-icons/fa';
+  import React, { useState } from 'react';
+import { FaPhone, FaMapMarkerAlt, FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import logo from './Anmol_Hospital_Logo_Hz_Color@150x-100.jpg';
-import AppointmentForm from './AppointmentForm';
+import AppointmentForm from '../AppointmentForm/AppointmentForm';
 import './TopHeader.css';
 import './Header.css';
 
@@ -21,12 +21,17 @@ export default function Header() {
         <div className="top-header-container">
           <div className="contact-box">24/7 Support</div>
           <div className="info-item"><FaPhone className="icon" />0731 3594 048</div>
-          <div className="info-item">
+        <a
+  href="https://maps.app.goo.gl/ArTGh7anxVCYdXbr5"
+  
+  rel="noopener noreferrer"
+  className="info-item"
+  style={{ display: 'flex', alignItems: 'center', color: 'inherit', textDecoration: 'none' }}
+>
   <FaMapMarkerAlt className="icon" />
-  
-    Kamla Nehru Nagar, Indore
-  
-</div>
+  Kamla Nehru Nagar, Indore
+</a>
+
 
  
 
@@ -73,4 +78,3 @@ export default function Header() {
     </>
   );
 }
-

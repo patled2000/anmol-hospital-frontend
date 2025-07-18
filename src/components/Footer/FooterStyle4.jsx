@@ -20,7 +20,7 @@ export default function FooterStyle4() {
          
         <div className="footer-column">
            
-          <p>Your care in our hand</p>
+          <p style={{fontWeight:"600" ,fontSize:"20px",marginBottom:"26px"}}>Contact</p>
           <ul>
             <li><FaMapMarkerAlt />26 B, Kila Maidan Rd, near khade Ganesh mandir, 
             Nanda Nagar, Kamla Nehru Nagar, Indore, Madhya Pradesh 452015</li>
@@ -30,7 +30,7 @@ export default function FooterStyle4() {
         </div>
 
         {/* Column 2 */}
-        <div className="footer-column" style={{paddingTop:"18px"}}>
+        <div className="footer-column" style={{paddingTop:"-5px"}}>
           <h4>Explore</h4>
           <ul>
             <li><Link to="/about">About </Link></li>
@@ -43,7 +43,7 @@ export default function FooterStyle4() {
         </div>
 
         {/* Column 3 */}
-        <div className="footer-column"  style={{paddingTop:"18px"}}>
+        <div className="footer-column"  style={{paddingTop:"-5px"}}>
           <h4>Support</h4>
           <ul>
             <li><Link to="/">Testimonials</Link></li>
@@ -54,7 +54,7 @@ export default function FooterStyle4() {
         </div>
 
         {/* Column 4 */}
-        <div className="footer-column"  style={{paddingTop:"18px"}}>
+        <div className="footer-column"  style={{paddingTop:"-5px"}}>
           <h4>Legal</h4>
           <ul>
             <li><Link to="/privacy-policy">Privacy Policy</Link></li>
@@ -73,8 +73,8 @@ export default function FooterStyle4() {
       {/* Footer Bottom */}
       <div className="footer-bottom">
         <p>
-          © 2025 <strong>Anmol Hospital</strong>.
-          Powered by <strong>Inkcast Innovations.</strong>
+         <span> © 2025 Anmol Hospital.All Rights Reserved</span>  
+          <span style={{marginLeft:"750px"}}> Powered by Inkcast Innovations.</span>
           
         </p>
         

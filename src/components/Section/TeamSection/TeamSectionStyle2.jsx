@@ -36,9 +36,9 @@ export default function TeamSectionStyle2({ data }) {
           </ul>
         </div>
         <div className="cs_view_box">
-          <span>Showing {filteredData.length} items</span>
-          <div className="cs_view_box_in">
-            <button
+         {/**  <span>Showing {filteredData.length} Doctors</span>   */}
+          <div className="cs_view_box_in">   
+        {/**     <button
               type="button"
               className={`cs_grid_view ${view === 'grid' ? 'active' : ''}`}
               onClick={() => setView('grid')}
@@ -55,8 +55,8 @@ export default function TeamSectionStyle2({ data }) {
                   fill="currentColor"
                 />
               </svg>
-            </button>
-            <button
+            </button>   */}
+         {/**    <button
               type="button"
               className={`cs_list_view ${view === 'list' ? 'active' : ''}`}
               onClick={() => setView('list')}
@@ -73,7 +73,7 @@ export default function TeamSectionStyle2({ data }) {
                   fill="currentColor"
                 />
               </svg>
-            </button>
+            </button>   */}
           </div>
         </div>
       </div>
@@ -83,8 +83,8 @@ export default function TeamSectionStyle2({ data }) {
           <TeamStyle2 {...item} key={index} />
         ))}
       </div>
-      <Spacing md="90" />
-      <Pagination />
+      <Spacing md="50" />
+    {/**   <Pagination />   */}
     </div>
   );
 }

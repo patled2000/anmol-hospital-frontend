@@ -9,7 +9,7 @@
   text-align: center;
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   color: #0054A6;
    font-family: 'Inter', sans-serif;
 }
@@ -39,11 +39,11 @@
 
 .doctor-image {
   width: 100%;
-  height: 300px;
+  height: 350px;
   
   object-fit: cover;
   border-radius: 10px;
-   object-position: center;
+   object-position: top;
   transition: transform 0.4s ease;
 }
 
@@ -101,6 +101,7 @@
 .arrow svg {
   font-size: 18px;
 }
+ 
 
 @media (max-width: 640px) {
   .arrow {

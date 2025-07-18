@@ -28,6 +28,9 @@ import Trauma from './image/Trauma.png'
 import Cardiology from './image/Cardiology.png'
 import Paediatric_care  from './image/Paediatric care.png'
 import TeamGroupSection from './TeamGroupSection';
+import sohanTestimonial from './testimonual_image/Untitled design.png'
+import deelipTestimonial from './testimonual_image/Untitled design (1).png'
+import hospital from './Department/hospital.jpeg'
 
 const featureListData = [
   {
@@ -173,25 +176,26 @@ const awardData = [
 
 const testimonialData = [
   {
-    text: '"I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease.”',
+    text: '"My mother was treated for a heart condition here, and the cardiology team was highly experienced, and the staff was extremely patient and supportive. If your looking for trusted cardiology care in Indore, I highly recommend them ”',
+ 
     ratingNumber: '5',
-    avatarImgUrl: '/images/home_4/avatar_2.png',
-    avatarName: 'Sophia Torres',
-    avatarDesignation: 'New York, USA',
+    avatarImgUrl: sohanTestimonial,
+    avatarName: 'Sohan Agrwal',
+    avatarDesignation: 'INDORE',
   },
   {
     text: '"ProHealth has been a game-changer for me. The doctors are caring and highly skilled, and the staff is always friendly and accommodating. We hope for the best wishes.”',
     ratingNumber: '5',
-    avatarImgUrl: '/images/home_4/avatar_3.png',
-    avatarName: 'John Dupont',
-    avatarDesignation: 'Manhattan, USA',
+    avatarImgUrl: deelipTestimonial,
+    avatarName: 'Deelip Wadhwani',
+    avatarDesignation: 'Dewas',
   },
   {
-    text: '“I had a great experience with ProHealth. The staff were friendly and professional, and the doctor took the time to answer all my questions and address my concerns.”',
+    text: '“I had to undergo appendix surgery and was really anxious, but the surgical team at Anmol Hospital made me feel completely safe. The doctors explained the whole process and the recovery was smoother than I expected. I’d definitely recommend their surgical care to anyone in Indore”',
     ratingNumber: '5',
     avatarImgUrl: '/images/home_4/avatar_4.png',
-    avatarName: 'Allen Duarte',
-    avatarDesignation: 'California, USA',
+    avatarName: 'Mahesh varma',
+    avatarDesignation: 'bhopal',
   },
   {
     text: '"I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease.”',
