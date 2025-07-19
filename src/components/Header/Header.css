@@ -6,8 +6,16 @@
   top: 52px;
   width: 100%;
   background: white;
-  z-index: 99999;
+  z-index: 9999;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.main-header.hidden {
+  transform: translateY(-171%);
+}
+.main-header.visible {
+  transform: translateY(0);
 }
 
 .main-header-container {
@@ -34,6 +42,7 @@
   font-size: 26px;
   cursor: pointer;
   color: #1e5799;
+  z-index: 10000;
 }
 
 /* -------------------
@@ -75,58 +84,15 @@
 }
 
 /* -------------------
-   Sidenav Form Overlay
-------------------- */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  z-index: 10000;
-}
-
-.appointment-sidenav {
-  background: white;
-  width: 400px;
-  height: 100%;
-  transform: translateX(100%);
-  transition: transform 0.4s ease-in-out;
-  z-index: 100001;
-  position: relative;
-}
-
-.appointment-sidenav.open {
-  transform: translateX(0);
-}
-
-.sidenav-content {
-  padding: 30px 20px;
-  height: 100%;
-  overflow-y: auto;
-}
-
-.close-btn {
-  background: none;
-  font-size: 24px;
-  border: none;
-  float: right;
-  cursor: pointer;
-}
-
-/* -------------------
    Mobile Styles
 ------------------- */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
   .main-header {
     top: 0;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   .nav-links {
@@ -140,7 +106,7 @@
     padding: 15px 20px;
     gap: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    z-index: 0;
+    z-index: 9999;
   }
 
   .nav-links.active {
@@ -161,10 +127,5 @@
   .appointment-btn button {
     width: 100%;
     padding: 12px;
-  }
-
-  .appointment-sidenav {
-    width: 100%;
-    max-width: 100%;
   }
 }

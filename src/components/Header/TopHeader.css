@@ -1,16 +1,26 @@
- .top-header {
-   background: linear-gradient(to top, #0054A6, #00AEEF);
-   
+ /* -------------------
+   Top Header
+------------------- */
+.top-header {
+  background: linear-gradient(to top, #0054A6, #00AEEF);
   color: white;
   font-family: sans-serif;
   padding: 10px 20px;
   font-size: 14px;
   display: flex;
   align-items: center;
-   position: fixed;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
+  transition: transform 0.3s ease-in-out;
+}
+
+.top-header.hidden {
+  transform: translateY(-100%);
+}
+.top-header.visible {
+  transform: translateY(0);
 }
 
 .top-header-container {
@@ -24,35 +34,30 @@
 
 .contact-box {
   background-color: rgb(243, 50, 50);
-  color:white;
+  color: white;
   padding: 5px 20px;
   border-radius: 15px 0px 15px 0px;
-  font-weight: 600 ;
+  font-weight: 600;
   font-size: 15px;
-
 }
 
 .info-item {
   display: flex;
-   text-align: center;
   gap: 10px;
   color: white;
   font-size: 18px;
   font-weight: 500;
-     
-  
 }
 
 .icon {
   font-size: 16px;
-   margin-top: 3px; 
+  margin-top: 3px;
   color: white;
-  transform: scaleX(-1);  
+  transform: scaleX(-1);
 }
 
 @media (max-width: 768px) {
   .top-header {
-      display: none;
+    display: none;
   }
-
 }

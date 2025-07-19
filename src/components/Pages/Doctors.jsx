@@ -4,7 +4,7 @@ import BannerSectionStyle4 from '../Section/BannerSection/BannerSectionStyle4';
 import TeamSectionStyle2 from '../Section/TeamSection/TeamSectionStyle2';
 import Section from '../Section';
 import { pageTitle } from '../../helpers/PageTitle';
-import Doctor_page  from './image/find doctor.png'
+import Doctor_page  from './image/Find-Doctors-banner.png'
 import dr_ashwin_aouchat from './Doctor_image/Dr ashwin aouchat.png'
 import Dr_mahesh_goad from './Doctor_image/Dr mahesh goad.png'
 import Dr_shreya_agrawal from './Doctor_image/Dr shreya agrawal.png'
@@ -19,7 +19,7 @@ const teamData = [
     description:
       'Specialist in Asthma, Heart Disease, Diabetes, and Thyroid treatment.',
     social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
+        { icon: 'fa6-brands:facebook-f', href: '/about' },
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
@@ -198,8 +198,8 @@ export default function Doctors() {
   return (
     <>
       <BannerSectionStyle5
-        bgUrl="/images/doctors/banner_bg.svg"
-        imgUrl={Doctor_page}
+        bgUrl={Doctor_page}
+        imgUrl='d'
         title="Introduce You to <br />Our Experts"
         subTitle="The list of certified doctors with years of <br />professional experiences"
       />

@@ -16,13 +16,35 @@ export default function AboutSectionStyle5({
             <div className="col-xl-7 position-relative">
               <div className="cs_about_text d-flex  align-items-center">
                 <div className="cs_section_heading cs_style_1">
-                  <h3 className="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32">
+                  <h3 className="cs_section_subtitle text-uppercase cs_accent_color cs_semibold m-0 cs_accent_color cs_fs_32" 
+                   style={{ color: '#00A3C8', fontSize: '24px', marginTop: '-50px' }}
+                  >
                     {titleUp}
                   </h3>
                   <div className="cs_height_5" />
-                  <h2 className="cs_section_title cs_fs_72 m-0">{title}</h2>
+                  <h2 className="cs_section_title cs_fs_72 m-0" 
+                  
+                  style={{
+    
+   
+      marginTop: '0px',         // 👈 Top gap hatao
+    marginBottom: '5px',     // 👈 Bottom gap control
+    color: '#0054A6',
+    fontSize: '42px',         // Optional: Font size adjust
+    lineHeight: '1.2',
+    }}
+      >{title}</h2>
                   <div className="cs_height_85 cs_height_xl_40 cs_height_lg_30" />
-                  <p className="cs_section_minititle m-0 cs_heading_color cs_fs_20">
+                  <p className="cs_section_minititle m-0 cs_heading_color cs_fs_20" 
+                  
+                   style={{
+      fontSize: '18px',
+      lineHeight: '1.5',
+      color: '#333',
+      marginBottom: '20px',
+       
+    }}
+                  >
                     {subTitle}
                   </p>
                 </div>

@@ -1,5 +1,5 @@
  .directors-section {
-  padding: 95px 50px;
+  padding: 60px 50px;
   background: linear-gradient(to right, #f4f9ff, #ffffff);
   text-align: center;
   animation: fadeIn 1s ease-in;
@@ -8,7 +8,7 @@
 .section-title {
   font-size: 45px;
   color: #0054A6;
-  margin-bottom: 10px;
+  
   font-family: 'Inter', sans-serif;
   font-weight: bold;
 }

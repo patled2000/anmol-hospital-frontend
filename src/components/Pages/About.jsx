@@ -9,7 +9,9 @@ import TeamSection from '../Section/TeamSection';
 import AwardSectionStyle2 from '../Section/AwardSection/AwardSectionStyle2';
 import FounderMessage from './FounderMessage';
 import { pageTitle } from '../../helpers/PageTitle';
-import about_page from './image/About Page.png'
+import about_page from './image/AboutPage.png'
+import aboutSection from './image/aboutsection.png';
+import waychoosesection from './image/wychooseSection.png'
 const departmentData = [
   {
     title: 'Diagnostic testing',
@@ -145,18 +147,18 @@ export default function About() {
     <>
       
       <BannerSectionStyle3
-            bgUrl="/images/about/banner_bg.svg"
+            bgUrl={about_page}
             imgUrl={about_page}
-            title="Welcome to <br />ProHealth Medical & Healthcare Center"
-            subTitle="Your Partner in Health and Wellness"
+            title="Welcome to <br />Anmol Hospital"
+            subTitle="Your care in our hand "
           />
 
        <Section topMd={170} topLg={120} topXl={100}>
         <AboutSectionStyle5
-          imgUrl="/images/home_4/about_img.jpeg"
+          imgUrl={aboutSection}
           titleUp="ABOUT US"
-          title="ProHealth is a team of experienced medical professionals"
-          subTitle="Dedicated to providing top-quality healthcare services. We believe in a holistic approach to healthcare that focuses on treating the whole person, not just the illness or symptoms."
+          title="Anmol Hospital "
+          subTitle="Founded by Dr. Jitendra Awasthi and Dr. Shivam Mishra, Anmol Hospital is built on a single promise — care that heals beyond treatment. Since its inception, Anmol Hospital has grown into a trusted name for compassionate and quality healthcare. With a patient-first approach, we provide advanced medical services including General Surgery, Gynaecology, Paediatrics, Emergency & Trauma Care, Cardiology, and more — all supported by modern diagnostic labs and a dedicated medical team. "
           supportTitle="24/7 Support"
           supportSubTitle="We are available when you want"
         />
@@ -168,7 +170,7 @@ export default function About() {
       <Section topMd={175} topLg={125} topXl={85} bottomMd={100} bottomLg={110}>
         <FeaturesSectionStyle2
           sectionTitle="Why Choose Us"
-          imgUrl="images/about/why_choose_us.jpeg"
+          imgUrl={waychoosesection}
           data={featureListData}
         />
       </Section>

@@ -4,7 +4,7 @@ import ModalImage from 'react-modal-image';
 
 export default function Portfolio({ imgUrl }) {
   return (
-    <div className="cs_portfolio cs_style_1 cs_radius_20 overflow-hidden">
+    <div className="cs_portfolio cs_style_1 cs_radius_20 overflow-hidden "  >
       <div
         className="cs_portfolio_img d-block cs_bg_filed st_lightbox_item"
         style={{

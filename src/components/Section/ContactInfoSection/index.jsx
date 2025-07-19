@@ -25,7 +25,7 @@ export default function ContactInfoSection({ sectionTitle }) {
         <div className="col-xl-4">
           <IconBoxStyle11
             title="Location"
-            subTitle="123 Anywhere St., Any City, 12345"
+            subTitle="Kamla Nehru Nagar, Indore"
             iconSrc="/images/contact/icon_3.svg"
           />
         </div>

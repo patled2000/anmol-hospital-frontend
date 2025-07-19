@@ -23,7 +23,7 @@ export default function TeamSectionStyle2({ data }) {
     <div className="container">
       <div className="cs_doctors_heading">
         <div className="cs_isotop_filter cs_style1">
-          <p className="mb-0">Sort by</p>
+         {/**  <p className="mb-0">Sort by</p>   */}
           <ul className="cs_mp0">
             <li className={active === 'all' ? 'active' : ''}>
               <span onClick={() => handleFilter('all')}>All</span>

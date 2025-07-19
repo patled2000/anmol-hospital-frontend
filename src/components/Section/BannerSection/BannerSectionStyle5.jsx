@@ -12,12 +12,12 @@ export default function BannerSectionStyle5({
       className="cs_banner cs_style_5 cs_bg_filed"
       style={{ backgroundImage: `url(${bgUrl})` }}
     >
-      <div className="cs_banner_img">
+     {/**  <div className="cs_banner_img">
         <img src={imgUrl} alt="Banner" />
-      </div>
+      </div>   */}
       <div className="container">
         <div className="cs_banner_text">
-          <h2 className="cs_banner_title cs_fs_72">{parse(title)}</h2>
+          <h2 className="cs_banner_title cs_fs_72"  style={{ lineHeight: '1.1' }}   >{parse(title)}</h2>
           <p className="cs_banner_subtitle cs_fs_20 mb-0 cs_heading_color">
             {parse(subTitle)}
           </p>

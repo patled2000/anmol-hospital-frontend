@@ -47,7 +47,7 @@ export default function FooterStyle4() {
           <h4>Support</h4>
           <ul>
             <li><Link to="/">Testimonials</Link></li>
-             <li><Link to="/timetable">Timetable</Link></li>
+           
             <li><Link to="/contact">Contact</Link></li>
             <li><Link to="/">FAQs</Link></li>
           </ul>

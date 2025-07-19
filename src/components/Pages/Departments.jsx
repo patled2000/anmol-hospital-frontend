@@ -4,6 +4,7 @@ import Section from '../Section';
 import DepartmentSectionStyle3 from '../Section/DepartmentSection/DepartmentSectionStyle3';
 import BannerSectionStyle6 from '../Section/BannerSection/BannerSectionStyle6';
 import { pageTitle } from '../../helpers/PageTitle';
+import departmentpagebanner from './image/department_banner.png'
 const departmentData = [
   {
     iconUrl: 'images/departments/icon_1.svg',
@@ -78,10 +79,10 @@ export default function Departments() {
   return (
     <>
       <BannerSectionStyle5
-        bgUrl="/images/departments/banner_bg.svg"
+        bgUrl={departmentpagebanner}
         imgUrl="/images/departments/banner_img.png"
-        title="Get to Know <br>ProHealth Departments"
-        subTitle="At ProHealth, we offer a wide range of medical and healthcare services that are designed to meet your individual needs and help you achieve optimal health."
+        title="Get to Know <br>Anmol Hospital Departments"
+        subTitle="At Anmol Hospital, we offer a wide range of medical and healthcare services that are designed to meet your individual needs and help you achieve optimal health."
       />
       <Section bottomMd={140} bottomLg={100} bottomXl={60}>
         <DepartmentSectionStyle3 data={departmentData} />

@@ -47,7 +47,7 @@ export default function Gallery() {
       <BannerSectionStyle3
         bgUrl="/images/about/banner_bg.svg"
         imgUrl={imageg10}
-        title="Welcome to <br>ProHealth Gallery"
+        title="Welcome to <br>Anmol Hospital Gallery"
         subTitle="The special moment of our hospital"
       />
       <Section

@@ -1,15 +1,18 @@
  .founder-section {
-  padding: 60px 20px;
-  background-color: #f9fcff;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #f4f9ff, #ffffff);
   font-family: 'Segoe UI', sans-serif;
 }
 
 .section-title {
   text-align: center;
-  font-size: 2.4rem;
-  margin-bottom: 50px;
-  color: #274760;
+   font-size: 45px;
+  padding-bottom: 60px;
+  color:  #0054A6;
   font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    
+    
 }
 
 .founder-block {

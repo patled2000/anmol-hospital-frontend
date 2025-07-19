@@ -4,15 +4,15 @@ import ContactForm from '../ContactForm';
 import Section from '../Section';
 import ContactInfoSection from '../Section/ContactInfoSection';
 import { pageTitle } from '../../helpers/PageTitle';
-import contact_page from './image/1500+.jpg'
+import contact_page from './image/Contant_page.png' ;
 
 export default function Contact() {
   pageTitle('Contact');
   return (
     <>
       <BannerSectionStyle5
-        bgUrl="/images/contact/banner_bg.svg"
-        imgUrl={contact_page}
+        bgUrl={contact_page}
+        
         title="Contact Us"
         subTitle="Kindly reach us to get the fastest response and treatment"
       />

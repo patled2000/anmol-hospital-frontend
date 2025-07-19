@@ -31,6 +31,7 @@ import TeamGroupSection from './TeamGroupSection';
 import sohanTestimonial from './testimonual_image/Untitled design.png'
 import deelipTestimonial from './testimonual_image/Untitled design (1).png'
 import hospital from './image/a7cbedf730a5dcc233171380bd84a9f6.jpg'
+import Faqimage from './image/fuq.png'
 
 const featureListData = [
   {
@@ -218,6 +219,11 @@ const faqData = [
     content:
       ' At Anmol Hospital, we offer a wide range of medical services to provide complete and quality care to our patients. Our key specialties include: [ General Surgery, Obstetrics & Gynaecology, Medical Management of Chronic and Acute Conditions, Trauma Care & Emergency Services, Road Accident Injury Treatment, Burn Management & Recovery, Urology Services, Cardiology (Heart Care), Paediatric Care (Children’s Health) ] Our team of experienced doctors and specialists ensures personalized treatment and round-the-clock support for every patient.',
   },
+   {
+    title: ' What are the visiting hours for patients relatives?' ,
+    content: ' At Anmol Hospital, we understand the importance of family during recovery. To ensure a balance between patient rest and family support, our visiting hours are: 🕘 Morning: 10:00 AM – 12:00 PM , Evening: 5:00 PM – 7:00 PM We kindly request all visitors to follow these timings strictly to maintain a peaceful healing environment for all patients.'
+  }, 
+  
   
 ];
 
@@ -274,13 +280,13 @@ export default function Home() {
       </Section>   */}
       {/* End About Section */}
       {/* Start Departments Section */}
-      <Section topMd={185} topLg={150} topXl={80}>
+    {/**   <Section topMd={185} topLg={150} topXl={80}>
         <DepartmentSection
           sectionTitle="Departments"
           bgUrl={hospital}
           data={departmentData}
         />
-      </Section>
+      </Section>   */}
        <DirectorsSection/>
        <DoctorSlider/>
 
@@ -313,7 +319,7 @@ export default function Home() {
                     <FaqSectionStyle4
                       sectionTitle="Frequently Asked <br />Questions"
                       data={faqData}
-                      faqImgUrl="/images/home_4/faq_img.jpeg"
+                      faqImgUrl= {Faqimage}
                       spiningImgUrl="/images/home_1/about_mini.svg"
                     />
                   </Section>
