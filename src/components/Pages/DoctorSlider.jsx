@@ -2,18 +2,20 @@
 import Slider from "react-slick";
 import "./DoctorSlider.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import dr_ashwin_aouchat from './Doctor_image/Dr ashwin aouchat.png'
-import Dr_mahesh_goad from './Doctor_image/Dr mahesh goad.png'
-import Dr_shreya_agrawal from './Doctor_image/Dr shreya agrawal.png'
-import Dr_shreya from './Doctor_image/Dr shreya.jpeg'
-import Dr_shubham_satsangi from './Doctor_image/Dr shubham.satsangi.png'
 
+// Images
+import dr_ashwin_aouchat from './Doctor_image/Dr ashwin aouchat.png';
+import Dr_mahesh_goad from './Doctor_image/Dr mahesh goad.png';
+import Dr_shreya_agrawal from './Doctor_image/Dr shreya agrawal.png';
+import Dr_shubham_satsangi from './Doctor_image/Dr shubham.satsangi.png';
+
+// Doctor data
 const doctors = [
   {
     name: "Dr. Ashwin Aouchat",
     degree: "MBBS, MS (Trauma)",
     department: "General Surgery",
-    image:dr_ashwin_aouchat,
+    image: dr_ashwin_aouchat,
   },
   {
     name: "Dr. Mahesh Gaud",
@@ -23,7 +25,7 @@ const doctors = [
   },
   {
     name: "Dr. Shreya Agrawal",
-    degree: "MBBS, DGO (Obstetrics )",
+    degree: "MBBS, DGO (Obstetrics)",
     department: "Gynaecology",
     image: Dr_shreya_agrawal,
   },
@@ -32,20 +34,7 @@ const doctors = [
     degree: "MBBS, DCH (Cardiology)",
     department: "Medical Management",
     image: Dr_shubham_satsangi,
-  },
- {
-    name: "Dr. Shubham Satsangi",
-    degree: "MBBS, DCH (Cardiology)",
-    department: "Medical Management",
-    image:"#",
-  },
-   {
-    name: "Dr. Shubham Satsangi",
-    degree: "MBBS, DCH (Cardiology)",
-    department: "Medical Management",
-    image:"#",
-  },
-
+  }
 ];
 
 // Custom arrow components
@@ -61,13 +50,14 @@ const PrevArrow = ({ onClick }) => (
   </div>
 );
 
+// Main Component
 const DoctorSlider = () => {
   const settings = {
     dots: false,
     infinite: true,
     speed: 800,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
     slidesToShow: 3,
     slidesToScroll: 1,
     pauseOnHover: false,
@@ -92,6 +82,13 @@ const DoctorSlider = () => {
   return (
     <div className="doctor-slider-container">
       <h2 className="slider-title expert-title">Meet Our Expert Doctors</h2>
+      <p className="doctor-intro">
+        At Anmol Hospital, our team of highly skilled and compassionate doctors brings 
+        years of experience across multiple specialties. From critical care to routine 
+        checkups, they are committed to delivering patient-first, ethical, and quality 
+        healthcare every day.
+      </p>
+
       <Slider {...settings}>
         {doctors.map((doctor, index) => (
           <div className="doctor-card" key={index}>

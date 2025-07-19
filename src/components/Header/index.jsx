@@ -56,9 +56,9 @@ export default function Header() {
             <Link to="/departments">Departments</Link>
             <Link to="/gallery">Gallery</Link>
             <Link to="/contact">Contact</Link>
-            <div className="appointment-btn">
+      {/**   <Link to='/appointment' ></Link> <div className="appointment-btn">
               <button onClick={openAppointment}>Appointment</button>
-            </div>
+            </div>    <Link />   */} 
           </nav>
         </div>
       </header>

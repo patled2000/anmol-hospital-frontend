@@ -13,7 +13,7 @@ export default function DepartmentSection({ sectionTitle, bgUrl, data }) {
             backgroundImage: `url(${bgUrl})`,
           }}
         />
-        <SectionHeading title={sectionTitle} center />
+        <SectionHeading title={sectionTitle} center  />
         <Spacing md="72" lg="50" />
         <div className="cs_department_list">
           <DepartmentCarousel data={data} />

@@ -13,9 +13,11 @@ export default function TestimonialSectionStyle4({
     <div className="container">
       <div className="row">
         <div className="col-lg-5">
-          <div className="cs_section_wrap_1">
-            <SectionHeading title={sectionTitle} titleUp={sectionTitleUp} />
-            <div className="cs_avatar_card">
+          <div className="cs_section_wrap_1" >
+            <SectionHeading title={sectionTitle} 
+            titleUp={sectionTitleUp}
+                />
+            <div className="cs_avatar_card"   >
               <h2 className="cs_avatar_card_title cs_fs_24 cs_semibold">
                 {avatarListTitle}
               </h2>

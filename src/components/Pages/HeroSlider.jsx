@@ -3,14 +3,15 @@ import './HeroSlider.css';
 import slider1 from './image/slider1.jpeg';
 import slider2 from './image/slider2.jpeg';
 import FunFactSection from '../Section/FunFactSection';
+import image1 from './image/24281.jpg'
 
 
 const funFactData = [
-  { number: '20+', title: 'Years of experience' },
+  { number: '6+', title: 'Years of experience' },
   { number: '95%', title: 'Patient satisfaction rating' },
-  { number: '5000+', title: 'Patients served annually' },
+  { number: '5K+', title: 'Patients served annually' },
   { number: '10+', title: 'Healthcare providers on staff' },
-  { number: '22+', title: 'Convenient locations in the area' },
+  
 ];
 
 const slides = [
@@ -45,7 +46,7 @@ export default function HeroSlider() {
       <div className="hero-stats-box">
         
                  <FunFactSection
-                   bgUrl="images/about/fun_fact_bg.jpeg"
+                    bgUrl={image1} 
                    data={funFactData}
                  />
                

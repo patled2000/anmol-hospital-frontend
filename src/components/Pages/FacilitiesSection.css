@@ -5,17 +5,18 @@
 }
 
 .facility-heading h2 {
-  font-size: 36px;
+  font-size: 45px;
   color:  #0054A6;
   margin-bottom: 10px;
     font-family: 'Inter', sans-serif;
+    font-weight: bold;
     
 }
 
 .facility-heading p {
   color: black;
   margin-bottom: 40px;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 500;
 }
 

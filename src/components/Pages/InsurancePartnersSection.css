@@ -10,17 +10,17 @@
 }
 
 .insurance-title {
-  font-size: 36px;
-   
+  font-size: 45px;
+   font-weight: bold;
   color: #0054A6;
    font-family: 'Inter', sans-serif;
   margin-bottom: 10px;
 }
 
 .insurance-subtitle {
-  font-size: 18px;
+  font-size: 20px;
   color: black;
-  margin-bottom: 40px;
+  margin-bottom: 55px;
   font-weight: 500;
 }
 

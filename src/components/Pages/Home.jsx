@@ -30,7 +30,7 @@ import Paediatric_care  from './image/Paediatric care.png'
 import TeamGroupSection from './TeamGroupSection';
 import sohanTestimonial from './testimonual_image/Untitled design.png'
 import deelipTestimonial from './testimonual_image/Untitled design (1).png'
-import hospital from './Department/hospital.jpeg'
+import hospital from './image/a7cbedf730a5dcc233171380bd84a9f6.jpg'
 
 const featureListData = [
   {
@@ -71,33 +71,7 @@ const brandData = [
   
   
 ];
-const faqData = [
-  {
-    title: 'What services does ProHealth offer?',
-    content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
-  },
-  {
-    title: 'How do I schedule an appointment with ProHealth?',
-    content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
-  },
-  {
-    title: 'Do you accept insurance?',
-    content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
-  },
-  {
-    title: 'What should I bring to my appointment?',
-    content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
-  },
-  {
-    title: 'How do I request a prescription refill?',
-    content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
-  },
-];
+ 
  
 const awardData = [
   {
@@ -223,39 +197,35 @@ const testimonialData = [
  
 ];
 
-const faqdata = [
+const faqData = [
   {
-    title: 'What services does ProHealth offer?',
+    title: ' How can I book an appointment with a doctor?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      ' You can book an appointment online through our website’s Book Appointment page, call our reception desk, or visit the hospital directly. For your convenience, we also offer appointment booking via WhatsApp and walk-ins, subject to availability. ',
   },
   {
-    title: 'How do I schedule an appointment with ProHealth?',
+    title: ' Do you provide emergency services?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      ' Yes, our emergency department operates 24×7 with trained doctors, nurses, and advanced equipment. For emergencies, please contact us at [ 0731 3594 048 ] or come directly to the Emergency entrance.',
   },
   {
-    title: 'Do you accept insurance?',
+    title: ' Do you accept health insurance?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'Yes, we are partnered with several leading health insurance providers. To know if your insurance is accepted, please refer to our Insurance Partners section or contact our billing department for assistance. ',
   },
   {
-    title: 'What should I bring to my appointment?',
+    title: ' What are the services available at Anmol Hospital?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      ' At Anmol Hospital, we offer a wide range of medical services to provide complete and quality care to our patients. Our key specialties include: [ General Surgery, Obstetrics & Gynaecology, Medical Management of Chronic and Acute Conditions, Trauma Care & Emergency Services, Road Accident Injury Treatment, Burn Management & Recovery, Urology Services, Cardiology (Heart Care), Paediatric Care (Children’s Health) ] Our team of experienced doctors and specialists ensures personalized treatment and round-the-clock support for every patient.',
   },
-  {
-    title: 'How do I request a prescription refill?',
-    content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
-  },
+  
 ];
 
 
 const funFactData = [
-  { number: '20+', title: 'Years of experience' },
+  { number: '6+', title: 'Years of experience' },
   { number: '95%', title: 'Patient satisfaction rating' },
-  { number: '5000+', title: 'Patients served annually' },
+  { number: '5K+', title: 'Patients served annually' },
   { number: '10+', title: 'Healthcare providers on staff' },
   { number: '22+', title: 'Convenient locations in the area' },
 ];
@@ -307,7 +277,7 @@ export default function Home() {
       <Section topMd={185} topLg={150} topXl={80}>
         <DepartmentSection
           sectionTitle="Departments"
-          bgUrl="images/home_1/department_bg.svg"
+          bgUrl={hospital}
           data={departmentData}
         />
       </Section>
@@ -328,7 +298,7 @@ export default function Home() {
               <TestimonialSectionStyle4
                 sectionTitle="Discover the Stories of Health and Healing"
                 sectionTitleUp="WHAT OUR PATIENTS SAY"
-                avatarListTitle="150+ patients are reviews about ProHealth"
+                avatarListTitle="150+ patients are reviews about Anmol hospital"
                 avatarList={[
                   { imgUrl: '/images/home_4/avatar_1.png' },
                   { imgUrl: '/images/home_4/avatar_2.png' },

@@ -13,15 +13,20 @@ export default function HospitalIntroSection() {
       <div className="intro-left">
         <h2>Anmol Hospital & Research Center</h2>
         <p>
-          <strong>Anmol Hospital</strong> is one of the most trusted names in healthcare across Central India. With a legacy of compassion and excellence, we offer <span className="highlight">multi-specialty treatments</span> and <span className="highlight">cutting-edge diagnostics</span> under one roof.
+          <strong>Anmol Hospital</strong> is a trusted multi-specialty hospital located in <span className='highlight-green'>Kamla Nehru Nagar, Indore</span >, serving the community since <strong>2019</strong> We started with a clear and honest mission — to provide <span className='highlight-green'>affordable, ethical, and 
+            compassionate healthcare</span> to every individual and family.
+           
         </p>
         <p>
-          Our mission is to bring world-class healthcare to every individual — blending <span className="highlight-green">advanced medical science</span> with <span className="highlight-green">personalized human care</span>. Trusted by thousands, we stand as a symbol of quality and hope.
-        </p>
-        <p className="sanskrit">
-          "Sarvetra Sukhinah Santu, Sarve Santu Niramayah" – May all be happy, may all be healthy.
-        </p>
-        <p className="tagline">“Anmol Hospital – Where Care Meets Excellence.”</p>
+           Founded by <strong>Dr. Jitendra Awasthi (BHMS, PGDEMS, MHA)</strong> and <strong>Dr. Shivam Mishra (BHMS, CMSED)</strong>, the hospital is built on a strong foundation of<span className="highlight-green"> medical expertise, patient care, and community trust.</span> Both doctors
+            bring years of hands-on experience and a deep commitment to healing with empathy.
+           </p>
+           <p>Over the years, we have earned the trust of many families by being available in
+             their time of need. Whether it's a <span className='highlight-green'>general consultation, emergency</span>, or <span  className='highlight-green'>specialized treatment</span>, our team ensures every patient receives <span className='highlight-green'>personal attention, respect, and quality care</span>.
+
+       </p>
+        
+        <p className="tagline">“Anmol Hospital – Your care in our hands.”</p>
       </div>
 
       <div className="intro-right">

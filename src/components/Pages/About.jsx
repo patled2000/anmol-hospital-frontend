@@ -9,7 +9,7 @@ import TeamSection from '../Section/TeamSection';
 import AwardSectionStyle2 from '../Section/AwardSection/AwardSectionStyle2';
 import FounderMessage from './FounderMessage';
 import { pageTitle } from '../../helpers/PageTitle';
-import about_page from './image/about_page.png'
+import about_page from './image/About Page.png'
 const departmentData = [
   {
     title: 'Diagnostic testing',
