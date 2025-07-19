@@ -1,3 +1,5 @@
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
  .specialty-header {
   text-align: center;
   padding: 60px 20px 30px;
@@ -12,11 +14,11 @@
 }
 
 .specialty-header h2 {
-  font-size: 45px;
+  font-size: 50px;
   color: #0054A6;
   margin-bottom: 5px;
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
   
 }
 
@@ -154,7 +156,7 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .specialty-header h2 {
     font-size: 28px;
   }
@@ -167,24 +169,50 @@
     flex-direction: column;
     text-align: center;
     padding: 30px 20px;
+    gap: 20px;
+    position: relative;
   }
 
   .specialty-left img {
     width: 100%;
     height: auto;
+    border-radius: 12px;
   }
 
-  .arrow-btn.left, .arrow-btn.right {
-    top: auto;
-    bottom: 20px;
-    transform: none;
+  .specialty-right {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .specialty-right h2 {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .specialty-right p {
+    font-size: 14px;
+  }
+
+  .dot-navigation {
+    margin-top: 15px;
+  }
+
+  .arrow-btn {
+    font-size: 40px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 20;
   }
 
   .arrow-btn.left {
-    left: 20px;
+    left: 10px;
   }
 
   .arrow-btn.right {
-    right: 20px;
+    right: 10px;
   }
 }

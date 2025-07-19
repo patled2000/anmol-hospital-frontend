@@ -32,6 +32,15 @@ import sohanTestimonial from './testimonual_image/Untitled design.png'
 import deelipTestimonial from './testimonual_image/Untitled design (1).png'
 import hospital from './image/a7cbedf730a5dcc233171380bd84a9f6.jpg'
 import Faqimage from './image/fuq.png'
+import mahesh from './image/Mahesh varma.png'
+import priya from './image/priya.png'
+import sophia from './image/sophia.png'
+import Ankit from './image/Ankit.png'
+import faq1 from './image/1.png'
+import faq2 from './image/2.png'
+import faq3 from './image/3.png'
+import faq4 from './image/4.png'
+import faq5 from './image/5.png'
 
 const featureListData = [
   {
@@ -151,47 +160,47 @@ const awardData = [
 
 const testimonialData = [
   {
-    text: '"My mother was treated for a heart condition here, and the cardiology team was highly experienced, and the staff was extremely patient and supportive. If your looking for trusted cardiology care in Indore, I highly recommend them ”',
+    text: '" My mother was treated for a heart condition here, and the cardiology team was highly experienced, and the staff was extremely patient and supportive. If your looking for trusted cardiology care in Indore, I highly recommend them ”',
  
     ratingNumber: '5',
     avatarImgUrl: sohanTestimonial,
     avatarName: 'Sohan Agrwal',
-    avatarDesignation: 'INDORE',
+    avatarDesignation: 'Indore',
   },
   {
-    text: '"ProHealth has been a game-changer for me. The doctors are caring and highly skilled, and the staff is always friendly and accommodating. We hope for the best wishes.”',
+    text: '" My mother had a heart issue that really scared us, but the cardiology team at Anmol Hospital made us feel safe from the very first moment. The doctors were calm, kind, and explained everything so patiently. They treated her like family. If your in Indore and need heart care you can truly trust this hospital ” ' ,
     ratingNumber: '5',
     avatarImgUrl: deelipTestimonial,
     avatarName: 'Deelip Wadhwani',
     avatarDesignation: 'Dewas',
   },
   {
-    text: '“I had to undergo appendix surgery and was really anxious, but the surgical team at Anmol Hospital made me feel completely safe. The doctors explained the whole process and the recovery was smoother than I expected. I’d definitely recommend their surgical care to anyone in Indore”',
+    text: '“ After my father was injured in a road accident, the emergency team at Anmol Hospital responded within minutes. Their trauma care was life-saving. I can confidently say this is one of the best emergency care hospitals in Indore.”',
     ratingNumber: '5',
-    avatarImgUrl: '/images/home_4/avatar_4.png',
+    avatarImgUrl: mahesh,
     avatarName: 'Mahesh varma',
-    avatarDesignation: 'bhopal',
+    avatarDesignation: 'Bhopal',
   },
   {
-    text: '"I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease.”',
+    text: '" We brought our 5-year-old here for a high fever that wouldnt go down. The paediatricians were gentle, cheerful, and kept our child calm. They treated her like their own. Its challenging to find such dedicated childcare in Indore. I would totally recommend Anmol Hospital.”',
     ratingNumber: '5',
-    avatarImgUrl: '/images/home_4/avatar_2.png',
-    avatarName: 'Sophia Torres',
-    avatarDesignation: 'New York, USA',
+    avatarImgUrl:  sophia,
+    avatarName: 'Sophia Tiwari',
+    avatarDesignation: 'Indore',
   },
   {
-    text: '"ProHealth has been a game-changer for me. The doctors are caring and highly skilled, and the staff is always friendly and accommodating. We hope for the best wishes.”',
+    text: '" I had to undergo appendix surgery and was really anxious, but the surgical team at Anmol Hospital made me feel completely safe. The doctors explained the whole process and the recovery was smoother than I expected. I’d definitely recommend their surgical care to anyone in Indore.”',
     ratingNumber: '5',
-    avatarImgUrl: '/images/home_4/avatar_3.png',
-    avatarName: 'John Dupont',
-    avatarDesignation: 'Manhattan, USA',
+    avatarImgUrl: priya,
+    avatarName: 'Priya Patidar',
+    avatarDesignation: 'Ujjain',
   },
   {
-    text: '“I had a great experience with ProHealth. The staff were friendly and professional, and the doctor took the time to answer all my questions and address my concerns.”',
+    text: '“ My son was admitted for a high fever and the pediatric care was top-notch. The doctors explained everything clearly and kept us informed. This hospital is a blessing for parents in Indore.”',
     ratingNumber: '5',
-    avatarImgUrl: '/images/home_4/avatar_4.png',
-    avatarName: 'Allen Duarte',
-    avatarDesignation: 'California, USA',
+    avatarImgUrl: Ankit,
+    avatarName: 'Ankit Nagar',
+    avatarDesignation: 'Indore',
   },
 
 
@@ -306,11 +315,11 @@ export default function Home() {
                 sectionTitleUp="WHAT OUR PATIENTS SAY"
                 avatarListTitle="150+ patients are reviews about Anmol hospital"
                 avatarList={[
-                  { imgUrl: '/images/home_4/avatar_1.png' },
-                  { imgUrl: '/images/home_4/avatar_2.png' },
-                  { imgUrl: '/images/home_4/avatar_3.png' },
-                  { imgUrl: '/images/home_4/avatar_4.png' },
-                  { imgUrl: '/images/home_4/avatar_5.png' },
+                  { imgUrl:  faq1 },
+                  { imgUrl:  faq2 },
+                  { imgUrl:  faq3 },
+                  { imgUrl:  faq4},
+                  { imgUrl:  faq5 },
                 ]}
                 data={testimonialData}
               />

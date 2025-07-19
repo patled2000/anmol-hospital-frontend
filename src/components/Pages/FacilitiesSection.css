@@ -1,15 +1,17 @@
- .facility-section {
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+.facility-section {
   padding: 60px 20px;
    background: linear-gradient(to right, #f4f9ff, #ffffff);
   text-align: center;
 }
 
 .facility-heading h2 {
-  font-size: 45px;
+  font-size: 50px;
   color:  #0054A6;
   margin-bottom: 10px;
     font-family: 'Inter', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     
 }
 
@@ -17,7 +19,7 @@
   color: black;
   margin-bottom: 40px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 50;
 }
 
 .facility-grid {

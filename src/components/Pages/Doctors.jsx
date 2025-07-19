@@ -24,7 +24,7 @@ const teamData = [
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'general',
-    href: '/doctors/doctor-details',
+    
   },
   {
     imgUrl: '/images/doctors/doctor_2.png',
@@ -39,7 +39,7 @@ const teamData = [
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'general',
-    href: '/doctors/doctor-details',
+    
   },
   {
     imgUrl: Dr_shubham_satsangi,
@@ -54,7 +54,7 @@ const teamData = [
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'general',
-    href: '/doctors/doctor-details',
+   
   },
   {
     imgUrl: '/images/doctors/doctor_4.png',
@@ -69,7 +69,7 @@ const teamData = [
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'ent',
-    href: '/doctors/doctor-details',
+     
   },
   {
     imgUrl: Dr_shreya_agrawal,
@@ -84,7 +84,7 @@ const teamData = [
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'gynecology',
-    href: '/doctors/doctor-details',
+    
   },
   {
     imgUrl: dr_ashwin_aouchat,
@@ -99,7 +99,7 @@ const teamData = [
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'surgery',
-    href: '/doctors/doctor-details',
+    
   },
   {
     imgUrl: '/images/doctors/doctor_7.png',
@@ -114,7 +114,7 @@ const teamData = [
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'orthopedics',
-    href: '/doctors/doctor-details',
+     
   },
   {
     imgUrl: '/images/doctors/doctor_8.png',
@@ -129,7 +129,7 @@ const teamData = [
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'pediatrics ',
-    href: '/doctors/doctor-details',
+   
   },
   {
     imgUrl: '/images/doctors/doctor_9.png',
@@ -144,7 +144,7 @@ const teamData = [
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'Pediatrics',
-    href: '/doctors/doctor-details',
+    
   },
   {
     imgUrl: '/images/doctors/doctor_10.png',
@@ -159,7 +159,7 @@ const teamData = [
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'gynecology',
-    href: '/doctors/doctor-details',
+    
   },
   {
     imgUrl: '/images/doctors/doctor_11.png',
@@ -174,7 +174,7 @@ const teamData = [
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'gynecology',
-    href: '/doctors/doctor-details',
+    
   },
  {
     imgUrl: '/images/doctors/doctor_12.png',
@@ -188,8 +188,8 @@ const teamData = [
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
-    category: 'pediatric',
-    href: '/doctors/doctor-details',
+    category: 'pediatrics',
+     
   },   
 ];
 

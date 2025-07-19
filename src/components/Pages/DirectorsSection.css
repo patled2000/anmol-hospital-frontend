@@ -5,20 +5,24 @@
   animation: fadeIn 1s ease-in;
 }
 
-.section-title {
-  font-size: 45px;
+ .section-title {
+  font-size: 50px;
   color: #0054A6;
-  
   font-family: 'Inter', sans-serif;
   font-weight: bold;
+
+  /* 👇 yeh lagao */
+  margin-top: 0;
+  margin-bottom: 10px; /* ya 0 karo agar aur kam chahiye */
+  padding: 5px; /* safety ke liye */
 }
 
 .founder-intro {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 500;
   color: black;
   max-width: 850px;
-  margin: 0 auto 60px;
+  margin: 0 auto 0px;
   line-height: 1.7;
   font-family: 'Inter', sans-serif;
   text-align: center;
@@ -31,6 +35,7 @@
   flex-wrap: wrap;
   max-width: 1400px;
   margin: 0 auto;
+  padding-top: 80px;
 }
 
 .director-card {
@@ -83,7 +88,7 @@
   font-size: 16px;
   margin-top: 8px;
   line-height: 1.5;
-  white-space: pre-line; /* allows <br /> to work properly */
+  white-space: pre-line;
 }
 
 /* Animations */
@@ -106,7 +111,7 @@
 
   .founder-intro {
     font-size: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 0 10px;
   }
 

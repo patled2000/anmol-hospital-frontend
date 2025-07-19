@@ -16,13 +16,14 @@
 }
 
 .intro-left h2 {
-  font-size: 34px;
+  font-size: 50px;
   color: #0054A6;
   margin-bottom: 20px;
     font-family: 'Inter', sans-serif;
    
   font-weight: 700;
   font-style: normal;
+  line-height: 1.1;
 }
 
 .intro-left p {
@@ -65,6 +66,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+  padding-top: 90px;
 }
 
 .img-grid img {
@@ -81,17 +83,35 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .hospital-intro {
     flex-direction: column;
+    padding: 40px 20px;
   }
 
   .intro-left, .intro-right {
     flex: 1 1 100%;
-    padding: 20px;
+    padding: 10px 0;
+  }
+
+  .intro-left h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .intro-left p {
+    font-size: 15px;
+    text-align: justify;
   }
 
   .img-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    max-width: 100%;
+  }
+
+  .img-grid img {
+    height: 150px;
   }
 }
+
