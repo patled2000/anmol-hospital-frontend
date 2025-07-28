@@ -111,7 +111,7 @@
   background: linear-gradient(to top, #0054A6); 
   
   padding: 1px 10px;
-  font-size: 11px;
+  font-size: 12px;
   color:white;
   padding-top: 14px;
   
@@ -120,6 +120,17 @@
 .footer-bottom strong {
   color: black;
 }
+
+ .powered-by {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.powered-by:hover {
+  color: #fff; /* hover pe bhi white */
+}
+
 
 /* ✅ Tablet */
 @media (max-width: 1024px) {

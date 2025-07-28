@@ -74,8 +74,16 @@ export default function FooterStyle4() {
       <div className="footer-bottom">
         <p>
          <span style={{marginLeft:"20px"}}> © 2025 Anmol Hospital.All Rights Reserved</span>  
-          <span style={{marginLeft:"885px"}}> Powered by Inkcast Innovations.</span>
-          
+
+     <a
+      href="https://www.inkcast.co.in/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="powered-by"
+      style={{ marginLeft: "870px" }}
+     >
+      Powered by Inkcast Innovations.
+      </a>
         </p>
         
         

@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 
 export default function ContactForm() {
   return (
@@ -6,31 +6,28 @@ export default function ContactForm() {
       <div className="row">
         <div className="col-lg-6">
           <label className="cs_input_label cs_heading_color">Name</label>
-          <input
-            type="text"
-            className="cs_form_field"
-            placeholder="Your name"
-          />
+          <input type="text" className="cs_form_field" placeholder="Your name" />
           <div className="cs_height_42 cs_height_xl_25" />
         </div>
+
         <div className="col-lg-6">
           <label className="cs_input_label cs_heading_color">Email</label>
-          <input
-            type="email"
-            className="cs_form_field"
-            placeholder="Your email"
-          />
+          <input type="email" className="cs_form_field" placeholder="Your email" />
           <div className="cs_height_42 cs_height_xl_25" />
         </div>
+
+        <div className="col-lg-6">
+          <label className="cs_input_label cs_heading_color">Phone</label>
+          <input type="tel" className="cs_form_field" placeholder="Your phone number" />
+          <div className="cs_height_42 cs_height_xl_25" />
+        </div>
+
         <div className="col-lg-12">
           <label className="cs_input_label cs_heading_color">Subject</label>
-          <input
-            type="text"
-            className="cs_form_field"
-            placeholder="Your subject"
-          />
+          <input type="text" className="cs_form_field" placeholder="Your subject" />
           <div className="cs_height_42 cs_height_xl_25" />
         </div>
+
         <div className="col-lg-12">
           <label className="cs_input_label cs_heading_color">Message</label>
           <textarea
@@ -38,10 +35,10 @@ export default function ContactForm() {
             rows={10}
             className="cs_form_field"
             placeholder="Write something..."
-            defaultValue={''}
           />
           <div className="cs_height_42 cs_height_xl_25" />
         </div>
+
         <div className="col-lg-12">
           <div className="cs_height_18" />
           <button className="cs_btn cs_style_1">

@@ -2,13 +2,13 @@
 import './Specialties.css';
 
 import General_surgery from './Department/General Surgery.jpg';
-import Obstetrics_and_gynaecology from './Department/Obstetrics and Gynaecology.jpg';
+import Obstetrics_and_gynaecology from './Department/Obstetrics and Gynaecology (1).png';
 import Medical_management from './Department/Medical Management.jpg';
 import Trauma from './Department/Trauma.jpg';
-import Burn from './Department/Burn.jpg';
-import Urology from './Department/Urology.jpg';
-import Cardiology from './Department/Cardiology.jpg';
-import Paediatric_care from './Department/Paediatric Care.jpg';
+import Burn from './Department/Burn.png';
+import Urology from './Department/Urology.png';
+import Cardiology from './Department/Cardiology (1).png';
+import Paediatric_care from './Department/Paediatric Care (1).png';
 
 const specialties = [
   {
