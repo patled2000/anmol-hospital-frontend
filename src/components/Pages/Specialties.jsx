@@ -87,10 +87,11 @@ export default function SpecialtySlider() {
   return (
     <>
       <div className="specialty-header">
-        <h2><span>Specialist Hours</span></h2>
-        <p>
-          Explore expert departments at Anmol Hospital <br />
-          with dedicated professionals
+        <h2><span>Specialized Care at Anmol Hospital</span></h2>
+        <p >
+           Explore our expert departments at Anmol Hospital <br />
+with trusted and compassionate professionals.
+          
         </p>
       </div>
 

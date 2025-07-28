@@ -5,7 +5,7 @@ import Spacing from '../../Spacing';
 export default function ContactInfoSection({ sectionTitle }) {
   return (
     <div className="container">
-      <h2 className="cs_fs_72 mb-0">{sectionTitle}</h2>
+      <h2 className="cs_fs_72 mb-0" style={{ color:" #044a8f"}}>{sectionTitle}</h2>
       <Spacing md="70" lg="50" />
       <div className="row g-4 g-xl-3 g-xxl-5">
         <div className="col-xl-4">

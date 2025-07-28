@@ -6,21 +6,21 @@
 }
 
 .team-group-content h2 {
-  font-size: 36px;
-  color: #0054A6;
+  font-size: 50px;
+  color: #044a8f;
   margin-bottom: 15px;
-   font-family: 'Inter', sans-serif;
+   font-family: 'Figtree';
 }
 
 .team-group-content h2 span {
   color: #0054A6;
-   font-family: 'Inter', sans-serif;
+   font-family: 'Figtree';
 }
 
 .team-group-content p {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
-  color:black;
+  color:rgb(65, 64, 64);
   max-width: 800px;
   margin: auto;
   margin-bottom: 40px;

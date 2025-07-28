@@ -4,7 +4,9 @@ export default function IconBoxStyle11({ title, subTitle, iconSrc }) {
   return (
     <div className="cs_iconbox cs_style_11 cs_radius_25">
       <div className="cs_iconbox_icon">
-        <img src={iconSrc} alt="Icon" />
+        <img src={iconSrc} alt="Icon" 
+         style={{ width: '45px', height: '45px' }}
+        />
       </div>
       <div className="cs_iconbox_right">
         <h3 className="cs_iconbox_title cs_fs_24 mb-0">{title}</h3>

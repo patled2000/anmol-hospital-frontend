@@ -12,43 +12,7 @@ import { pageTitle } from '../../helpers/PageTitle';
 import about_page from './image/AboutPage.png'
 import aboutSection from './image/aboutsection.png';
 import waychoosesection from './image/wychooseSection.png'
-const departmentData = [
-  {
-    title: 'Diagnostic testing',
-    subTitle:
-      'Blood tests, imaging studies, and other tests to diagnose health conditions',
-    iconUrl: '/images/icons/calendar_white.svg',
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Rehabilitation services',
-    subTitle:
-      'Physical therapy, occupational therapy, and other services to help patients recover from injuries',
-    iconUrl: '/images/icons/calendar_white.svg',
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Preventive care',
-    subTitle:
-      'Annual checkups, immunizations, and health screenings care preventive',
-    iconUrl: '/images/icons/calendar_white.svg',
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Treatment for acute and chronic conditions',
-    subTitle:
-      'Medication management, disease management, and other treatments to improve health outcomes',
-    iconUrl: '/images/icons/calendar_white.svg',
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Mental health services',
-    subTitle:
-      'Counseling, therapy, and other services to help patients manage mental health conditions',
-    iconUrl: '/images/icons/calendar_white.svg',
-    href: '/departments/department-details',
-  },
-];
+ 
 
 const featureListData = [
   {
@@ -77,53 +41,9 @@ const featureListData = [
   },
 ];
 
-const funFactData = [
-  { number: '20+', title: 'Years of experience' },
-  { number: '95%', title: 'Patient satisfaction rating' },
-  { number: '5000+', title: 'Patients served annually' },
-  { number: '10+', title: 'Healthcare providers on staff' },
-  { number: '22+', title: 'Convenient locations in the area' },
-];
+ 
 
-const teamData = [
-  {
-    imgUrl: 'images/about/doctor_1.png',
-    name: 'Dr. James Lee, MD',
-    designation: 'Head of Cardiologist',
-    description:
-      'With expertise in managing complex heart conditions and performing advanced cardiac procedures',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
-  },
-  {
-    imgUrl: 'images/about/doctor_2.png',
-    name: 'Dr. John Smith, MD',
-    designation: 'Emergency Medicine Physician',
-    description:
-      'With expertise in treating acute illnesses and injuries in medicine physician',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
-  },
-  {
-    imgUrl: 'images/about/doctor_3.png',
-    name: 'Dr. Susan Bones, MD',
-    designation: 'Board-certified Pediatrician',
-    description:
-      'With experience in managing complex medical conditions in children',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
-  },
-];
-
+ 
 
 const awardData = [
   {
@@ -174,26 +94,7 @@ export default function About() {
           data={featureListData}
         />
       </Section>
-   {/**    <Section>
-        <FunFactSection
-          bgUrl="images/about/fun_fact_bg.jpeg"
-          data={funFactData}
-        />
-   </Section>    */}
-        {/**   <Section topMd={190} topLg={145} topXl={105}>
-        <TeamSection
-          sectionTitle="Experts Doctor"
-          sectionTitleUp="MEET OUR"
-          data={teamData}
-        />
-      </Section>   */}
-   {/**    <Section topMd={170} topLg={120} topXl={80}>
-        <GallerySection
-          sectionTitle="Our Facilities and <br />Latest Activities"
-          sectionTitleUp="HAVE A LOOK AT"
-          data={galleryData}
-        />
-      </Section>    */}
+   
       <Section
         topMd={190}
         topLg={145}
@@ -209,14 +110,7 @@ export default function About() {
           data={awardData}
         />
       </Section>
-   {/**   <Section className="cs_footer_margin_0">
-        <BannerSectionStyle4
-          bgUrl="images/about/banner_bg_2.jpeg"
-          title="Don’t Let Your Health <br />Take a Backseat!"
-          subTitle="Schedule an appointment with one of our experienced <br />medical professionals today!"
-          center
-        />
-      </Section>   */} 
+  
     </>
   );
 }

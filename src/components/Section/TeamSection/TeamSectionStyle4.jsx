@@ -10,7 +10,9 @@ export default function TeamSectionStyle4({
 }) {
   return (
     <div className="container">
-      <SectionHeading title={sectionTitle} titleUp={sectionTitleUp} center />
+      <SectionHeading title={sectionTitle} titleUp={sectionTitleUp} center 
+       color=" #044a8f"
+      />
       <Spacing md="72" lg="50" />
       <div className="row cs_gap_y_30">
         {data?.map((item, index) => (

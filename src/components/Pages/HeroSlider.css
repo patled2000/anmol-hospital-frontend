@@ -83,10 +83,21 @@
 
 /* ✅ Mobile Responsive */
 @media (max-width: 768px) {
-  .slide {
-    height: 80vh;
+  .slide,.hero-slider {
+    height: 40vh;
+  }
+  .specialty-header p{
+    margin-left: 0px;
+    margin-top: 10px;
+    text-align: left!important;
   }
 
+  .facility-heading h2 ,.insurance-title{
+    font-size: 20px!important;
+  }
+      .cs_funfact_1_wrap {
+  display: none!important;
+}
   .hero-stats-box {
     padding: 20px 15px;
   }

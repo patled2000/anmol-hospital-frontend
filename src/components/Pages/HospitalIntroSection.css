@@ -17,9 +17,9 @@
 
 .intro-left h2 {
   font-size: 50px;
-  color: #0054A6;
+  color:  #044a8f;
   margin-bottom: 20px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Figtree';
    
   font-weight: 700;
   font-style: normal;
@@ -88,19 +88,128 @@
     flex-direction: column;
     padding: 40px 20px;
   }
-
+.insurance-subtitle {
+  font-size: 14px;
+    color: rgb(68, 67, 67);
+    margin-bottom: 26px;
+    line-height: 18px;
+}
+.cs_section_wrap_1{
+  margin-top: 20px;
+}
+.founder-section{
+  padding: 20px 0px!important;
+}
+.cs_about.cs_style_3 .cs_support_card{
+          margin-left: 10px;
+        margin-right: 9px;
+        margin-bottom: 16px;
+        padding: 10px 20px;
+}
+.cs_img_filed > img{
+  margin-bottom: 20px;
+}
+.cs_accent_color {
+  margin-top: 20px;
+}
+.cs_fs_20{
+  font-size: 15px!important;
+}
+.cs_height_lg_110,.cs_height_lg_145{
+  height: auto!important;
+}
+    .cs_iconbox.cs_style_5 .cs_iconbox_icon {
+        width: 68px;
+        height: 58px;
+        padding: 20px;
+    }
+.cs_support_card .cs_heading_color {
+font-size: 12px!important;
+}
+.cs_height_lg_125{
+  height: 20px!important;
+}
+p{
+  font-size: 14px!important;
+  font-family: 'poppins';
+}
+.cs_about.cs_style_3 .cs_section_heading.cs_style_1{
+  padding: 20px 10px!important;
+}
+.cs_height_lg_120{
+  height: auto!important;
+  margin-bottom: 20px;
+}
+.cs_banner.cs_style_3, .cs_banner.cs_style_5{
+  padding: 80px 0px 50px 0px!important;
+}
+    .cs_banner.cs_style_3, .cs_banner.cs_style_5 {
+      min-height: 200px!important;
+    }
+.cs_section_subtitle{
+  font-size: 16px!important;
+}
+    .slider-title {
+      font-size: 20px!important;
+      margin-bottom: 20px;
+    }
+    .cs_height_lg_150{
+      display: none;
+    }
+    .cs_fs_24{
+      font-size: 18px!important;
+    }
+    .cs_fs_72{
+      font-size: 22px!important;
+    }
+.facility-section{
+  padding: 20px 10px;
+}
+.facility-heading p{
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+.directors-container{
+  padding-top: 0px!important;
+}
+.founder-intro{
+  font-size: 14px!important;
+}
+.insurance-section{
+  padding: 20px 10px;
+}
+.section-title{
+  font-size: 20px!important;
+}
   .intro-left, .intro-right {
     flex: 1 1 100%;
     padding: 10px 0;
   }
 
   .intro-left h2 {
-    font-size: 24px;
-    text-align: center;
+    font-size: 20px;
+    text-align: left;
+  }
+  .specialty-header {
+    padding: 20px 10px;
+  }
+  .hero-stats-box{
+    margin-bottom: 20px;
+  }
+      .specialty-header h2 {
+        font-size: 20px;
+        text-align: left;
+      }
+  .img-grid{
+    padding-top: 10px;
   }
 
+  .hospital-intro{
+    padding: 20px 10px;
+  }
   .intro-left p {
-    font-size: 15px;
+    font-size: 14px;
     text-align: justify;
   }
 

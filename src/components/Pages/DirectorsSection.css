@@ -7,8 +7,8 @@
 
  .section-title {
   font-size: 50px;
-  color: #0054A6;
-  font-family: 'Inter', sans-serif;
+  color: #044a8f;
+  font-family: 'Figtree';
   font-weight: bold;
 
   /* 👇 yeh lagao */
@@ -18,13 +18,13 @@
 }
 
 .founder-intro {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 500;
-  color: black;
+  color: rgb(87, 85, 85);
   max-width: 850px;
   margin: 0 auto 0px;
   line-height: 1.7;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Figtree';
   text-align: center;
 }
 
@@ -41,7 +41,7 @@
 .director-card {
   position: relative;
   width: 600px;
-  height: 500px;
+  height: 460px;
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);

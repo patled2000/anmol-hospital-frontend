@@ -14,7 +14,7 @@ export default function FeaturesSectionStyle2({ sectionTitle, imgUrl, data }) {
               <img src={imgUrl} alt={sectionTitle} className="cs_radius_30" />
             </div>
           </div>
-          <div className="col-xl-7">
+          <div  className="col-xl-7" >
             <SectionHeading title={sectionTitle} />
             <Spacing md="85" lg="70" xl="50" />
             <div className="row">

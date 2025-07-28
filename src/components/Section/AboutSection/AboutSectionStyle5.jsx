@@ -27,18 +27,18 @@ export default function AboutSectionStyle5({
                   style={{
     
    
-      marginTop: '0px',         // 👈 Top gap hatao
-    marginBottom: '5px',     // 👈 Bottom gap control
+      marginTop: '0px',         //  Top gap hatao
+    marginBottom: '5px',     // Bottom gap control
     color: '#0054A6',
     fontSize: '42px',         // Optional: Font size adjust
     lineHeight: '1.2',
     }}
       >{title}</h2>
                   <div className="cs_height_85 cs_height_xl_40 cs_height_lg_30" />
-                  <p className="cs_section_minititle m-0 cs_heading_color cs_fs_20" 
+                  <p className="cs_section_minititle m-0 cs_heading_color  " 
                   
                    style={{
-      fontSize: '18px',
+      fontSize: '14px !important',
       lineHeight: '1.5',
       color: '#333',
       marginBottom: '20px',
@@ -54,7 +54,7 @@ export default function AboutSectionStyle5({
                   <img src="/images/home_4/support_icon.svg" alt="Icon" />
                 </div>
                 <div className="cs_support_card_right">
-                  <h3 className="cs_fs_24 cs_semibold mb-0">{supportTitle}</h3>
+                  <h3 className="cs_fs_24 cs_semibold mb-0" >{supportTitle}</h3>
                   <p className="cs_heading_color mb-0">{supportSubTitle}</p>
                 </div>
               </div>

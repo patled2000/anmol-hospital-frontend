@@ -10,16 +10,17 @@
   font-size: 50px;
   color:  #0054A6;
   margin-bottom: 10px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Figtree';
     font-weight: 700;
     
 }
 
 .facility-heading p {
-  color: black;
+  color: rgb(63, 61, 61);
   margin-bottom: 40px;
-  font-size: 20px;
-  font-weight: 50;
+  font-size: 18px;
+  font-weight: 500;
+  
 }
 
 .facility-grid {

@@ -42,37 +42,7 @@ import faq3 from './image/3.png'
 import faq4 from './image/4.png'
 import faq5 from './image/5.png'
 
-const featureListData = [
-  {
-    iconSrc: '/images/home_1/compassion.svg',
-    title: 'Compassion',
-    subTitle:
-      'We understand that seeking medical care can be a stressful and emotional experience, and we strive to create a welcoming and supportive environment that puts our patients at ease and every one.',
-  },
-  {
-    iconSrc: '/images/home_1/excellence.svg',
-    title: 'Excellence',
-    subTitle:
-      'We are committed to providing excellent medical care and services to our patients. We believe in continuously improving our skills, knowledge, and resources to ensure that we deliver the highest quality care possible.',
-  },
-  {
-    iconSrc: '/images/home_1/integrity.svg',
-    title: 'Integrity',
-    subTitle: `We believe in practicing medicine with integrity and honesty. We are transparent in our communication and decision-making processes, and we always put our patient's interests first & provide best solution.`,
-  },
-  {
-    iconSrc: '/images/home_1/respect.svg',
-    title: 'Respect',
-    subTitle:
-      'We treat all individuals with respect and dignity, regardless of their background, beliefs, or circumstances. We believe that every person deserves to be treated with compassion and kindness.',
-  },
-  {
-    iconSrc: '/images/home_1/teamwork.svg',
-    title: 'Teamwork',
-    subTitle:
-      'We believe in working collaboratively with our team membersvand other healthcare professionals to provide comprehensive and effective care to our patients.',
-  },
-];
+ 
 const brandData = [
     { imgUrl: '/images/insurance/HDFC.png', imgAlt: 'Brand' },
   { imgUrl: '/images/insurance/iffco.png', imgAlt: 'Brand' },
@@ -82,82 +52,6 @@ const brandData = [
   
 ];
  
- 
-const awardData = [
-  {
-    title: 'Malcolm Baldrige National Quality Award',
-    subTitle:
-      'This award recognizes healthcare organizations that have demonstrated excellence in leadership, strategic planning, customer and employee satisfaction, and operational efficiency.',
-    iconUrl: 'images/icons/award.svg',
-  },
-  {
-    title: 'HIMSS Davies Award',
-    subTitle:
-      'This award recognizes healthcare organizations that have used health information technology to improve patient outcomes and reduce costs.',
-    iconUrl: 'images/icons/award.svg',
-  },
-  {
-    title: 'Healthgrades National’s Best Hospital',
-    subTitle:
-      'This recognition is given to hospitals that have achieved high ratings for clinical quality and patient safety across multiple specialties and procedures.',
-    iconUrl: 'images/icons/award.svg',
-  },
-  {
-    title: 'Joint Commission Gold Seal of Approval',
-    subTitle:
-      'This recognition is given to hospitals that have met rigorous standards for patient safety and quality of care.',
-    iconUrl: 'images/icons/award.svg',
-  },
-];
- const departmentData = [
-  {
-    title: 'General Surgery',
-     iconUrl:General1,
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Obstetrics ',
-      iconUrl: Obstetrics ,
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Medical Management',
-       iconUrl: Medical_management,
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Trauma Care',
-     iconUrl: Trauma,
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Road Accident Unit',
-      iconUrl: '/images/departments/slider2.jpeg',
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Burn Unit',
-      iconUrl: '/images/departments/slider2.jpeg',
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Urology Department',
-     iconUrl: '/images/departments/slider2.jpeg',
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Cardiology Department',
-     iconUrl: Cardiology,
-    href: '/departments/department-details',
-  },
-  {
-    title: 'Paediatric Care',
-     iconUrl: Paediatric_care,
-    href: '/departments/department-details',
-  },
-];
-
-
 const testimonialData = [
   {
     text: '" My mother was treated for a heart condition here, and the cardiology team was highly experienced, and the staff was extremely patient and supportive. If your looking for trusted cardiology care in Indore, I highly recommend them ”',
@@ -237,14 +131,7 @@ const faqData = [
 ];
 
 
-const funFactData = [
-  { number: '6+', title: 'Years of experience' },
-  { number: '95%', title: 'Patient satisfaction rating' },
-  { number: '5K+', title: 'Patients served annually' },
-  { number: '10+', title: 'Healthcare providers on staff' },
-  { number: '22+', title: 'Convenient locations in the area' },
-];
-
+ 
  
 
 export default function Home() {
@@ -256,52 +143,9 @@ export default function Home() {
         <SpecialtySlider/>
           <FacilitiesSection/>
        <InsurancePartnersSection/>
-
-
-      
-      
-     
-      <section> 
-    {/**  <FunFactSection  bgUrl="images/about/fun_fact_bg.jpeg"  
-          data={funFactData}/>   
-    {/**    <FounderMessage/>  */}
-      </section>
-      
- {/**       
-<Section>
-        <AboutSection
-          imgUrl="/images/home_1/about.png"
-          spiningImgUrl="/images/home_1/about_mini.svg"
-          title="About Us"
-          subTitle="PRO HEALTH"
-          featureList={[
-            {
-              featureListTitle:
-                  
-                   " ProHealth is a team of experienced medical professionals"  ,
-                   
-        
-              featureListSubTitle:
-                'Dedicated to providing top-quality healthcare services. We believe in a holistic approach to healthcare that focuses on treating the whole person, not just the illness or symptoms.',
-            },
-          ]}
-        />
-      </Section>   */}
-      {/* End About Section */}
-      {/* Start Departments Section */}
-    {/**   <Section topMd={185} topLg={150} topXl={80}>
-        <DepartmentSection
-          sectionTitle="Departments"
-          bgUrl={hospital}
-          data={departmentData}
-        />
-      </Section>   */}
        <DirectorsSection/>
        <DoctorSlider/>
-
-      {/* End Departments Section */}
-     
-      {/* Start Testimonial */}
+ 
       <Section
               topMd={190}
               topLg={150}
@@ -311,8 +155,8 @@ export default function Home() {
               bottomXl={110}
             >
               <TestimonialSectionStyle4
-                sectionTitle="Discover the Stories of Health and Healing"
-                sectionTitleUp="WHAT OUR PATIENTS SAY"
+                sectionTitle=" Healing journeys shared by those who trusted Anmol Hospital"
+                sectionTitleUp="Patient Testimonials"
                 avatarListTitle="150+ patients are reviews about Anmol hospital"
                 avatarList={[
                   { imgUrl:  faq1 },
@@ -331,16 +175,9 @@ export default function Home() {
                       faqImgUrl= {Faqimage}
                       spiningImgUrl="/images/home_1/about_mini.svg"
                     />
-                  </Section>
-
-
-            
+                  </Section>          
             <TeamGroupSection/>
-      
-
-                   
-     
-     
+            
     </>
   );
 }

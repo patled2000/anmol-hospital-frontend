@@ -10,18 +10,18 @@ export default function TestimonialSectionStyle4({
   data,
 }) {
   return (
-    <div className="container">
+    <div className="container" style={{color:"black"}} >
       <div className="row">
-        <div className="col-lg-5">
+        <div className="col-lg-5" style={{color:"black"}}>
           <div className="cs_section_wrap_1" >
             <SectionHeading title={sectionTitle} 
             titleUp={sectionTitleUp}
                 />
             <div className="cs_avatar_card"   >
-              <h2 className="cs_avatar_card_title cs_fs_24 cs_semibold">
+              <h2 className="cs_avatar_card_title cs_fs_24 cs_semibold" style={{color:"black"}}>
                 {avatarListTitle}
               </h2>
-              <div className="cs_avatar_group">
+              <div className="cs_avatar_group" style={{color:"black"}}>
                 {avatarList?.map((item, index) => (
                   <div className="cs_avatar_item" key={index}>
                     <img src={item.imgUrl} alt="Avatar" />

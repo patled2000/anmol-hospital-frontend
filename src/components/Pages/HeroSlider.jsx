@@ -7,10 +7,10 @@ import image1 from './image/24281.jpg'
 
 
 const funFactData = [
-  { number: '6+', title: 'Years of experience' },
-  { number: '95%', title: 'Patient satisfaction rating' },
-  { number: '5K+', title: 'Patients served annually' },
-  { number: '10+', title: 'Healthcare providers on staff' },
+  { number: '6+', title: 'Years of Experience' },
+  { number: '95%', title: 'Patient Satisfaction' },
+  { number: '5K+', title: 'Patients Served Annually' },
+  { number: '10+', title: 'Healthcare Providers on Staff' },
   
 ];
 

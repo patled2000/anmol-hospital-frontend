@@ -6,7 +6,7 @@ export default function TeamGroupSection() {
   return (
     <section className="team-group-section">
       <div className="team-group-content">
-        <h2>Meet the Minds Behind <span>Anmol Hospital</span></h2>
+        <h2> Meet Our Expert Medical Team</h2>
         <p>
           Our dedicated team of highly skilled doctors, surgeons, and healthcare professionals
           work collaboratively to deliver excellence in medical care. At Anmol Hospital,
