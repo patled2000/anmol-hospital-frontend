@@ -1,10 +1,40 @@
- /* === Filter Button Active Style === */
+
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+ /* Filter Buttons */
+.cs_filter_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.cs_filter_btn {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
 .cs_filter_btn.active {
   background-color: #0054A6;
   color: #fff;
 }
 
-/* === Category Name Style === */
+/* Gallery Grid */
+.cs_gallery_grid_2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Category Tag */
 .cs_category_name {
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
@@ -25,31 +55,19 @@
   color: #fff;
 }
 
-/* === Remove Flicker on Lightbox Image Load === */
-.ril__image,
-.ril__imagePrev,
-.ril__imageNext {
-  transition: none !important;
-  animation: none !important;
-}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .cs_filter_buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* === Hide Lightbox Loader Immediately === */
-.ril__loadingCircle {
-  display: none !important;
-}
+  .cs_filter_btn {
+    width: 80%;
+    text-align: center;
+  }
 
-/* === Force Show Arrows on Load === */
-.ril__navButtons,
-.ril__navButtonPrev,
-.ril__navButtonNext {
-  opacity: 1 !important;
-  visibility: visible !important;
-  transition: none !important;
-  animation: none !important;
-  z-index: 10000 !important;
-}
-
-/* === Optional: Darker Background on Lightbox === */
-.ril__outer {
-  background-color: rgba(0, 0, 0, 0.95) !important;
+  .cs_gallery_grid_2 {
+    grid-template-columns: 1fr;
+  }
 }

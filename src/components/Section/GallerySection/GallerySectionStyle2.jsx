@@ -1,22 +1,21 @@
- import React, { useState } from 'react';
+ import React, { useState, useMemo } from 'react';
 import Portfolio from '../../Portfolio';
-import Lightbox from 'yet-another-react-lightbox';
-import 'yet-another-react-lightbox/styles.css';
 import './GallerysectionStyle2.css';
 
 export default function GallerySectionStyle2({ data }) {
   const [activeCategory, setActiveCategory] = useState('All');
-  const [open, setOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   const categories = ['All', ...new Set(data.map((item) => item.category))];
 
-  const filteredData =
-    activeCategory === 'All'
+  const filteredData = useMemo(() => {
+    return activeCategory === 'All'
       ? data
       : data.filter((item) => item.category === activeCategory);
+  }, [data, activeCategory]);
 
-  const slides = filteredData.map((item) => ({ src: item.imgUrl }));
+  const handleCategoryChange = (category) => {
+    setActiveCategory(category);
+  };
 
   return (
     <div className="container">
@@ -25,17 +24,8 @@ export default function GallerySectionStyle2({ data }) {
         {categories.map((category, index) => (
           <button
             key={index}
-            onClick={() => setActiveCategory(category)}
+            onClick={() => handleCategoryChange(category)}
             className={`cs_filter_btn ${activeCategory === category ? 'active' : ''}`}
-            style={{
-              margin: '0 10px',
-              padding: '10px 20px',
-              border: '1px solid #ccc',
-              backgroundColor: activeCategory === category ? '#0054A6' : '#fff',
-              color: activeCategory === category ? '#fff' : '#000',
-              borderRadius: '8px',
-              cursor: 'pointer',
-            }}
           >
             {category}
           </button>
@@ -45,15 +35,7 @@ export default function GallerySectionStyle2({ data }) {
       {/* Gallery Grid */}
       <div className="cs_gallery_grid_2">
         {filteredData.map((item, index) => (
-          <div
-            className="cs_grid_item"
-            key={index}
-            onClick={() => {
-              setCurrentIndex(index);
-              setOpen(true);
-            }}
-            style={{ cursor: 'pointer' }}
-          >
+          <div key={index} className="cs_grid_item">
             <Portfolio {...item} />
             <div className="text-center mt-2">
               <span className="cs_category_name">{item.category}</span>
@@ -61,16 +43,6 @@ export default function GallerySectionStyle2({ data }) {
           </div>
         ))}
       </div>
-
-      {/* Lightbox */}
-      {open && (
-        <Lightbox
-          open={open}
-          close={() => setOpen(false)}
-          slides={slides}
-          index={currentIndex}
-        />
-      )}
     </div>
   );
 }
