@@ -60,6 +60,7 @@
   .cs_filter_buttons {
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
   }
 
   .cs_filter_btn {
