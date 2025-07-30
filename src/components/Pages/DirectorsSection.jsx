@@ -1,7 +1,7 @@
  import React from 'react';
 import './DirectorsSection.css';
-import director1 from './image/shivam.jpeg';
-import director2 from './image/jitendar.png';
+import director1 from './About_page_image/shivam.webp';
+import director2 from './About_page_image/jitendar.webp';
 
 export default function DirectorsSection() {
   return (

@@ -2,10 +2,10 @@ import React from "react";
 import "./InsurancePartnersSection.css";
 
 const partners = [
-  { name: "HDFC ERGO", image: "/images/insurance/HDFC.png" },
-  { name: "IFFCO Tokio", image: "/images/insurance/iffco.png" },
+  { name: "HDFC ERGO", image: "/images/insurance/HDFC.webp" },
+  { name: "IFFCO Tokio", image: "/images/insurance/iffco.webp" },
   { name: "SBI General", image: "/images/insurance/Sbi.webp" },
-  { name: "Medi Assist", image: "/images/insurance/Mediassist.jpg" },
+  { name: "Medi Assist", image: "/images/insurance/Mediassist.webp" },
 ];
 
 const InsurancePartnersSection = () => {

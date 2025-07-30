@@ -1,7 +1,7 @@
  import React from 'react';
 import './FounderMessage.css';
-import founder1 from './image/jitendar.png';
-import founder2 from './image/shivam.jpeg';
+import founder1 from './About_page_image/jitendar.webp';
+import founder2 from './About_page_image/shivam.webp';
 
 export default function FounderMessage() {
   return (

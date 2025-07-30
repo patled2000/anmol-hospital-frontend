@@ -21,7 +21,7 @@ const facilities = [
   {
     icon: <FaStethoscope />,
     title: "OPD Services",
-    description: "Regular outpatient consultations available all weekdays.",
+    description: " Regular outpatient consultations are available on all weekdays.",
   },
   {
     icon: <FaHeartbeat />,

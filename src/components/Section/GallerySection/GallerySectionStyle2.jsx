@@ -16,7 +16,8 @@ export default function GallerySectionStyle2({ data }) {
       ? data
       : data.filter((item) => item.category === activeCategory);
 
-  const openLightbox = (index) => {
+  const openLightbox = (imgUrl) => {
+    const index = filteredData.findIndex((item) => item.imgUrl === imgUrl);
     setPhotoIndex(index);
     setLightboxOpen(true);
   };
@@ -51,7 +52,7 @@ export default function GallerySectionStyle2({ data }) {
           <div
             className="cs_grid_item"
             key={index}
-            onClick={() => openLightbox(index)}
+            onClick={() => openLightbox(item.imgUrl)}
             style={{ cursor: 'pointer' }}
           >
             <Portfolio {...item} />
@@ -63,21 +64,26 @@ export default function GallerySectionStyle2({ data }) {
       </div>
 
       {/* Lightbox */}
-      {lightboxOpen && (
+      {lightboxOpen && filteredData.length > 0 && (
         <Lightbox
           mainSrc={filteredData[photoIndex].imgUrl}
           nextSrc={filteredData[(photoIndex + 1) % filteredData.length].imgUrl}
           prevSrc={
-            filteredData[(photoIndex + filteredData.length - 1) % filteredData.length]
-              .imgUrl
+            filteredData[
+              (photoIndex + filteredData.length - 1) % filteredData.length
+            ].imgUrl
           }
           onCloseRequest={() => setLightboxOpen(false)}
           onMovePrevRequest={() =>
-            setPhotoIndex((photoIndex + filteredData.length - 1) % filteredData.length)
+            setPhotoIndex(
+              (photoIndex + filteredData.length - 1) % filteredData.length
+            )
           }
           onMoveNextRequest={() =>
             setPhotoIndex((photoIndex + 1) % filteredData.length)
           }
+          enableZoom={false}
+          preloadNextImage={true}
         />
       )}
     </div>

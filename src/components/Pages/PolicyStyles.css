@@ -1,0 +1,65 @@
+ /* src/pages/PolicyStyles.css */
+.privacy-container {
+  max-width: 960px;
+  margin: auto;
+  padding: 160px 20px 100px;
+    background: linear-gradient(to right, #f4f9ff, #ffffff);
+  color: #2a2a2a;
+  font-family: 'Inter', sans-serif;
+}
+
+.privacy-container h1 {
+  font-size: 40px;
+  color: #0054A6;
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.privacy-container h2 {
+  font-size: 22px;
+  margin-top: 40px;
+  color: #003d80;
+  font-weight: 600;
+}
+
+.privacy-container p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 12px 0;
+}
+
+.privacy-container ul {
+  margin: 10px 0 20px 20px;
+  padding-left: 20px;
+}
+
+.privacy-container ul li {
+  list-style-type: disc;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.privacy-note {
+  margin-top: 50px;
+  background: #eaf1fb;
+  padding: 20px 25px;
+  border-left: 4px solid #0054A6;
+  font-weight: 500;
+  font-size: 16px;
+  color: #1c1c1c;
+}
+
+@media (max-width: 768px) {
+  .privacy-container {
+    padding: 120px 15px 80px;
+  }
+
+  .privacy-container h1 {
+    font-size: 30px;
+  }
+
+  .privacy-container h2 {
+    font-size: 20px;
+  }
+}

@@ -24,8 +24,9 @@
 }
 
 .facility-grid {
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr); 
   gap: 30px;
   justify-content: center;
 }
@@ -77,3 +78,9 @@
     max-width: 90%;
   }
 }
+@media (max-width: 1024px) {
+  .facility-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+

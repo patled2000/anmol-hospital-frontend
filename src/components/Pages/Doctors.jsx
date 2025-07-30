@@ -4,194 +4,179 @@ import BannerSectionStyle4 from '../Section/BannerSection/BannerSectionStyle4';
 import TeamSectionStyle2 from '../Section/TeamSection/TeamSectionStyle2';
 import Section from '../Section';
 import { pageTitle } from '../../helpers/PageTitle';
-import Doctor_page  from './image/Find-Doctors-banner.png'
-import dr_ashwin_aouchat from './Doctor_image/Dr ashwin aouchat.png'
-import Dr_mahesh_goad from './Doctor_image/Dr mahesh goad.png'
-import Dr_shreya_agrawal from './Doctor_image/Dr shreya agrawal.png'
-import Dr_shreya from './Doctor_image/Dr shreya.jpeg'
-import Dr_shubham_satsangi from './Doctor_image/Dr shubham.satsangi.png'
-const teamData = [
+import Doctor_page  from './BannerSection_image/Find-Doctors-banner.png'
+import dr_ashwin_aouchat from './Doctor_image/Dr_ashwin_aouchat.webp'
+import Dr_mahesh_goad from './Doctor_image/Dr_mahesh_goad.webp'
+import Dr_shreya_agrawal from './Doctor_image/Dr_shreya_agrawal.webp'
+import Dr_shubham_satsangi from './Doctor_image/Dr_shubham_satsangi.webp'
+import Dr_icon from './Doctor_image/Dr. icon.webp'
+import founder from './About_page_image/shivam.webp'
+ 
+
+
+
+ const teamData = [
   {
     imgUrl: Dr_mahesh_goad,
-    department: 'General Medicine Department',
-    name: 'Dr. Mahesh Gaud MBBS,MD',
+    department: 'General Medicine',
+    name: 'Dr. Mahesh Gaud, MBBS MD',
     designation: 'Physician',
-    description:
-      'Specialist in Asthma, Heart Disease, Diabetes, and Thyroid treatment.',
-    social: [
-        { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
-    category: 'general',
-    
-  },
-  {
-    imgUrl: '/images/doctors/doctor_2.png',
-    department: 'General Medicine Department',
-    name: 'Dr. Kulbhushan Kanase, MBBS,MD',
-    designation: 'Physician',
-    description:
-      ' Experienced in managing Asthma, Heart, Diabetes, and Thyroid .',
+    description: 'Expert in asthma, heart disease, diabetes, and thyroid treatment plans.',
     social: [
       { icon: 'fa6-brands:facebook-f', href: '/about' },
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'general',
-    
+  },
+  {
+    imgUrl: Dr_icon,
+    department: 'General Medicine',
+    name: 'Dr. Kulbhushan Kanase, MBBS MD',
+    designation: 'Physician',
+    description: 'Handles asthma, thyroid, diabetes, and heart disease with clinical precision.',
+    social: [
+      { icon: 'fa6-brands:facebook-f', href: '/about' },
+      { icon: 'fa6-brands:linkedin-in', href: '/about' },
+      { icon: 'fa6-brands:twitter', href: '/about' },
+    ],
+    category: 'general',
   },
   {
     imgUrl: Dr_shubham_satsangi,
-    department: 'General Medicine Department',
+    department: 'General Medicine',
     name: 'Dr. Shubham Satsangi, MBBS MD',
-    designation: ' Physician',
-    description:
-       "Focuses on Asthma, Heart Disease, Thyroid, and Diabetes treatment.",
+    designation: 'Physician',
+    description: 'Specializes in treating asthma, thyroid disorders, diabetes, and chronic heart conditions.',
     social: [
       { icon: 'fa6-brands:facebook-f', href: '/about' },
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'general',
-   
   },
   {
-    imgUrl: '/images/doctors/doctor_4.png',
-    department: 'ENT  Department',
-    name: 'Dr. K.P. Singh, MBBS, DLO',
-    designation: 'Ear, Nose, and Throat',
-    description:
-      ' Expert in ear, nose, and throat disorders.',
+    imgUrl: Dr_icon,
+    department: 'ENT',
+    name: 'Dr. K.P. Singh, (MBBS)DLO ',
+
+    designation: 'ENT Specialist',
+    description: 'Specialist in diagnosing and treating nose, throat, and ear conditions.',
     social: [
       { icon: 'fa6-brands:facebook-f', href: '/about' },
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'ent',
-     
   },
   {
     imgUrl: Dr_shreya_agrawal,
-    department: 'Gynecology Department',
+    department: 'Gynecology',
     name: 'Dr. Shreya Agrawal, MBBS DGO',
     designation: 'Gynecologist & Obstetrician',
-    description:
-      ' Treats women’s health and pregnancy-related conditions.',
+    description: 'Expertise in pregnancy and female reproductive health issues.',
     social: [
       { icon: 'fa6-brands:facebook-f', href: '/about' },
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'gynecology',
-    
   },
   {
     imgUrl: dr_ashwin_aouchat,
-    department: 'Gastroenterology Department',
+    department: 'Surgery',
     name: 'Dr. Ashwin Aouchat, MBBS MS',
-    designation: 'Surgeon',
-    description:
-      'Performs abdominal surgeries and treats digestive system disorders.',
+    designation: 'General Surgeon',
+    description: 'Performs surgical care in abdominal and digestive system conditions.',
     social: [
       { icon: 'fa6-brands:facebook-f', href: '/about' },
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'surgery',
-    
   },
   {
-    imgUrl: '/images/doctors/doctor_7.png',
-    department: 'Orthopedics Department',
+    imgUrl: Dr_icon,
+    department: 'Orthopedics',
     name: 'Dr. Akash Dev Naneriya, MBBS D Ortho',
     designation: 'Orthopedic Surgeon',
-    description:
-      'Specialist in bone and joint problems.',
+    description: 'Treats bone, joint, muscle issues, and orthopedic trauma management.',
     social: [
       { icon: 'fa6-brands:facebook-f', href: '/about' },
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'orthopedics',
-     
   },
   {
-    imgUrl: '/images/doctors/doctor_8.png',
-    department: 'Pediatrics Department',
+    imgUrl: Dr_icon,
+    department: 'Pediatrics',
     name: 'Dr. Sachin Garg, MBBS MD',
     designation: 'Pediatrician',
-    description:
-      'Newborn and child healthcare expert.',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
-    category: 'pediatrics ',
-   
-  },
-  {
-    imgUrl: '/images/doctors/doctor_9.png',
-    department: 'Pediatrics Department',
-    name: 'Dr. Vikash Porwal, MBBS MD',
-    designation: 'Pediatrician',
-    description:
-      'newborn and pediatric care.',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
-    category: 'Pediatrics',
-    
-  },
-  {
-    imgUrl: '/images/doctors/doctor_10.png',
-    department: 'Gynecology Department',
-    name: 'Dr. Hemant Kansal, MBBS MS',
-    designation: 'Gynecologist & Obstetrician',
-    description:
-      ' Available on call for maternity and women’s health.',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
-    category: 'gynecology',
-    
-  },
-  {
-    imgUrl: '/images/doctors/doctor_11.png',
-    department: ' Gynecology Department',
-    name: 'Dr. Avinash Patwari, MBBS MS',
-    designation: 'Gynecologist & Obstetrician',
-    description:
-      'Provides on-call care for women’s health and pregnancy.',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
-    category: 'gynecology',
-    
-  },
- {
-    imgUrl: '/images/doctors/doctor_12.png',
-    department: 'Psychiatry Department',
-    name: 'Dr. Maria Rodriguez,MBBS MD',
-    designation: 'Psychiatrist',
-    description:
-      'Dr. Chen is a skilled psychiatrist with expertise psychiatrist with expertise   ',
+    description:  'Expert in newborn care, child growth, and pediatric health.',
     social: [
       { icon: 'fa6-brands:facebook-f', href: '/about' },
       { icon: 'fa6-brands:linkedin-in', href: '/about' },
       { icon: 'fa6-brands:twitter', href: '/about' },
     ],
     category: 'pediatrics',
-     
-  },   
+  },
+  {
+    imgUrl: Dr_icon,
+    department: 'Pediatrics',
+    name: 'Dr. Vikash Porwal, MBBS MD',
+    designation: 'Pediatrician',
+    description: 'Experienced in newborn healthcare and childhood disease prevention.',
+    social: [
+      { icon: 'fa6-brands:facebook-f', href: '/about' },
+      { icon: 'fa6-brands:linkedin-in', href: '/about' },
+      { icon: 'fa6-brands:twitter', href: '/about' },
+    ],
+    category: 'pediatrics',
+  },
+  {
+    imgUrl: Dr_icon,
+    department: 'Gynecology',
+    name: 'Dr. Hemant Kansal, MBBS MS',
+    designation: 'Gynecologist & Obstetrician (On Call)',
+    description: 'Provides on-call support for maternity and female health concerns.',
+    social: [
+      { icon: 'fa6-brands:facebook-f', href: '/about' },
+      { icon: 'fa6-brands:linkedin-in', href: '/about' },
+      { icon: 'fa6-brands:twitter', href: '/about' },
+    ],
+    category: 'gynecology',
+  },
+  {
+    imgUrl: Dr_icon,
+    department: 'Gynecology',
+    name: 'Dr. Avinash Patwari, MBBS MS',
+    designation: 'Gynecologist & Obstetrician (On Call)',
+    description: 'On-call gynecologist for pregnancy and female wellness support.',
+    social: [
+      { icon: 'fa6-brands:facebook-f', href: '/about' },
+      { icon: 'fa6-brands:linkedin-in', href: '/about' },
+      { icon: 'fa6-brands:twitter', href: '/about' },
+    ],
+    category: 'gynecology',
+  },
+  {
+    imgUrl: founder,
+    department: 'Founder & Director',
+    name: 'Dr. Anmol Patidar, MBBS MD',
+    designation: 'Founder - Anmol Hospital',
+    description: ' Founder of Anmol Hospital, promoting ethical healthcare',
+    social: [
+      { icon: 'fa6-brands:facebook-f', href: '/about' },
+      { icon: 'fa6-brands:linkedin-in', href: '/about' },
+      { icon: 'fa6-brands:twitter', href: '/about' },
+    ],
+    category: 'founder',
+  },
 ];
+
+
+
 
 export default function Doctors() {
   pageTitle('Doctors');

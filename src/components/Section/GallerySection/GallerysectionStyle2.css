@@ -1,24 +1,10 @@
-
- 
+ /* === Filter Button Active Style === */
 .cs_filter_btn.active {
   background-color: #0054A6;
   color: #fff;
 }
-  .cs_link_hover {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: 0.3s ease;
-  z-index: 5;
-}
 
-.cs_portfolio_img:hover .cs_link_hover {
-  opacity: 1;
-}
-
- 
+/* === Category Name Style === */
 .cs_category_name {
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
@@ -39,3 +25,31 @@
   color: #fff;
 }
 
+/* === Remove Flicker on Lightbox Image Load === */
+.ril__image,
+.ril__imagePrev,
+.ril__imageNext {
+  transition: none !important;
+  animation: none !important;
+}
+
+/* === Hide Lightbox Loader Immediately === */
+.ril__loadingCircle {
+  display: none !important;
+}
+
+/* === Force Show Arrows on Load === */
+.ril__navButtons,
+.ril__navButtonPrev,
+.ril__navButtonNext {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: none !important;
+  animation: none !important;
+  z-index: 10000 !important;
+}
+
+/* === Optional: Darker Background on Lightbox === */
+.ril__outer {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+}

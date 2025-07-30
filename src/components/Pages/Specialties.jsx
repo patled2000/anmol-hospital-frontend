@@ -4,7 +4,7 @@ import './Specialties.css';
 import General_surgery from './Department/General Surgery.jpg';
 import Obstetrics_and_gynaecology from './Department/Obstetrics and Gynaecology (1).png';
 import Medical_management from './Department/Medical Management.jpg';
-import Trauma from './Department/Trauma.jpg';
+import Trauma from './Department/Untitled design (18).png';
 import Burn from './Department/Burn.png';
 import Urology from './Department/Urology.png';
 import Cardiology from './Department/Cardiology (1).png';
@@ -24,7 +24,7 @@ const specialties = [
   {
     image: Medical_management,
     title: 'Medical Management',
-    desc: 'Our Internal Medicine specialists at Anmol Hospital offer comprehensive care for chronic and acute conditions like diabetes, hypertension, and infections. We provide continuous monitoring, medication planning, and lifestyle guidance tailored to every patient.',
+    desc: ' At Anmol Hospital, our Internal Medicine specialists provide comprehensive care for both chronic and acute conditions such as diabetes, hypertension, and infections. We offer continuous monitoring, personalized medication planning, and lifestyle guidance tailored to each patient.',
   },
   {
     image: Trauma,
@@ -89,8 +89,9 @@ export default function SpecialtySlider() {
       <div className="specialty-header">
         <h2><span>Specialized Care at Anmol Hospital</span></h2>
         <p >
-           Explore our expert departments at Anmol Hospital <br />
-with trusted and compassionate professionals.
+           Explore the expert departments at Anmol Hospital, <br />
+       led by trusted and compassionate professionals.
+
           
         </p>
       </div>

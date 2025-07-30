@@ -1,12 +1,12 @@
 import React from 'react';
 import './TeamGroupSection.css';
-import teamGroupImage from './image/cheerful-group-medics-hospital.jpg'; 
+import teamGroupImage from './Home_page_image/group_team.webp'; 
 
 export default function TeamGroupSection() {
   return (
     <section className="team-group-section">
       <div className="team-group-content">
-        <h2> Meet Our Expert Medical Team</h2>
+        <h2> Meet our team of Medical Experts </h2>
         <p>
           Our dedicated team of highly skilled doctors, surgeons, and healthcare professionals
           work collaboratively to deliver excellence in medical care. At Anmol Hospital,

@@ -4,36 +4,86 @@ import "./DoctorSlider.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 // Images
-import dr_ashwin_aouchat from './Doctor_image/Dr ashwin aouchat.png';
-import Dr_mahesh_goad from './Doctor_image/Dr mahesh goad.png';
-import Dr_shreya_agrawal from './Doctor_image/Dr shreya agrawal.png';
-import Dr_shubham_satsangi from './Doctor_image/Dr shubham.satsangi.png';
+ import Dr_mahesh from './Doctor_image/Dr_mahesh_goad.webp';
+import Dr_kulbhushan from './Doctor_image/Dr. icon.webp';
+import Dr_shubham from './Doctor_image/Dr_shubham_satsangi.webp';
+import Dr_kp_singh from './Doctor_image/Dr. icon.webp';
+import Dr_shreya from './Doctor_image/Dr_shreya_agrawal.webp';
+import Dr_ashwin from './Doctor_image/Dr_ashwin_aouchat.webp';
+import Dr_akash from './Doctor_image/Dr. icon.webp';
+import Dr_sachin from './Doctor_image/Dr. icon.webp';
+import Dr_vikash from './Doctor_image/Dr. icon.webp';
+import Dr_hemant from './Doctor_image/Dr. icon.webp';
+import Dr_avinash from './Doctor_image/Dr. icon.webp';
+
 
 // Doctor data
-const doctors = [
-  {
-    name: "Dr. Ashwin Aouchat",
-    degree: "MBBS, MS (Trauma)",
-    department: "General Surgery",
-    image: dr_ashwin_aouchat,
-  },
+ const doctors = [
   {
     name: "Dr. Mahesh Gaud",
-    degree: "MBBS, MD (Cardiology)",
-    department: "Medical Management",
-    image: Dr_mahesh_goad,
+    degree: "MBBS, MD",
+    department: "Cardiology | Diabetes | Thyroid",
+    image: Dr_mahesh,
   },
   {
-    name: "Dr. Shreya Agrawal",
-    degree: "MBBS, DGO (Obstetrics)",
-    department: "Gynaecology",
-    image: Dr_shreya_agrawal,
+    name: "Dr. Kulbhushan Kanase",
+    degree: "MBBS, MD",
+    department: "Cardiology | Diabetes | Thyroid",
+    image: Dr_kulbhushan,
   },
   {
     name: "Dr. Shubham Satsangi",
-    degree: "MBBS, DCH (Cardiology)",
-    department: "Medical Management",
-    image: Dr_shubham_satsangi,
+    degree: "MBBS, MD",
+    department: "Cardiology | Diabetes | Thyroid",
+    image: Dr_shubham,
+  },
+  {
+    name: "Dr. K.P. Singh",
+    degree: "MBBS, DLO",
+    department: "ENT Specialist",
+    image: Dr_kp_singh,
+  },
+  {
+    name: "Dr. Shreya Agrawal",
+    degree: "MBBS, DGO",
+    department: "Gynecology & Obstetrics",
+    image: Dr_shreya,
+  },
+  {
+    name: "Dr. Ashwin Aouchat",
+    degree: "MBBS, MS",
+    department: "Gastro & Abdominal Surgery",
+    image: Dr_ashwin,
+  },
+  {
+    name: "Dr. Akash Dev Naneriya",
+    degree: "MBBS, D Ortho",
+    department: "Bone & Joint Specialist",
+    image: Dr_akash,
+  },
+  {
+    name: "Dr. Sachin Garg",
+    degree: "MBBS, MD",
+    department: "Child Specialist",
+    image: Dr_sachin,
+  },
+  {
+    name: "Dr. Vikash Porwal",
+    degree: "MBBS, MD",
+    department: "Child Specialist",
+    image: Dr_vikash,
+  },
+  {
+    name: "Dr. Hemant Kansal",
+    degree: "MBBS, MS",
+    department: "Gynecology (On Call)",
+    image: Dr_hemant,
+  },
+  {
+    name: "Dr. Avinash Patwari",
+    degree: "MBBS, MS",
+    department: "Gynecology (On Call)",
+    image: Dr_avinash,
   }
 ];
 
@@ -55,7 +105,7 @@ const DoctorSlider = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 800,
+    speed: 2000,
     autoplay: true,
     autoplaySpeed: 2500,
     slidesToShow: 3,

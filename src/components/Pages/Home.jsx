@@ -21,36 +21,27 @@ import Specialties from './Specialties';
 import SpecialtySlider from './Specialties';
 import HospitalIntroSection from './HospitalIntroSection';
 import DirectorsSection from './DirectorsSection';
-import General1 from './image/General surgery.png'
-import Obstetrics from './image/Obstetrics and gynaecology.png'
-import Medical_management from './image/Medical management.png'
-import Trauma from './image/Trauma.png'
-import Cardiology from './image/Cardiology.png'
-import Paediatric_care  from './image/Paediatric care.png'
+ 
+ 
+ 
 import TeamGroupSection from './TeamGroupSection';
-import sohanTestimonial from './testimonual_image/Untitled design.png'
-import deelipTestimonial from './testimonual_image/Untitled design (1).png'
-import hospital from './image/a7cbedf730a5dcc233171380bd84a9f6.jpg'
-import Faqimage from './image/fuq.png'
-import mahesh from './image/Mahesh varma.png'
-import priya from './image/priya.png'
-import sophia from './image/sophia.png'
-import Ankit from './image/Ankit.png'
-import faq1 from './image/1.png'
-import faq2 from './image/2.png'
-import faq3 from './image/3.png'
-import faq4 from './image/4.png'
-import faq5 from './image/5.png'
+import sohanTestimonial from './testimonual_image/sohanTestimonial.png';
+import deelipTestimonial from './testimonual_image/deelipTestimonial.png';
+
+
+import mahesh from './testimonual_image/Mahesh varma.png';
+import priya from './testimonual_image/priya.png';
+import sophia from './testimonual_image/sophia.png';
+import Ankit from './testimonual_image/Ankit.png';
+import faq1 from './testimonual_image/1.png';
+import faq2 from './testimonual_image/2.png';
+import faq3 from './testimonual_image/3.png';
+import faq4 from './testimonual_image/4.png';
+import faq5 from './testimonual_image/5.png';
+import Faqimage from './Home_page_image/Faq.webp';
+ 
 
  
-const brandData = [
-    { imgUrl: '/images/insurance/HDFC.png', imgAlt: 'Brand' },
-  { imgUrl: '/images/insurance/iffco.png', imgAlt: 'Brand' },
-  { imgUrl: '/images/insurance/Sbi.webp', imgAlt: 'Brand' },
-  { imgUrl: '/images/insurance/Mediassist.jpg', imgAlt: 'Brand' },
-  
-  
-];
  
 const testimonialData = [
   {
@@ -105,7 +96,7 @@ const faqData = [
   {
     title: ' How can I book an appointment with a doctor?',
     content:
-      ' You can book an appointment online through our website’s Book Appointment page, call our reception desk, or visit the hospital directly. For your convenience, we also offer appointment booking via WhatsApp and walk-ins, subject to availability. ',
+      ' Patient or his/her attendant can get the appointment by calling us at number 0731 3594 048 or can also come to appointment-cum-registration counters in the hospital. ',
   },
   {
     title: ' Do you provide emergency services?',
@@ -124,7 +115,7 @@ const faqData = [
   },
    {
     title: ' What are the visiting hours for patients relatives?' ,
-    content: ' At Anmol Hospital, we understand the importance of family during recovery. To ensure a balance between patient rest and family support, our visiting hours are: 🕘 Morning: 10:00 AM – 12:00 PM , Evening: 5:00 PM – 7:00 PM We kindly request all visitors to follow these timings strictly to maintain a peaceful healing environment for all patients.'
+    content: ' At Anmol Hospital, we understand the importance of family during recovery. To ensure a balance between patient rest and family support, our visiting hours are: Morning: 10:00 AM – 12:00 PM , Evening: 5:00 PM – 7:00 PM. We kindly request all visitors to follow these timings strictly to maintain a peaceful healing environment for all patients.'
   }, 
   
   
@@ -158,8 +149,9 @@ export default function Home() {
                 sectionTitle=" Healing journeys shared by those who trusted Anmol Hospital"
                 sectionTitleUp="Patient Testimonials"
                 avatarListTitle="150+ patients are reviews about Anmol hospital"
+              
                 avatarList={[
-                  { imgUrl:  faq1 },
+                 { imgUrl:  faq1 },
                   { imgUrl:  faq2 },
                   { imgUrl:  faq3 },
                   { imgUrl:  faq4},

@@ -1,9 +1,9 @@
 import React from 'react';
 import './HospitalIntroSection.css';
-import img1 from './image/MRI Scan.jpg';
-import img2 from './image/Lab Work.jpg';
-import img3 from './image/Microscope.jpg';
-import img4 from './image/ICU Unit.jpg';
+import img1 from './Home_page_image/anmol_hospital1.png';
+import img2 from './Home_page_image/anmol_hospital2.png';
+import img3 from './Home_page_image/anmol_hospital3.png';
+import img4 from './Home_page_image/anmol_hospital4.png';
 import { Link } from 'react-router-dom';
 
 
@@ -21,8 +21,8 @@ export default function HospitalIntroSection() {
            Founded by <strong>Dr. Jitendra Awasthi (BHMS, PGDEMS, MHA)</strong> and <strong>Dr. Shivam Mishra (BHMS, CMSED)</strong>, the hospital is built on a strong foundation of<span className="highlight-green"> medical expertise, patient care, and community trust.</span> Both doctors
             bring years of hands-on experience and a deep commitment to healing with empathy.
            </p>
-           <p>Over the years, we have earned the trust of many families by being available in
-             their time of need. Whether it's a <span className='highlight-green'>general consultation, emergency</span>, or <span  className='highlight-green'>specialized treatment</span>, our team ensures every patient receives <span className='highlight-green'>personal attention, respect, and quality care</span>.
+           <p>Over the years, we’ve earned the trust of many families by being there when they needed us most.
+            Whether it's a <span className='highlight-green'>general consultation, emergency</span>, or <span  className='highlight-green'>specialized treatment</span>, our team ensures every patient receives <span className='highlight-green'>personal attention, respect, and quality care</span>.
 
        </p>
         
@@ -31,10 +31,10 @@ export default function HospitalIntroSection() {
 
       <div className="intro-right">
         <div className="img-grid"> 
-      <Link to="/gallery">   <img src={img1} alt="MRI Scan" /></Link> 
-      <Link to="/gallery">     <img src={img2} alt="Lab work" /></Link>
-        <Link to="/gallery">   <img src={img3} alt="Microscope" /></Link>
-        <Link to="/gallery">   <img src={img4} alt="ICU Unit" /> </Link>
+      <Link to="/gallery">   <img src={img1} alt="Anmol Hospital" /></Link> 
+      <Link to="/gallery">     <img src={img2} alt="Anmol Hospital" /></Link>
+        <Link to="/gallery">   <img src={img3} alt="Anmol Hospital" /></Link>
+        <Link to="/gallery">   <img src={img4} alt="Anmol Hospital" /> </Link>
         </div>
       </div>
     </section>

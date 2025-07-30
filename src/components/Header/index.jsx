@@ -63,8 +63,8 @@ export default function Header() {
 
           <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
             <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/doctors">Find Doctor</Link>
+            <Link to="/about">About Us</Link>
+            <Link to="/doctors">Our Doctor</Link>
             <Link to="/departments">Departments</Link>
             <Link to="/gallery">Gallery</Link>
             <Link to="/contact">Contact</Link>

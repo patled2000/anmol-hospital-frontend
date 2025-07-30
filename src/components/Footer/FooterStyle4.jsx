@@ -57,15 +57,15 @@ export default function FooterStyle4() {
         <div className="footer-column"  style={{paddingTop:"-3px"}}>
           <h4 style={{fontSize:"25px"}}>Legal</h4>
           <ul>
-            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
-            <li><Link to="/terms">Terms and Conditions</Link></li>
+            <li><Link to="/PrivacyPolicy">Privacy Policy</Link></li>
+            <li><Link to="/TermsAndConditions">Terms and Conditions</Link></li>
           </ul>
           
           <div className="social-icons">
             <a href="#"><FaFacebookF /></a>
             <a href="#"><FaLinkedinIn /></a>
             <a href="#"><FaTwitter /></a>
-            <a href="#"><FaInstagram /></a>
+            <a href="https://www.instagram.com/anmol.hospital1/"><FaInstagram /></a>
           </div>
         </div>
       </div>

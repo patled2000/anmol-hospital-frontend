@@ -1,9 +1,9 @@
  import React, { useEffect, useState } from 'react';
 import './HeroSlider.css';
-import slider1 from './image/slider1.jpeg';
-import slider2 from './image/slider2.jpeg';
+import slider1 from './Home_page_image/slider1.webp';
+import slider2 from './Home_page_image/slider2.webp';
 import FunFactSection from '../Section/FunFactSection';
-import image1 from './image/24281.jpg'
+import Funfactimage from './Home_page_image/funfactsection_image.webp';
 
 
 const funFactData = [
@@ -46,7 +46,7 @@ export default function HeroSlider() {
       <div className="hero-stats-box">
         
                  <FunFactSection
-                    bgUrl={image1} 
+                    bgUrl={Funfactimage} 
                    data={funFactData}
                  />
                

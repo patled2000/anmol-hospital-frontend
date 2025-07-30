@@ -9,35 +9,38 @@ import TeamSection from '../Section/TeamSection';
 import AwardSectionStyle2 from '../Section/AwardSection/AwardSectionStyle2';
 import FounderMessage from './FounderMessage';
 import { pageTitle } from '../../helpers/PageTitle';
-import about_page from './image/AboutPage.png'
-import aboutSection from './image/aboutsection.png';
-import waychoosesection from './image/wychooseSection.png'
- 
+import about_page from './About_page_image/AboutPage.png'
+import aboutSection from './About_page_image/aboutsection.webp';
+import waychoosesection from './About_page_image/why_choose_us.png'
+ import Supportive_Professionals from './About_page_image/Untitled design (19).png'
+ import Medical_Services from './About_page_image/2.png'
+ import Patient_Centric_Approach from './About_page_image/Comprehensive Services Icon.png'
+ import Personalized_Attention from './About_page_image/Personalized Attention.png'
 
 const featureListData = [
   {
-    title: 'Experienced Medical Professionals',
+    title: 'Experienced and Supportive Professionals',
     subTitle:
-      'Our team includes experienced doctors, nurses, <br />and other healthcare professionals who are <br />dedicated to providing the best possible care to <br />our patients.',
-    iconUrl: 'images/icons/professional.svg',
+      ' Our hospital is home to a team of renowned doctors, skilled surgeons, and dedicated healthcare staff. With years of clinical expertise and a commitment to continued learning, we ensure every patient receives the highest standard of medical care.',
+    iconUrl:  Supportive_Professionals,
   },
   {
-    title: 'Comprehensive <br />Services',
+    title: 'Wide Range of Medical Services',
     subTitle:
-      'We offer a wide range of healthcare services, <br />from preventive care to specialized treatment <br />for complex conditions.',
-    iconUrl: 'images/icons/comprehensive.svg',
+      ' From routine health check-ups and diagnostics to specialized treatments and surgeries, we offer a full spectrum of medical services across multiple departments  all designed to provide seamless, integrated care under one roof. ',
+    iconUrl: Medical_Services,
   },
   {
-    title: 'Patient-centered <br />Approach',
+    title: ' Compassionate, Patient-Centric Approach',
     subTitle:
-      'We believe in treating each patient as an <br />individual, and we take the time to understand <br />your unique health needs and concerns.',
-    iconUrl: 'images/icons/patient.svg',
+      ' We believe healing begins with empathy. Our team takes the time to listen, understand, and involve you in your care decisions. Every treatment plan is customized to meet your unique needs, ensuring comfort, dignity, and trust at every step.',
+   iconUrl: Patient_Centric_Approach ,
   },
   {
-    title: 'State-of-the-art <br />Facilities',
+    title: 'Personalized Attention',
     subTitle:
-      'Our healthcare center is equipped with the <br />latest technology and equipment to provide our <br />patients with the most advanced care possible.',
-    iconUrl: 'images/icons/facilities.svg',
+      ' We understand that every patient’s needs are different. From consultation to recovery, our team is here to guide and support you with one-on-one attention and clear communication.',
+    iconUrl: Personalized_Attention  ,
   },
 ];
 
@@ -104,7 +107,7 @@ export default function About() {
         bottomXl={110}
       >
         <AwardSectionStyle2
-          sectionTitle="Winning Awards and <br />Recognition"
+          sectionTitle=" Accreditations & Recognitions"
           sectionTitleUp="AWARDS"
           sectionSubTitle="We have been recognized for our commitment to <br />excellence in healthcare."
           data={awardData}

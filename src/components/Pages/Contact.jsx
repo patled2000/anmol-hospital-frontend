@@ -4,7 +4,7 @@ import ContactForm from '../ContactForm';
 import Section from '../Section';
 import ContactInfoSection from '../Section/ContactInfoSection';
 import { pageTitle } from '../../helpers/PageTitle';
-import contact_page from './image/Contant_page.png' ;
+import contact_page from './BannerSection_image/Contant_page.png' ;
 
 export default function Contact() {
   pageTitle('Contact');
