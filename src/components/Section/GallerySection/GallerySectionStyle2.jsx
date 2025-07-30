@@ -1,13 +1,13 @@
  import React, { useState } from 'react';
 import Portfolio from '../../Portfolio';
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
 import './GallerysectionStyle2.css';
 
 export default function GallerySectionStyle2({ data }) {
   const [activeCategory, setActiveCategory] = useState('All');
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [photoIndex, setPhotoIndex] = useState(0);
+  const [open, setOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const categories = ['All', ...new Set(data.map((item) => item.category))];
 
@@ -16,11 +16,7 @@ export default function GallerySectionStyle2({ data }) {
       ? data
       : data.filter((item) => item.category === activeCategory);
 
-  const openLightbox = (imgUrl) => {
-    const index = filteredData.findIndex((item) => item.imgUrl === imgUrl);
-    setPhotoIndex(index);
-    setLightboxOpen(true);
-  };
+  const slides = filteredData.map((item) => ({ src: item.imgUrl }));
 
   return (
     <div className="container">
@@ -52,7 +48,10 @@ export default function GallerySectionStyle2({ data }) {
           <div
             className="cs_grid_item"
             key={index}
-            onClick={() => openLightbox(item.imgUrl)}
+            onClick={() => {
+              setCurrentIndex(index);
+              setOpen(true);
+            }}
             style={{ cursor: 'pointer' }}
           >
             <Portfolio {...item} />
@@ -64,26 +63,12 @@ export default function GallerySectionStyle2({ data }) {
       </div>
 
       {/* Lightbox */}
-      {lightboxOpen && filteredData.length > 0 && (
+      {open && (
         <Lightbox
-          mainSrc={filteredData[photoIndex].imgUrl}
-          nextSrc={filteredData[(photoIndex + 1) % filteredData.length].imgUrl}
-          prevSrc={
-            filteredData[
-              (photoIndex + filteredData.length - 1) % filteredData.length
-            ].imgUrl
-          }
-          onCloseRequest={() => setLightboxOpen(false)}
-          onMovePrevRequest={() =>
-            setPhotoIndex(
-              (photoIndex + filteredData.length - 1) % filteredData.length
-            )
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % filteredData.length)
-          }
-          enableZoom={false}
-          preloadNextImage={true}
+          open={open}
+          close={() => setOpen(false)}
+          slides={slides}
+          index={currentIndex}
         />
       )}
     </div>
