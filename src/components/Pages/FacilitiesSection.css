@@ -1,18 +1,17 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 .facility-section {
   padding: 60px 20px;
-   background: linear-gradient(to right, #f4f9ff, #ffffff);
+  background: linear-gradient(to right, #f4f9ff, #ffffff);
   text-align: center;
 }
 
 .facility-heading h2 {
   font-size: 50px;
-  color:  #0054A6;
+  color: #0054A6;
   margin-bottom: 10px;
-    font-family: 'Figtree';
-    font-weight: 700;
-    
+  font-family: 'Figtree';
+  font-weight: 700;
 }
 
 .facility-heading p {
@@ -20,25 +19,26 @@
   margin-bottom: 40px;
   font-size: 18px;
   font-weight: 500;
-  
 }
 
+/* ✅ FIXED: Use Grid instead of Flex */
 .facility-grid {
-  display:flex;
-  flex-wrap: wrap;
-    grid-template-columns: repeat(4, 1fr); 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .facility-box {
   background: #ffffff;
   padding: 25px 20px;
   border-radius: 12px;
-  width: 250px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
   transition: all 0.3s ease;
   cursor: pointer;
+  text-align: center;
 }
 
 .facility-box:hover {
@@ -49,7 +49,7 @@
 
 .facility-icon {
   font-size: 40px;
-  color:#A1D348;
+  color: #A1D348;
   margin-bottom: 15px;
   transition: all 0.3s ease;
 }
@@ -71,16 +71,15 @@
   color: #555;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .facility-box {
-    width: 100%;
-    max-width: 90%;
-  }
-}
+/* ✅ Responsive Layout */
 @media (max-width: 1024px) {
   .facility-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+@media (max-width: 600px) {
+  .facility-grid {
+    grid-template-columns: 1fr;
+  }
+}
