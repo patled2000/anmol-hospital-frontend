@@ -4,16 +4,16 @@ import Section from '../Section';
 import DepartmentSectionStyle3 from '../Section/DepartmentSection/DepartmentSectionStyle3';
 import BannerSectionStyle6 from '../Section/BannerSection/BannerSectionStyle6';
 import { pageTitle } from '../../helpers/PageTitle';
-import departmentpagebanner from './BannerSection_image/department_banner.png'
-import General_Surgery  from './Department/General Surgery Icon.png'
-import  Paediatric_Care  from './Department/Paediatric Care Icon.png'
-import   Burn_Care_Unit from './Department/Burn Care Unit Icon.png'
-import  Trauma_Department  from './Department/Trauma Department Icon.png'
-import  Road_Accident_Care  from './Department/Raod Accident Care Icon.png'
-import  Medical_Management  from './Department/Medical Management Icon.png'
-import  Urology_Department  from './Department/Urology Department Icon.png'
-import Cardiology_Department   from './Department/Cardiology Department Icon.png'
-import Obstetrics_and_Gynecology   from './Department/Obstetrics and Gynecology Icon.png'
+import departmentpagebanner from './BannerSection_image/department_banner.webp'
+import General_Surgery  from './Department/General Surgery Icon.webp'
+import  Paediatric_Care  from './Department/Paediatric Care Icon.webp'
+import   Burn_Care_Unit from './Department/Burn Care Unit Icon.webp'
+import  Trauma_Department  from './Department/Trauma Department Icon.webp'
+import  Road_Accident_Care  from './Department/Raod Accident Care Icon.webp'
+import  Medical_Management  from './Department/Medical Management Icon.webp'
+import  Urology_Department  from './Department/Urology Department Icon.webp'
+import Cardiology_Department   from './Department/Cardiology Department Icon.webp'
+import Obstetrics_and_Gynecology   from './Department/Obstetrics and Gynecology Icon.webp'
 const departmentData = [
   {
     iconUrl:  General_Surgery,

@@ -4,7 +4,7 @@ import BannerSectionStyle4 from '../Section/BannerSection/BannerSectionStyle4';
 import TeamSectionStyle2 from '../Section/TeamSection/TeamSectionStyle2';
 import Section from '../Section';
 import { pageTitle } from '../../helpers/PageTitle';
-import Doctor_page  from './BannerSection_image/Find-Doctors-banner.png'
+import Doctor_page  from './BannerSection_image/Find-Doctors-banner.webp'
 import dr_ashwin_aouchat from './Doctor_image/Dr_ashwin_aouchat.webp'
 import Dr_mahesh_goad from './Doctor_image/Dr_mahesh_goad.webp'
 import Dr_shreya_agrawal from './Doctor_image/Dr_shreya_agrawal.webp'

@@ -1,14 +1,14 @@
  import React, { useState, useEffect, useRef } from 'react';
 import './Specialties.css';
 
-import General_surgery from './Department/General Surgery.jpg';
-import Obstetrics_and_gynaecology from './Department/Obstetrics and Gynaecology (1).png';
-import Medical_management from './Department/Medical Management.jpg';
-import Trauma from './Department/Untitled design (18).png';
-import Burn from './Department/Burn.png';
-import Urology from './Department/Urology.png';
-import Cardiology from './Department/Cardiology (1).png';
-import Paediatric_care from './Department/Paediatric Care (1).png';
+import General_surgery from './Department/General Surgery.webp';
+import Obstetrics_and_gynaecology from './Department/Obstetrics and Gynaecology (1).webp';
+import Medical_management from './Department/Medical Management.webp';
+import Trauma from './Department/Untitled design (18).webp';
+import Burn from './Department/Burn.webp';
+import Urology from './Department/Urology.webp';
+import Cardiology from './Department/Cardiology (1).webp';
+import Paediatric_care from './Department/Paediatric Care (1).webp';
 
 const specialties = [
   {

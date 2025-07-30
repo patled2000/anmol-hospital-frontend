@@ -9,13 +9,13 @@ import TeamSection from '../Section/TeamSection';
 import AwardSectionStyle2 from '../Section/AwardSection/AwardSectionStyle2';
 import FounderMessage from './FounderMessage';
 import { pageTitle } from '../../helpers/PageTitle';
-import about_page from './About_page_image/AboutPage.png'
+import about_page from './About_page_image/AboutPage.webp'
 import aboutSection from './About_page_image/aboutsection.webp';
-import waychoosesection from './About_page_image/why_choose_us.png'
- import Supportive_Professionals from './About_page_image/Untitled design (19).png'
- import Medical_Services from './About_page_image/2.png'
- import Patient_Centric_Approach from './About_page_image/Comprehensive Services Icon.png'
- import Personalized_Attention from './About_page_image/Personalized Attention.png'
+import waychoosesection from './About_page_image/why_choose_us.webp'
+ import Supportive_Professionals from './About_page_image/Supportive Professionals.webp'
+ import Medical_Services from './About_page_image/Medical Services.webp'
+ import Patient_Centric_Approach from './About_page_image/Comprehensive Services Icon.webp'
+ import Personalized_Attention from './About_page_image/Personalized Attention.webp'
 
 const featureListData = [
   {

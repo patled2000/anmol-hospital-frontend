@@ -24,8 +24,6 @@ import { useEffect } from 'react';
 import ErrorPage from './components/Pages/ErrorPage';
  
  
-
- 
 import AppointmentForm from './components/AppointmentForm/AppointmentForm';
 import TeamSectionStyle4 from './components/Section/TeamSection/TeamSectionStyle4';
 import Layout4 from './components/Layout/Layout4';
@@ -46,6 +44,7 @@ function App() {
      
       <Route path="/" element={<Layout4 />}>
         <Route index element={<Home />} />
+           
         <Route path="about" element={<About />} />
         <Route path="doctors" element={<Doctors />} />
         <Route path="doctors/:doctorId" element={<DoctorDetails />} />
@@ -79,6 +78,8 @@ function App() {
   {/**     <Route path="home-v5" element={<Layout5 />}>
         <Route index element={<HomeStyle5 />} />
       </Route>    */}
+
+      
       <Route path="*" element={<ErrorPage />} />
       
     </Routes>  
