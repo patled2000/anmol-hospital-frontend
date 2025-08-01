@@ -6,12 +6,13 @@ import DoctorDetailsSection from '../Section/DoctorDetailsSection';
 import AppointmentSectionStyle2 from '../Section/AppointmentSection/AppointmentSectionStyle2';
 import { pageTitle } from '../../helpers/PageTitle';
 import TermsAndConditions from './TermsAndConditions';
+import WhatsAppFloatingButton from './WhatsAppFloatingButton';
 
 export default function DoctorDetails() {
   pageTitle(' Terms & Conditions');
   return (
     <>
-
+<WhatsAppFloatingButton/>
     <TermsAndConditions/>
        
     </>

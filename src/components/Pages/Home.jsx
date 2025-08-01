@@ -39,6 +39,7 @@ import faq3 from './testimonual_image/3.png';
 import faq4 from './testimonual_image/4.png';
 import faq5 from './testimonual_image/5.png';
 import Faqimage from './Home_page_image/Faq.webp';
+import WhatsAppFloatingButton from './WhatsAppFloatingButton';
  
 
  
@@ -129,6 +130,7 @@ export default function Home() {
   pageTitle('Home');
   return (
     <>
+    <WhatsAppFloatingButton/>
       <HeroSlider/>
       <HospitalIntroSection/>
         <SpecialtySlider/>

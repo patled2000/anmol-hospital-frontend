@@ -8,6 +8,7 @@ import FeaturesSectionStyle3 from '../Section/FeaturesSection/FeaturesSectionSty
 import TeamSectionStyle3 from '../Section/TeamSection/TeamSectionStyle3';
 import { pageTitle } from '../../helpers/PageTitle';
 import PrivacyPolicy from './PrivacyPolicy';
+import WhatsAppFloatingButton from './WhatsAppFloatingButton';
 
 const featureData = [
   {
@@ -111,7 +112,7 @@ export default function DepartmentDetails() {
   pageTitle('Privacy Policy');
   return (
     <>
-
+<WhatsAppFloatingButton/>
     <PrivacyPolicy/>
     
     </>

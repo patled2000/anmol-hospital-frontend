@@ -1,6 +1,6 @@
-import { Icon } from '@iconify/react';
-import React from 'react';
+ import React from 'react';
 import { Link } from 'react-router-dom';
+ 
 
 export default function TeamStyle2({
   imgUrl,
@@ -8,16 +8,15 @@ export default function TeamStyle2({
   name,
   designation,
   description,
-  social,
+  timing, // 👈 timing added as a prop
   href,
 }) {
   return (
     <div className="cs_team cs_style_1 cs_type_2 text-center cs_radius_20 overflow-hidden">
       <div className="cs_member_img">
-      {/**   <Link to={href} className="d-block">   */}
-          <img src={imgUrl} alt="Doctor" />
-     {/**    </Link>   */}
-     
+        {/* <Link to={href} className="d-block"> */}
+        <img src={imgUrl} alt="Doctor" />
+        {/* </Link> */}
         <div className="cs_label cs_white_color cs_accent_bg">{department}</div>
       </div>
       <div className="cs_team_meta cs_white_bg">
@@ -29,15 +28,15 @@ export default function TeamStyle2({
             {designation}
           </p>
           <p className="cs_member_description">{description}</p>
-        </div>
-        <div>
-          <div className="cs_social_links">
-            {social?.map((item, index) => (
-              <Link to={item.href} key={index}>
-                <Icon icon={item.icon} />
-              </Link>
-            ))}
-          </div>
+          <p className="doctor-timing" style={{
+             fontSize:"17px",
+             color:"#333",
+             fontWeight:"700",
+             fontFamily:"Figtree",
+             
+
+
+          }}>{timing}</p> {/* 👈 Timing Display */}
         </div>
       </div>
     </div>

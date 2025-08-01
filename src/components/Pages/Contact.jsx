@@ -5,11 +5,14 @@ import Section from '../Section';
 import ContactInfoSection from '../Section/ContactInfoSection';
 import { pageTitle } from '../../helpers/PageTitle';
 import contact_page from './BannerSection_image/Contant_page.webp' ;
+import WhatsAppFloatingButton from './WhatsAppFloatingButton';
 
 export default function Contact() {
   pageTitle('Contact');
   return (
     <>
+
+    <WhatsAppFloatingButton/>
       <BannerSectionStyle5
         bgUrl={contact_page}
         

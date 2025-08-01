@@ -37,9 +37,9 @@ export default function FooterStyle4() {
         <div className="footer-column">
           <h4 style={{ fontSize: '25px' }}>Explore</h4>
           <ul>
-            <li><Link to="/about">About</Link></li>
+            <li><Link to="/about">About Us</Link></li>
             <li><Link to="/departments">Departments</Link></li>
-            <li><Link to="/doctors">Doctors</Link></li>
+            <li><Link to="/doctors">Our Doctors</Link></li>
             <li><Link to="/gallery">Gallery</Link></li>
           </ul>
         </div>
@@ -63,8 +63,8 @@ export default function FooterStyle4() {
           </ul>
 
           <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+            <a href="https://www.facebook.com/share/1GZZgfpujS/" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+            <a href="https://www.linkedin.com/in/dr-shivam-mishra-a6a404105/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
             <a href="https://www.instagram.com/anmol.hospital1/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           </div>

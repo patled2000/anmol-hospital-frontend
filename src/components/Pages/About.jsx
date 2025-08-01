@@ -16,6 +16,7 @@ import waychoosesection from './About_page_image/why_choose_us.webp'
  import Medical_Services from './About_page_image/Medical Services.webp'
  import Patient_Centric_Approach from './About_page_image/Comprehensive Services Icon.webp'
  import Personalized_Attention from './About_page_image/Personalized Attention.webp'
+import WhatsAppFloatingButton from './WhatsAppFloatingButton';
 
 const featureListData = [
   {
@@ -68,7 +69,7 @@ export default function About() {
   pageTitle('About');
   return (
     <>
-      
+      <WhatsAppFloatingButton/>
       <BannerSectionStyle3
             bgUrl={about_page}
             imgUrl={about_page}
@@ -98,21 +99,7 @@ export default function About() {
         />
       </Section>
    
-      <Section
-        topMd={190}
-        topLg={145}
-        topXl={105}
-        bottomMd={200}
-        bottomLg={150}
-        bottomXl={110}
-      >
-        <AwardSectionStyle2
-          sectionTitle=" Accreditations & Recognitions"
-          sectionTitleUp="AWARDS"
-          sectionSubTitle="We have been recognized for our commitment to <br />excellence in healthcare."
-          data={awardData}
-        />
-      </Section>
+      
   
     </>
   );

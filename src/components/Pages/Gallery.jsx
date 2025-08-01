@@ -4,32 +4,51 @@ import BannerSectionStyle9 from '../Section/BannerSection/BannerSectionStyle9';
 import Section from '../Section';
 import GallerySectionStyle2 from '../Section/GallerySection/GallerySectionStyle2';
 import { pageTitle } from '../../helpers/PageTitle';
-import imageg1 from './Gallery_image/Hospital_Building.jpeg'
-import imageg2 from './Gallery_image/Hospital_Wards1.jpeg'
-import imageg3 from './Gallery_image/Hospital_Wards2.jpeg'
-import imageg4 from './Gallery_image/Hospital_Wards3.jpeg'
-import imageg5 from './Gallery_image/Hospital_Wards4.jpeg'
-import imageg6 from './Gallery_image/Hospital_Wards5.jpeg'
-import imageg7 from './Gallery_image/Hospital_Wards6.jpeg'
-import imageg8 from './Gallery_image/TestLaboratory1.jpeg'
-import imageg9 from './Gallery_image/TestLaboratory2.jpeg'
-import imageg10 from './Gallery_image/TestLaboratory3.jpeg'
-import imageg11 from './Gallery_image/TestLaboratory5.jpeg'
+
+import Hospital_Building1 from './Gallery_image/HospitalBuilding1.webp';
+import Hospital_Building2 from './Gallery_image/HospitalBuilding2.webp';
+import Hospital_Building3 from './Gallery_image/HospitalBuilding3.webp';
+import Hospital_Wards from './Gallery_image/HospitalWards.webp';
+ import Hospital_Ward1 from './Gallery_image/HospitalWards1.webp';
+ import Hospital_Ward2 from './Gallery_image/HospitalWards2.webp';
+ import Hospital_Ward3 from './Gallery_image/hospitalwards3.webp';
+ import Hospital_Ward4 from './Gallery_image/HospitalWards4.webp';
+ import Hospital_Ward5 from './Gallery_image/HospitalWards5.webp';
+ import Hospital_Pharmacy from './Gallery_image/HospitalPharmacy.webp';
+import Hospital_Reception from './Gallery_image/HospitalReception.webp';
+import MajorSpecific from './Gallery_image/MajorSpecificWards.webp';
+import MajorSpecific1 from './Gallery_image/MajorSpecificWards1.webp';
+import MajorSpecific2 from './Gallery_image/MajorSpecificWards2.webp';
+import TestLaboratory from './Gallery_image/TestLaboratory.webp';
+import TestLaboratory1 from './Gallery_image/TestLaboratory1.webp';
+import TestLaboratory2 from './Gallery_image/TestLaboratory2.webp';
+import TestLaboratory3 from './Gallery_image/TestLaboratory3.webp';
+import aboutbanner from './About_page_image/AboutPage.webp'
+import WhatsAppFloatingButton from './WhatsAppFloatingButton';
+ 
+ 
  
 
  const galleryData = [
-  { imgUrl: imageg1, category: 'Hospital Bullding' },
-  { imgUrl: imageg2, category: 'Hospital Wards ' },
-  { imgUrl: imageg3, category: 'Hospital Wards ' },
-  { imgUrl: imageg4, category: 'Hospital Wards ' },
-  { imgUrl: imageg5, category: 'Hospital Wards ' },
-  { imgUrl: imageg6, category: 'Hospital Wards ' },
-  { imgUrl: imageg7, category: 'Hospital Wards ' },
-  { imgUrl: imageg8, category: 'Test Laboratory' },
-  { imgUrl: imageg9, category: 'Test Laboratory' },
-  { imgUrl: imageg10, category: 'Test Laboratory' },
-  { imgUrl: imageg11, category: 'Test Laboratory' },
-  
+  { imgUrl: Hospital_Building1 , category: 'Hospital Bullding' },
+  { imgUrl: Hospital_Building2 , category: 'Hospital Bullding' },
+  { imgUrl: Hospital_Building3, category: 'Hospital Bullding' },
+  { imgUrl: Hospital_Pharmacy, category: 'Hospital Pharmacy' },
+  { imgUrl: Hospital_Reception, category: 'Hospital Reception' },
+  { imgUrl: MajorSpecific, category: 'Major Specific Wards' },
+  { imgUrl: MajorSpecific1, category: 'Major Specific Wards' },
+  { imgUrl: MajorSpecific2, category: 'Major Specific Wards' },
+  { imgUrl: TestLaboratory, category: 'Test Laboratory' },
+  { imgUrl: TestLaboratory1, category: 'Test Laboratory' },
+  { imgUrl: TestLaboratory2, category: 'Test Laboratory' },
+  { imgUrl: TestLaboratory3, category: 'Test Laboratory' },
+  { imgUrl: Hospital_Wards , category: 'Hospital Wards' },
+  { imgUrl: Hospital_Ward1 , category: 'Hospital Wards' },
+  { imgUrl: Hospital_Ward2 , category: 'Hospital Wards' },
+  { imgUrl: Hospital_Ward3 , category: 'Hospital Wards' },
+  { imgUrl: Hospital_Ward4 , category: 'Hospital Wards' },
+  { imgUrl: Hospital_Ward5 , category: 'Hospital Wards' },
+
 ];
 
 
@@ -37,9 +56,11 @@ export default function Gallery() {
   pageTitle('Gallery');
   return (
     <>
+
+    <WhatsAppFloatingButton/>
       <BannerSectionStyle3
         bgUrl="/images/about/banner_bg.svg"
-        imgUrl={imageg10}
+        imgUrl={aboutbanner}
         title="Welcome to <br>Anmol Hospital Gallery"
         subTitle="The special moment of our hospital"
       />

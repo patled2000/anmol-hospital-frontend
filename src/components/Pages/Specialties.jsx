@@ -13,43 +13,43 @@ import Paediatric_care from './Department/Paediatric Care (1).webp';
 const specialties = [
   {
     image: General_surgery,
-    title: 'General Surgery',
-    desc: 'At Anmol Hospital, our General Surgery unit specializes in performing a wide range of surgical procedures using modern techniques and advanced tools. From minor procedures to complex operations, our expert surgeons ensure safe, successful outcomes with personalized post-operative care.',
+    title: 'जनरल सर्जरी',
+    desc: 'अनमोल अस्पताल में, हमारी जनरल सर्जरी यूनिट आधुनिक तकनीकों और उन्नत उपकरणों का उपयोग करके विभिन्न प्रकार की सर्जिकल प्रक्रियाओं को करने में माहिर है। छोटी प्रक्रियाओं से लेकर जटिल ऑपरेशनों तक, हमारे विशेषज्ञ सर्जन व्यक्तिगत पोस्ट-ऑपरेटिव देखभाल के साथ सुरक्षित और सफल परिणाम सुनिश्चित करते हैं।',
   },
   {
     image: Obstetrics_and_gynaecology,
-    title: 'Obstetrics & Gynaecology',
-    desc: 'Anmol Hospital provides complete women’s health services including prenatal care, safe deliveries, menopause management, and gynecological treatments. Our caring team ensures comfort and privacy at every stage of a woman’s journey.',
+    title: 'स्त्री रोग और प्रसव विज्ञान',
+    desc: 'अनमोल हॉस्पिटल महिलाओं को प्रसवपूर्व देखभाल, सुरक्षित प्रसव, रजोनिवृत्ति प्रबंधन और स्त्री रोग संबंधी उपचार सहित संपूर्ण स्वास्थ्य सेवाएँ प्रदान करता है। हमारी देखभाल करने वाली टीम महिलाओं की यात्रा के हर चरण में आराम और गोपनीयता सुनिश्चित करती है।',
   },
   {
     image: Medical_management,
-    title: 'Medical Management',
-    desc: ' At Anmol Hospital, our Internal Medicine specialists provide comprehensive care for both chronic and acute conditions such as diabetes, hypertension, and infections. We offer continuous monitoring, personalized medication planning, and lifestyle guidance tailored to each patient.',
+    title: 'चिकित्सा प्रबंधन',
+    desc: 'अनमोल अस्पताल में, हमारे आंतरिक चिकित्सा विशेषज्ञ मधुमेह, उच्च रक्तचाप और संक्रमण जैसी पुरानी और गंभीर दोनों तरह की बीमारियों के लिए व्यापक देखभाल प्रदान करते हैं। हम निरंतर निगरानी, व्यक्तिगत दवा योजना और प्रत्येक रोगी के लिए अनुकूलित जीवनशैली मार्गदर्शन प्रदान करते हैं।',
   },
   {
     image: Trauma,
-    title: 'Trauma & Emergency',
-    desc: 'Anmol Hospital’s 24/7 Trauma & Emergency department is equipped with rapid response teams, life-saving equipment, and ICU support to handle all types of accidents, critical injuries, and medical emergencies with speed and precision.',
+    title: 'प्रसव एवं आपातकालीन चिकित्सा',
+    desc: 'अनमोल अस्पताल का 24/7 ट्रॉमा और आपातकालीन विभाग त्वरित प्रतिक्रिया टीमों, जीवन रक्षक उपकरणों और आईसीयू सहायता से सुसज्जित है, ताकि सभी प्रकार की दुर्घटनाओं, गंभीर चोटों और चिकित्सा आपात स्थितियों को गति और सटीकता के साथ संभाला जा सके।',
   },
   {
     image: Burn,
-    title: 'Burn Care',
-    desc: 'Our Burn Care Unit provides specialized treatment for all degrees of burns. At Anmol Hospital, we use advanced wound care, skin grafting, and pain management strategies to promote fast healing and minimize scarring.',
+    title: 'जलने की देखभाल',
+    desc: 'हमारी बर्न केयर यूनिट सभी प्रकार के जलने के लिए विशेष उपचार प्रदान करती है। अनमोल अस्पताल में, हम घाव को तेज़ी से भरने और निशानों को कम करने के लिए उन्नत घाव देखभाल, त्वचा प्रत्यारोपण और दर्द प्रबंधन रणनीतियों का उपयोग करते हैं।',
   },
   {
     image: Urology,
-    title: 'Urology',
-    desc: 'The Urology department at Anmol Hospital offers expert diagnosis and treatment for kidney stones, prostate issues, bladder conditions, and more. Our team uses the latest minimally invasive techniques for faster recovery.',
+    title: 'मूत्रविज्ञान',
+    desc: 'अनमोल अस्पताल का यूरोलॉजी विभाग गुर्दे की पथरी, प्रोस्टेट की समस्याओं, मूत्राशय की समस्याओं आदि के लिए विशेषज्ञ निदान और उपचार प्रदान करता है। हमारी टीम शीघ्र स्वास्थ्य लाभ के लिए नवीनतम न्यूनतम इनवेसिव तकनीकों का उपयोग करती है।',
   },
   {
     image: Cardiology,
-    title: 'Cardiology',
-    desc: 'Anmol Hospital’s Cardiology team provides complete heart care including ECG, 2D Echo, and cardiac risk assessments. Our specialists create personalized treatment plans and preventive strategies for a healthy heart.',
+    title: 'कार्डियोलोजी',
+    desc: 'अनमोल अस्पताल की कार्डियोलॉजी टीम ईसीजी, 2डी इको और हृदय संबंधी जोखिम आकलन सहित संपूर्ण हृदय देखभाल प्रदान करती है। हमारे विशेषज्ञ स्वस्थ हृदय के लिए व्यक्तिगत उपचार योजनाएँ और निवारक रणनीतियाँ बनाते हैं।',
   },
   {
     image: Paediatric_care,
-    title: 'Paediatric Care',
-    desc: 'At Anmol Hospital, we provide compassionate care for newborns, infants, and children. From vaccinations to growth monitoring and child-specific ailments, our pediatricians ensure a healthy start for your little ones.',
+    title: 'बाल चिकित्सा देखभाल',
+    desc: 'अनमोल हॉस्पिटल में, हम नवजात शिशुओं, शिशुओं और बच्चों की देखभाल के लिए समर्पित हैं। टीकाकरण से लेकर उनके विकास की निगरानी और बच्चों की विशिष्ट बीमारियों तक, हमारे बाल रोग विशेषज्ञ आपके नन्हे-मुन्नों के लिए एक स्वस्थ शुरुआत सुनिश्चित करते हैं।',
   },
 ];
 
@@ -61,7 +61,7 @@ export default function SpecialtySlider() {
   const startAutoPlay = () => {
     intervalRef.current = setInterval(() => {
       setCurrent((prev) => (prev + 1) % specialties.length);
-    }, 3000); // 3 seconds
+    }, 5000); // 3 seconds
   };
 
   const stopAutoPlay = () => {

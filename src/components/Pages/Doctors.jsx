@@ -11,22 +11,19 @@ import Dr_shreya_agrawal from './Doctor_image/Dr_shreya_agrawal.webp'
 import Dr_shubham_satsangi from './Doctor_image/Dr_shubham_satsangi.webp'
 import Dr_icon from './Doctor_image/Dr. icon.webp'
 import founder from './About_page_image/shivam.webp'
+import WhatsAppFloatingButton from './WhatsAppFloatingButton';
  
 
 
 
- const teamData = [
+  const teamData = [
   {
     imgUrl: Dr_mahesh_goad,
     department: 'General Medicine',
     name: 'Dr. Mahesh Gaud, MBBS MD',
     designation: 'Physician',
     description: 'Expert in asthma, heart disease, diabetes, and thyroid treatment plans.',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
+    timing: 'Mon-Sat: 9:00 AM - 2:00 PM',
     category: 'general',
   },
   {
@@ -35,11 +32,7 @@ import founder from './About_page_image/shivam.webp'
     name: 'Dr. Kulbhushan Kanase, MBBS MD',
     designation: 'Physician',
     description: 'Handles asthma, thyroid, diabetes, and heart disease with clinical precision.',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
+    timing: 'Mon-Sat: 5:00 PM - 9:00 PM',
     category: 'general',
   },
   {
@@ -48,25 +41,16 @@ import founder from './About_page_image/shivam.webp'
     name: 'Dr. Shubham Satsangi, MBBS MD',
     designation: 'Physician',
     description: 'Specializes in treating asthma, thyroid disorders, diabetes, and chronic heart conditions.',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
+    timing: 'Mon-Sat: 10:00 AM - 4:00 PM',
     category: 'general',
   },
   {
     imgUrl: Dr_icon,
     department: 'ENT',
     name: 'Dr. K.P. Singh, (MBBS)DLO ',
-
     designation: 'ENT Specialist',
     description: 'Specialist in diagnosing and treating nose, throat, and ear conditions.',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
+    timing: 'Tue-Thu: 11:00 AM - 2:00 PM',
     category: 'ent',
   },
   {
@@ -75,11 +59,7 @@ import founder from './About_page_image/shivam.webp'
     name: 'Dr. Shreya Agrawal, MBBS DGO',
     designation: 'Gynecologist & Obstetrician',
     description: 'Expertise in pregnancy and female reproductive health issues.',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
+    timing: 'Mon-Sat: 10:00 AM - 1:00 PM',
     category: 'gynecology',
   },
   {
@@ -88,11 +68,7 @@ import founder from './About_page_image/shivam.webp'
     name: 'Dr. Ashwin Aouchat, MBBS MS',
     designation: 'General Surgeon',
     description: 'Performs surgical care in abdominal and digestive system conditions.',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
+    timing: 'Mon-Fri: 6:00 PM - 9:00 PM',
     category: 'surgery',
   },
   {
@@ -101,11 +77,7 @@ import founder from './About_page_image/shivam.webp'
     name: 'Dr. Akash Dev Naneriya, MBBS D Ortho',
     designation: 'Orthopedic Surgeon',
     description: 'Treats bone, joint, muscle issues, and orthopedic trauma management.',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
+    timing: 'Mon-Sat: 5:30 PM - 8:30 PM',
     category: 'orthopedics',
   },
   {
@@ -113,12 +85,8 @@ import founder from './About_page_image/shivam.webp'
     department: 'Pediatrics',
     name: 'Dr. Sachin Garg, MBBS MD',
     designation: 'Pediatrician',
-    description:  'Expert in newborn care, child growth, and pediatric health.',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
+    description: 'Expert in newborn care, child growth, and pediatric health.',
+    timing: 'Mon-Sat: 12:00 PM - 3:00 PM',
     category: 'pediatrics',
   },
   {
@@ -127,11 +95,7 @@ import founder from './About_page_image/shivam.webp'
     name: 'Dr. Vikash Porwal, MBBS MD',
     designation: 'Pediatrician',
     description: 'Experienced in newborn healthcare and childhood disease prevention.',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
+    timing: 'Mon-Sat: 4:00 PM - 7:00 PM',
     category: 'pediatrics',
   },
   {
@@ -140,11 +104,7 @@ import founder from './About_page_image/shivam.webp'
     name: 'Dr. Hemant Kansal, MBBS MS',
     designation: 'Gynecologist & Obstetrician (On Call)',
     description: 'Provides on-call support for maternity and female health concerns.',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
+    timing: 'On Call',
     category: 'gynecology',
   },
   {
@@ -153,11 +113,7 @@ import founder from './About_page_image/shivam.webp'
     name: 'Dr. Avinash Patwari, MBBS MS',
     designation: 'Gynecologist & Obstetrician (On Call)',
     description: 'On-call gynecologist for pregnancy and female wellness support.',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
+    timing: 'On Call',
     category: 'gynecology',
   },
   {
@@ -165,12 +121,8 @@ import founder from './About_page_image/shivam.webp'
     department: 'Founder & Director',
     name: 'Dr. Anmol Patidar, MBBS MD',
     designation: 'Founder - Anmol Hospital',
-    description: ' Founder of Anmol Hospital, promoting ethical healthcare',
-    social: [
-      { icon: 'fa6-brands:facebook-f', href: '/about' },
-      { icon: 'fa6-brands:linkedin-in', href: '/about' },
-      { icon: 'fa6-brands:twitter', href: '/about' },
-    ],
+    description: 'Founder of Anmol Hospital, promoting ethical healthcare.',
+    timing: 'N/A',
     category: 'founder',
   },
 ];
@@ -182,6 +134,7 @@ export default function Doctors() {
   pageTitle('Doctors');
   return (
     <>
+    <WhatsAppFloatingButton/>
       <BannerSectionStyle5
         bgUrl={Doctor_page}
         imgUrl='d'

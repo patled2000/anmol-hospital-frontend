@@ -14,6 +14,7 @@ import  Medical_Management  from './Department/Medical Management Icon.webp'
 import  Urology_Department  from './Department/Urology Department Icon.webp'
 import Cardiology_Department   from './Department/Cardiology Department Icon.webp'
 import Obstetrics_and_Gynecology   from './Department/Obstetrics and Gynecology Icon.webp'
+import WhatsAppFloatingButton from './WhatsAppFloatingButton';
 const departmentData = [
   {
     iconUrl:  General_Surgery,
@@ -87,6 +88,8 @@ export default function Departments() {
   pageTitle('Departments');
   return (
     <>
+
+    <WhatsAppFloatingButton/>
       <BannerSectionStyle5
         bgUrl={departmentpagebanner}
         imgUrl="/images/departments/banner_img.png"
