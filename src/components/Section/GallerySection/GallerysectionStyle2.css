@@ -11,7 +11,7 @@
 }
 
 .cs_filter_btn {
-  padding: 10px 20px;
+  padding: 20px 20px;
   border: 1px solid #ccc;
   background-color: #fff;
   color: #000;
@@ -56,19 +56,23 @@
 }
 
 /* Mobile Responsive */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .cs_filter_buttons {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row; /* 🔄 row me laayein */
+    justify-content: center;
+    gap: 10px;
     padding-top: 20px;
   }
 
   .cs_filter_btn {
-    width: 80%;
-    text-align: center;
+    width: auto; 
+    padding: 8px 8px;
+    font-size: 11px;
   }
 
   .cs_gallery_grid_2 {
     grid-template-columns: 1fr;
   }
 }
+

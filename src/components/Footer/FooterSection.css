@@ -1,4 +1,4 @@
- .footer {
+  .footer {
   background: linear-gradient(to top, #0054A6,#00AEEF); 
   color: #ffffff;
   font-family: 'Figtree';
@@ -171,34 +171,5 @@
 
   .social-icons {
     font-size: 16px;
-  }
-}
-@media (max-width: 768px) {
-  .footer-bottom {
-    background: linear-gradient(to top, #0054A6); 
-    font-size: 12px;
-    color: white;
-    padding: 16px 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 8px;
-    line-height: 1.5;
-  }
-
-  .footer-bottom p {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
-  .powered-by {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    font-size: 12px;
-    text-align: center;
-    word-break: break-word;
   }
 }

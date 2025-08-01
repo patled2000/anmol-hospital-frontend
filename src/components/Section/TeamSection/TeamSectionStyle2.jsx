@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Spacing from '../../Spacing';
 import TeamStyle2 from '../../Team/TeamStyle2';
 import Pagination from '../../Pagination';
+import './TeamSectionStyle2.css'
 
 export default function TeamSectionStyle2({ data }) {
   const [view, setView] = useState('grid');
@@ -22,9 +23,9 @@ export default function TeamSectionStyle2({ data }) {
   return (
     <div className="container">
       <div className="cs_doctors_heading">
-        <div className="cs_isotop_filter cs_style1">
+        <div >
          {/**  <p className="mb-0">Sort by</p>   */}
-          <ul className="cs_mp0">
+          <ul className=" category-filter-buttons">
             <li className={active === 'all' ? 'active' : ''}>
               <span onClick={() => handleFilter('all')}>All</span>
             </li>

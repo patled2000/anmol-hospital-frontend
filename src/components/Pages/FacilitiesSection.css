@@ -99,8 +99,69 @@
   }
 }
 
+ @media (max-width: 600px) {
+  .facility-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
 @media (max-width: 600px) {
   .facility-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 10px;
+  }
+
+  .facility-box {
+    padding: 14px 12px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .facility-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #A1D348;
+  }
+
+  .facility-title-hindi {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 4px 0;
+    text-align: center;
+  }
+
+  .facility-title-eng {
+    font-size: 12px;
+    margin-bottom: 4px;
+    color: #333;
+  }
+
+  .facility-box p {
+    font-size: 11px;
+    line-height: 1.3;
+    margin: 0;
+    color: #202020;
+    text-align: center;
+  }
+
+  .facility-heading h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .facility-heading p {
+    font-size: 10px;
+    margin-bottom: 24px;
+  }
+
+  .facility-section {
+    padding: 40px 10px;
   }
 }
