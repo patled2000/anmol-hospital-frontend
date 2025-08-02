@@ -55,14 +55,14 @@ const departmentData = [
      iconUrl:  Medical_Management,
     title: 'Medical Management',
     subTitle:
-      'This department manages chronic and acute conditions such as diabetes, hypertension, and infections through expert physicians.',
+      'This department manages chronic and acute conditions such as diabetes, hypertension, and infections .',
     href: '/departments/department-details',
   },
   {
     iconUrl:  Urology_Department,
     title: ' Urology Department',
     subTitle:
-      ' This department deals with urinary tract and male reproductive issues, including kidney stones, infections, and prostate care.',
+      ' This department deals with urinary tract and male reproductive issues, kidney stones, infections, and prostate care.',
     href: '/departments/department-details',
   },
   {
@@ -77,7 +77,7 @@ const departmentData = [
       iconUrl:  Obstetrics_and_Gynecology,
     title: 'Obstetrics and Gynecology',
     subTitle:
-      'This department provides care for pregnancy, childbirth, and female reproductive health using advanced treatment and technology.',
+      'This department provides care for pregnancy, childbirth, and female reproductive health using advanced   technology.',
     href: '/departments/department-details',
   },
 

@@ -214,7 +214,7 @@
   .footer-bottom {
   background: #0054A6;
   padding: 14px 20px;
-  font-size: 12px;
+  font-size: 9px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -229,6 +229,7 @@
   flex-direction: column;
   align-items: center;
   gap: 6px;
+  font-size: 9px;
 }
 
 .footer-bottom .bottom_right_content {

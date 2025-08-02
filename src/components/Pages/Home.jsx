@@ -46,7 +46,7 @@ import WhatsAppFloatingButton from './WhatsAppFloatingButton';
  
 const testimonialData = [
   {
-    text: '" My mother was treated for a heart condition here, and the cardiology team was highly experienced, and the staff was extremely patient and supportive. If your looking for trusted cardiology care in Indore, I highly recommend them ”',
+    text: '" My mother was treated for a heart condition here, and the cardiology team was highly experienced, and the staff was extremely patient and supportive. If you are looking for trusted cardiology care in Indore, I highly recommend them ”',
  
     ratingNumber: '5',
     avatarImgUrl: sohanTestimonial,
@@ -54,35 +54,35 @@ const testimonialData = [
     avatarDesignation: 'Indore',
   },
   {
-    text: '" My mother had a heart issue that really scared us, but the cardiology team at Anmol Hospital made us feel safe from the very first moment. The doctors were calm, kind, and explained everything so patiently. They treated her like family. If your in Indore and need heart care you can truly trust this hospital ” ' ,
+    text: '" My mother had a heart issue that scared us, but the cardiology team at Anmol Hospital made us feel safe from the start. The doctors were calm, kind, and caring, truly trustworthy heart care in Indore. ” ' ,
     ratingNumber: '5',
     avatarImgUrl: deelipTestimonial,
     avatarName: 'Deelip Wadhwani',
     avatarDesignation: 'Dewas',
   },
   {
-    text: '“ After my father was injured in a road accident, the emergency team at Anmol Hospital responded within minutes. Their trauma care was life-saving. I can confidently say this is one of the best emergency care hospitals in Indore.”',
+    text: '“ After my father was injured in a road accident, the emergency team at Anmol Hospital responded within minutes. Their trauma care was life-saving. I can confidently say this is one of the best emergency care hospitals in Indore. ”',
     ratingNumber: '5',
     avatarImgUrl: mahesh,
     avatarName: 'Mahesh varma',
     avatarDesignation: 'Bhopal',
   },
   {
-    text: '" We brought our 5-year-old here for a high fever that wouldnt go down. The paediatricians were gentle, cheerful, and kept our child calm. They treated her like their own. Its challenging to find such dedicated childcare in Indore. I would totally recommend Anmol Hospital.”',
+    text: '" We brought our 5-year-old to Anmol Hospital for a high fever. The paediatricians were gentle, cheerful, and kept her calm. It’s rare to find such dedicated childcare in Indore. Highly recommended! ”',
     ratingNumber: '5',
     avatarImgUrl:  sophia,
     avatarName: 'Sophia Tiwari',
     avatarDesignation: 'Indore',
   },
   {
-    text: '" I had to undergo appendix surgery and was really anxious, but the surgical team at Anmol Hospital made me feel completely safe. The doctors explained the whole process and the recovery was smoother than I expected. I’d definitely recommend their surgical care to anyone in Indore.”',
+    text: '" I had appendix surgery and was anxious, but the surgical team at Anmol Hospital made me feel safe. The doctors explained everything clearly, and my recovery was smooth. Highly recommend their surgical care in Indore. ”',
     ratingNumber: '5',
     avatarImgUrl: priya,
     avatarName: 'Priya Patidar',
     avatarDesignation: 'Ujjain',
   },
   {
-    text: '“ My son was admitted for a high fever and the pediatric care was top-notch. The doctors explained everything clearly and kept us informed. This hospital is a blessing for parents in Indore.”',
+    text: '“ My son was admitted for a high fever and the pediatric care was top-notch. The doctors explained everything clearly and kept us informed. This hospital is a blessing for parents in Indore. ”',
     ratingNumber: '5',
     avatarImgUrl: Ankit,
     avatarName: 'Ankit Nagar',
