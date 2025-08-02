@@ -89,9 +89,8 @@ export default function SpecialtySlider() {
       <div className="specialty-header">
         <h2><span>Specialized Care at Anmol Hospital</span></h2>
         <p >
-           Explore the expert departments at Anmol Hospital, <br />
-       led by trusted and compassionate professionals.
-
+           Explore the expert departments at Anmol Hospital,
+        
           
         </p>
       </div>

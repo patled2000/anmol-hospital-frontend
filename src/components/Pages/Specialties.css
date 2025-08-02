@@ -4,7 +4,7 @@
 
  .specialty-header {
    
-  padding: 60px 20px 30px;
+  padding: 60px 40px 30px;
   background: linear-gradient(to right, #f4f9ff, #ffffff);
   animation: fadeIn 0.8s ease;
   text-align: center;
@@ -50,8 +50,8 @@ h1,h2,h3,h4,h5,h6{
   max-width: 750px;
   text-align: center;
   line-height: 1.4;
-  font-weight: 500px;
-  margin-left: 275px;
+  font-weight: 500;
+  
 
   margin-bottom: 0px;
   
@@ -238,6 +238,26 @@ h1,h2,h3,h4,h5,h6{
   .arrow-btn.right {
     right: 10px;
   }
+
+
+.specialty-right h2 {
+  font-size: 32px;
+  color: #274760;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .specialty-right h2 {
+    font-size: 22px;
+    margin-top: 10px;
+    font-family: 'Noto Sans Devanagari', sans-serif !important;
+  }
+}
+
+
+
 }
 @media (max-width: 768px) {
   .specialty-right p {
@@ -248,26 +268,31 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
-@media (max-width: 768px) {
+
+ @media (max-width: 768px) {
   .specialty-header {
     text-align: center;
-    padding: 40px 10px 20px;
+    padding: 40px 15px 20px;
   }
 
   .specialty-header h2 {
     font-size: 26px;
     line-height: 1.3;
-    text-align: center; /* ✅ ensure center alignment */
-     padding-left: 42px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .specialty-header h2 span {
+    display: inline-block;
+    width: 100%;
   }
 
   .specialty-header p {
     font-size: 14px;
     line-height: 1.6;
-    margin: 0 auto;            /* ✅ center horizontally */
-    padding: 0 15px;           /* ✅ spacing from sides */
-    max-width: 90%;
-    padding-left: 23px;
-     text-align: center;
+    margin: 10px auto 0;
+    padding: 0 10px;
+    max-width: 100%;
+    text-align: center;
   }
 }

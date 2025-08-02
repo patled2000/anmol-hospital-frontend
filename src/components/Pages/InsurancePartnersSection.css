@@ -55,7 +55,7 @@
 .insurance-name {
   font-size: 14px;
   font-weight: 600;
-  color: #0054A6;
+  color: #032342;
 }
 
 
@@ -78,25 +78,25 @@
 
   .insurance-img {
     height: 36px;              /* ✅ small logo */
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     object-fit: contain;
   }
 
   .insurance-name {
-    font-size: 7px;            /* ✅ very small text */
+    font-size: 7px !important;            /* ✅ very small text */
     text-align: center;
-    font-weight: 500;
+     
      margin: 0;                       /* ✅ remove extra gap */
     line-height: 1;   
   }
 
   .insurance-title {
-    font-size: 22px;
+    font-size: 26px;
     margin-bottom: 6px;
   }
 
   .insurance-subtitle {
-    font-size: 11px;
+    font-size: 13px;
     margin-bottom: 20px;
   }
 

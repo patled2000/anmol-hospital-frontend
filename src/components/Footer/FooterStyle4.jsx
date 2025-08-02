@@ -57,10 +57,9 @@ export default function FooterStyle4() {
     </ul>
 
     <div className="social-icons">
-      <a href="#"><FaFacebookF /></a>
+      <a href="https://www.facebook.com/profile.php?id=100064572828949&rdid=xY99ALd3vZ4k11Ya&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GZZgfpujS%2F#"><FaFacebookF /></a>
       <a href="#"><FaLinkedinIn /></a>
-      <a href="#"><FaTwitter /></a>
-      <a href="#"><FaInstagram /></a>
+      <a href="Instagram: https://www.instagram.com/anmol.hospital1/"><FaInstagram /></a>
     </div>
   </div>
 </div>
