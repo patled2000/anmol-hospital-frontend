@@ -115,9 +115,9 @@ const DoctorSlider = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 3000,
+    speed: 1500,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2000,
     slidesToShow: 3,
     slidesToScroll: 1,
     pauseOnHover: false,

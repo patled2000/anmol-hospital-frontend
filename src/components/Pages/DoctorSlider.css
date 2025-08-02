@@ -126,54 +126,40 @@
 }
 
 /* ✅ Responsive Styling */
-@media (max-width: 768px) {
-  .slider-title {
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
-
-  .doctor-intro {
-    font-size: 14px;
-    padding: 0 10px;
-    margin-bottom: 20px;
-  }
-
-  .doctor-name {
-    font-size: 18px;
-  }
-
-  .doctor-degree,
-  .doctor-department,
-  .doctor-timing {
-    font-size: 14px;
-  }
-
-  .doctor-image {
-    height: 280px;
-  }
-}
-
 @media (max-width: 640px) {
-  .arrow {
-    display: block; /* ✅ Show arrows on mobile */
-    padding: 8px;
-  }
-
   .doctor-slider-container {
     padding: 40px 10px;
   }
 
   .doctor-image {
-    height: 285px;
+    height: 275px; /* 🔽 reduce height */
+    object-position: top center; /* ✅ Fix cutting from top */
   }
 
   .doctor-name {
     font-size: 16px;
   }
 
-  .doctor-degree,
-  .doctor-department,
-  .doctor-timing {
+  .doctor-degree {
     font-size: 13px;
+  }
+
+  .doctor-department {
+    font-size: 11px;
+    font-family: 'Noto Sans Devanagari', sans-serif; /* ✅ Hindi font better */
+    font-weight: 500;
+  }
+
+  .doctor-timing {
+    font-size: 12px;
+  }
+
+  .doctor-intro {
+    font-size: 13px;
+    padding: 0 12px;
+  }
+
+  .slider-title {
+    font-size: 24px;
   }
 }

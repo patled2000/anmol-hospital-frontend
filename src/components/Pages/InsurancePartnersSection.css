@@ -59,34 +59,45 @@
 }
 
 
-/* ✅ Mobile-specific: compact 4-column grid + small content */
-@media (max-width: 480px) {
+  
+   @media (max-width: 480px) {
   .insurance-grid {
-    grid-template-columns: repeat(4, 1fr);  /* ✅ 4 columns on mobile */
+    grid-template-columns: repeat(4, 1fr);  /* ✅ 4 boxes per row */
     gap: 10px;
   }
 
   .insurance-card {
-    padding: 6px;            /* compact box */
-    border-radius: 8px;
+    padding: 6px;              /* ✅ compact padding */
+    border-radius: 6px;
+    height: 80px;              /* ✅ fixed small height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .insurance-img {
-    height: 36px;            /* smaller logo */
-    margin-bottom: 4px;
+    height: 36px;              /* ✅ small logo */
+    margin-bottom: 2px;
+    object-fit: contain;
   }
 
   .insurance-name {
-    font-size: 8px;         /* smaller text */
+    font-size: 7px;            /* ✅ very small text */
+    text-align: center;
+    font-weight: 500;
+     margin: 0;                       /* ✅ remove extra gap */
+    line-height: 1;   
   }
 
   .insurance-title {
-    font-size: 24px;         /* small heading */
+    font-size: 22px;
+    margin-bottom: 6px;
   }
 
   .insurance-subtitle {
-    font-size: 13px;
-    margin-bottom: 25px;
+    font-size: 11px;
+    margin-bottom: 20px;
   }
 
   .insurance-section {

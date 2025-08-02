@@ -14,6 +14,12 @@
  .Footer_logo {
   flex-shrink: 0;
 }
+.Footer_logo {
+  display: flex;
+  justify-content: start;
+  padding: 30px 60px 10px;
+}
+
 
 .Footer_logo img {
   height: 95px !important;
@@ -23,13 +29,20 @@
 }
 
 /* Top grid layout of footer */
-.footer-top {
+ .footer-top {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 30px;
-  padding: 0px 60px 30px 60px;
+  grid-template-columns: 2fr 3fr;
+  gap: 40px;
+  padding: 30px 60px;
   align-items: start;
 }
+
+.footer-columns-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
 
 .footer-column {
   display: flex;
@@ -79,7 +92,7 @@
 }
 
 .footer-column h4 {
-  font-size: 18px;
+  font-size: 22px;
   color: white;
   margin-bottom: 10px;
 }
@@ -132,6 +145,26 @@
 }
 
 
+.footer-bottom {
+  background: #0054A6;
+  padding: 5px 30px;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p{
+  padding-top:8px ;
+}
+
+.bottom_right_content{
+  padding-left: 839px;
+}
+
+
+
 /* ✅ Tablet */
 @media (max-width: 1024px) {
   .footer-top {
@@ -142,34 +175,72 @@
 }
 
 /* ✅ Mobile */
-@media (max-width: 768px) {
-  .logo {
-    padding:0px;
+ @media (max-width: 768px) {
+  .Footer_logo {
     justify-content: center;
-  }
-
-  .logo img {
-    height: 150px; /* ✅ Mobile optimized logo */
+    padding: 20px;
   }
 
   .footer-top {
+    display: grid;
     grid-template-columns: 1fr;
-    padding: 30px 20px;
+    gap: 30px;
+    padding: 20px;
   }
 
-  .footer-column {
-    width: 100%;
+  /* Move Contact on Top */
+  .footer-column.contact {
+    order: -1;
   }
 
-  .footer-column li {
-    font-size: 14px;
+  /* Grid for remaining 3 columns (Explore, Support, Legal) */
+  .footer-columns-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
-  .footer-column h4 {
-    font-size: 16px;
+  .footer-column h4,
+  .footer-column ul li,
+  .footer-column a {
+    font-size: 13px;
   }
 
-  .social-icons {
-    font-size: 16px;
+   
+
+  .footer-columns-group h4{
+  font-size: 14px;
   }
+  .footer-bottom {
+  background: #0054A6;
+  padding: 14px 20px;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
 }
+
+.footer-bottom p {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-bottom .bottom_right_content {
+  padding-left: 0;
+  text-align: center;
+}
+
+.footer-bottom .powered-by {
+  color: #fff;
+  text-decoration: underline;
+}
+
+}
+
+ 

@@ -141,7 +141,9 @@ export default function Doctors() {
         title="Introduce You to <br />Our Experts"
         subTitle="The list of certified doctors with years of <br />professional experiences"
       />
-      <Section topMd={65} bottomMd={200} bottomLg={150} bottomXl={110}>
+      <Section topMd={30} bottomMd={200} bottomLg={150} bottomXl={50
+        
+      }>
         <TeamSectionStyle2 data={teamData} />
       </Section>
    {/**   <Section className="cs_footer_margin_0">
