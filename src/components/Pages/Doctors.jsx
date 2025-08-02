@@ -24,7 +24,7 @@ import WhatsAppFloatingButton from './WhatsAppFloatingButton';
     designation: 'Physician',
     description: 'Expert in asthma, heart disease, diabetes, and thyroid treatment plans.',
     timing: 'Mon-Sat: 9:00 AM - 2:00 PM',
-    category: 'general',
+    category: 'General',
   },
   {
     imgUrl: Dr_icon,
@@ -33,7 +33,7 @@ import WhatsAppFloatingButton from './WhatsAppFloatingButton';
     designation: 'Physician',
     description: 'Handles asthma, thyroid, diabetes, and heart disease with clinical precision.',
     timing: 'Mon-Sat: 5:00 PM - 9:00 PM',
-    category: 'general',
+    category: 'General',
   },
   {
     imgUrl: Dr_shubham_satsangi,
@@ -42,7 +42,7 @@ import WhatsAppFloatingButton from './WhatsAppFloatingButton';
     designation: 'Physician',
     description: 'Specializes in treating asthma, thyroid disorders, diabetes, and chronic heart conditions.',
     timing: 'Mon-Sat: 10:00 AM - 4:00 PM',
-    category: 'general',
+    category: 'General',
   },
   {
     imgUrl: Dr_icon,
@@ -51,7 +51,7 @@ import WhatsAppFloatingButton from './WhatsAppFloatingButton';
     designation: 'ENT Specialist',
     description: 'Specialist in diagnosing and treating nose, throat, and ear conditions.',
     timing: 'Tue-Thu: 11:00 AM - 2:00 PM',
-    category: 'ent',
+    category: 'ENT',
   },
   {
     imgUrl: Dr_shreya_agrawal,
@@ -60,7 +60,7 @@ import WhatsAppFloatingButton from './WhatsAppFloatingButton';
     designation: 'Gynecologist & Obstetrician',
     description: 'Expertise in pregnancy and female reproductive health issues.',
     timing: 'Mon-Sat: 10:00 AM - 1:00 PM',
-    category: 'gynecology',
+    category: 'Gynecology',
   },
   {
     imgUrl: dr_ashwin_aouchat,
@@ -69,7 +69,7 @@ import WhatsAppFloatingButton from './WhatsAppFloatingButton';
     designation: 'General Surgeon',
     description: 'Performs surgical care in abdominal and digestive system conditions.',
     timing: 'Mon-Fri: 6:00 PM - 9:00 PM',
-    category: 'surgery',
+    category: 'Surgery',
   },
   {
     imgUrl: Dr_icon,
@@ -78,7 +78,7 @@ import WhatsAppFloatingButton from './WhatsAppFloatingButton';
     designation: 'Orthopedic Surgeon',
     description: 'Treats bone, joint, muscle issues, and orthopedic trauma management.',
     timing: 'Mon-Sat: 5:30 PM - 8:30 PM',
-    category: 'orthopedics',
+    category: 'Orthopedics',
   },
   {
     imgUrl: Dr_icon,
@@ -87,7 +87,7 @@ import WhatsAppFloatingButton from './WhatsAppFloatingButton';
     designation: 'Pediatrician',
     description: 'Expert in newborn care, child growth, and pediatric health.',
     timing: 'Mon-Sat: 12:00 PM - 3:00 PM',
-    category: 'pediatrics',
+    category: 'Pediatrics',
   },
   {
     imgUrl: Dr_icon,
@@ -96,7 +96,7 @@ import WhatsAppFloatingButton from './WhatsAppFloatingButton';
     designation: 'Pediatrician',
     description: 'Experienced in newborn healthcare and childhood disease prevention.',
     timing: 'Mon-Sat: 4:00 PM - 7:00 PM',
-    category: 'pediatrics',
+    category: 'Pediatrics',
   },
   {
     imgUrl: Dr_icon,
@@ -105,7 +105,7 @@ import WhatsAppFloatingButton from './WhatsAppFloatingButton';
     designation: 'Gynecologist & Obstetrician (On Call)',
     description: 'Provides on-call support for maternity and female health concerns.',
     timing: 'On Call',
-    category: 'gynecology',
+    category: 'Gynecology',
   },
   {
     imgUrl: Dr_icon,
@@ -114,7 +114,7 @@ import WhatsAppFloatingButton from './WhatsAppFloatingButton';
     designation: 'Gynecologist & Obstetrician (On Call)',
     description: 'On-call gynecologist for pregnancy and female wellness support.',
     timing: 'On Call',
-    category: 'gynecology',
+    category: 'Gynecology',
   },
   {
     imgUrl: founder,
@@ -123,7 +123,7 @@ import WhatsAppFloatingButton from './WhatsAppFloatingButton';
     designation: 'Founder - Anmol Hospital',
     description: 'Founder of Anmol Hospital, promoting ethical healthcare.',
     timing: 'N/A',
-    category: 'founder',
+    category: 'Founder',
   },
 ];
 

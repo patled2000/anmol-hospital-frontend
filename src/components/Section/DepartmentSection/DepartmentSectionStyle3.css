@@ -1,0 +1,61 @@
+ /* Grid layout for 4 columns on desktop, 2 on mobile */
+.custom-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .custom-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 10px;
+  }
+}
+
+/* Individual card styling */
+.custom-grid-item {
+  display: flex;
+  justify-content: center;
+}
+
+/* Card box size and compact style */
+.cs_iconbox.cs_style_7 {
+  width: 100%;
+  max-width: 280px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+/* Compact height for mobile */
+@media (max-width: 768px) {
+  .cs_iconbox.cs_style_7 {
+    padding: 16px;
+  }
+
+  .cs_iconbox_title {
+    font-size: 16px !important;
+    margin-bottom: 8px;
+  }
+
+  .cs_iconbox_subtitle {
+    font-size: 13px !important;
+    line-height: 1.4;
+  }
+
+  .cs_iconbox_icon {
+    width: 50px !important;
+    height: 50px !important;
+    margin-bottom: 12px;
+  }
+
+  .cs_iconbox_icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

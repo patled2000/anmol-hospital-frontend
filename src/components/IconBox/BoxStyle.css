@@ -1,0 +1,67 @@
+ /* Card box full layout */
+.cs_iconbox.cs_style_7 {
+  width: 100%;
+  max-width: 280px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+  
+  /* Flex column to align items */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  /* Add consistent height */
+  min-height: 300px;
+}
+
+/* Icon styling */
+.cs_iconbox_icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Force heading and subheading to align below icon */
+.cs_iconbox_title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+  min-height: 48px; /* helps align all headings vertically */
+}
+
+.cs_iconbox_subtitle {
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Responsive compact layout on mobile */
+@media (max-width: 768px) {
+  .cs_iconbox.cs_style_7 {
+    padding: 16px;
+    min-height: 240px;
+  }
+
+  .cs_iconbox_title {
+    font-size: 16px;
+    min-height: 40px;
+  }
+
+  .cs_iconbox_subtitle {
+    font-size: 13px;
+  }
+
+  .cs_iconbox_icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12px;
+  }
+}

@@ -15,7 +15,12 @@ import {
 export default function FooterStyle4() {
   return (
     <footer className="footer">
-       <div className='Footer_logo'><img src={logo} alt="Anmol Hospital Logo" /></div>
+ <div className="Footer_logo">
+  <Link to="/">
+    <img src={logo} alt="Anmol Hospital Logo" />
+  </Link>
+</div>
+
       <div className="footer-top">
          
         <div className="footer-column contact">
@@ -69,7 +74,7 @@ export default function FooterStyle4() {
       {/* Footer Bottom */}
       <div className="footer-bottom">
         <p>
-         <span style={{marginLeft:"20px"}}> © 2025 Anmol Hospital.All Rights Reserved</span> 
+         <span style={{marginLeft:"20px"}}> © 2025 Anmol Hospital</span> 
          
           <span className='bottom_right_content'>Powered by  <a
       href="https://www.inkcast.co.in/"
